@@ -88,6 +88,3 @@ command checks the fixed inputs needed by that workflow; `--help` lists commands
 Exposure labels denote temporal association with eligible attack execution.
 Unknown-window alerts measure review workload. Seed repeats are dependent
 measurements of the same windows, and the comparisons are retrospective.
-
-Some included files exceed GitHub's 25 MiB browser-upload limit. Use Git or
-GitHub Desktop for these files; see [GitHub's file-size documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
