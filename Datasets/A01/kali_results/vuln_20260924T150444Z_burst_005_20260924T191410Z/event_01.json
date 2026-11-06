@@ -1,0 +1,35 @@
+{
+  "kind": "topic_device_mismatch",
+  "device": "patient_b",
+  "profile": "cluster",
+  "started_at": "2026-09-24T19:14:26.805811+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-24T19:14:26.946921+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "6d18b0263efe5068132e41ba806199adca8cc639483d84935adb53ca7f342945",
+      "bytes": 692,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-24T19:14:27.616003+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "6d18b0263efe5068132e41ba806199adca8cc639483d84935adb53ca7f342945",
+      "bytes": 692,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-24T19:14:28.203616+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "6d18b0263efe5068132e41ba806199adca8cc639483d84935adb53ca7f342945",
+      "bytes": 692,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "6d18b0263efe5068132e41ba806199adca8cc639483d84935adb53ca7f342945",
+  "finished_at": "2026-09-24T19:14:28.203637+00:00"
+}

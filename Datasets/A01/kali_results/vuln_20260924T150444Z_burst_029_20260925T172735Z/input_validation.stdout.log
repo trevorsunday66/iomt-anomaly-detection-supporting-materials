@@ -1,0 +1,109 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ WARNING: FOR AUTHORIZED SECURITY TESTING ONLY
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ This tool sends potentially malicious input to test input validation.
+ This may cause unexpected behavior or crashes on the target device.
+
+ Only use against systems you own or have explicit permission to test.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+======================================================================
+ PHMS Input Validation Test Suite (PHMS-006)
+======================================================================
+Target HTTP:  http://192.168.25.105:5000
+Target WS:    ws://192.168.25.105:81/
+Timeout:      20s
+Start Time:   2026-09-25T17:27:36Z
+======================================================================
+
+⚠️  Testing input validation may cause unexpected behavior.
+    Ensure you have authorization to test this device.
+
+Checking target connectivity...
+✓ Target reachable (Status: 200)
+
+
+[*] Testing URL parameter handling...
+    XSS payload #1: 200 (0.020s)
+    XSS payload #2: 200 (0.020s)
+    XSS payload #3: 200 (0.013s)
+    Null byte: 200 (0.017s)
+    CRLF injection: 200 (0.048s)
+    Path traversal: 200 (0.139s)
+    URL-encoded null: 200 (0.013s)
+    URL-encoded CRLF: 200 (0.035s)
+    SQL injection pattern: 200 (0.025s)
+    Long query string: 200 (0.134s)
+
+[*] Testing HTTP method handling...
+    GET          -> 200 (Allowed)
+    POST         -> 405 (Blocked)
+    PUT          -> 405 (Blocked)
+    DELETE       -> 405 (Blocked)
+    PATCH        -> 405 (Blocked)
+    OPTIONS      -> 200 (Allowed)
+    HEAD         -> 200 (Allowed)
+    TRACE        -> 405 (Blocked)
+    CONNECT      -> 405 (Blocked)
+    INVALID      -> 405 (Blocked)
+    CUSTOM       -> 405 (Blocked)
+    MALFORMED    -> 405 (Blocked)
+
+[*] Testing oversized request handling...
+    Size    100: 200 (0.026s)
+    Size   1000: 200 (0.019s)
+    Size  10000: 200 (0.011s)
+    Size 100000: 200 (0.152s)
+
+    Testing POST body sizes...
+    POST   1000 bytes: 405
+    POST  10000 bytes: 405
+    POST 100000 bytes: 405
+
+[*] Testing malformed header handling...
+    Oversized header value: 200
+    Null bytes in header: 200
+    CRLF injection: ERROR
+    Negative content length: 200
+    Large content length: 200
+    Modified Host header: 200
+    IP spoofing header: 200
+
+[*] Testing WebSocket input handling...
+    Valid JSON: CRASH - [Errno 111] Connection refused
+    Incomplete JSON: CRASH - [Errno 111] Connection refused
+    Non-JSON message: CRASH - [Errno 111] Connection refused
+    Oversized message: CRASH - [Errno 111] Connection refused
+    Binary data: CRASH - [Errno 111] Connection refused
+    XSS in JSON key: CRASH - [Errno 111] Connection refused
+
+======================================================================
+ TEST SUMMARY
+======================================================================
+
+Total Tests Run:    30
+Issues Found:       2
+
+Issues Detected:
+--------------------------------------------------
+  [Medium] Potential XSS vulnerability - script reflected
+  [Medium] WebSocket crashed with malformed input
+
+----------------------------------------------------------------------
+ VULNERABILITY ASSESSMENT
+----------------------------------------------------------------------
+
+⚠️  VULNERABILITY CONFIRMED: PHMS-006
+   Finding: Insufficient input validation
+   CVSS: 6.5 (Medium)
+
+   Recommendations:
+   1. Validate and sanitize all input parameters
+   2. Implement request size limits
+   3. Use safe string handling functions
+   4. Reject malformed requests gracefully
+
+======================================================================
+
+Results saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_029_20260925T172735Z/input_validation.json

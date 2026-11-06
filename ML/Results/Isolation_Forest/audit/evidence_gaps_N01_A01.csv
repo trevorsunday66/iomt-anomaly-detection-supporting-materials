@@ -1,0 +1,2 @@
+campaign,start,end,reason
+vuln_20260924T150444Z,2026-09-24 15:04:45+00:00,2026-09-25 04:16:45+00:00,before_preserved_broker_log

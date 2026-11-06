@@ -1,0 +1,43 @@
+{
+  "analysis_feature_policy": "system-network-only-v1",
+  "campaign_id": "vuln_20260924T150444Z",
+  "configuration": {
+    "PHMS_ATTACK_DURATION": "0",
+    "PHMS_ATTACK_MODE": "randomized",
+    "PHMS_ATTACK_ONLY": "1",
+    "PHMS_BROKER": "127.0.0.1",
+    "PHMS_CAMPAIGN_SEED": "720829183800191030",
+    "PHMS_GIT_UPDATE": "0",
+    "PHMS_IN_TMUX": "1",
+    "PHMS_KALI_COMPLETION_POLL_SECONDS": "15",
+    "PHMS_KALI_HOST": "192.168.25.101",
+    "PHMS_KALI_REPO": "/home/pi2/phms-attack",
+    "PHMS_KALI_RESULTS_ROOT": "/home/pi2/phms-attack-results",
+    "PHMS_KALI_USER": "pi2",
+    "PHMS_KALI_USE_TMUX": "1",
+    "PHMS_MAX_RUNS": "0",
+    "PHMS_TARGET": "192.168.25.105",
+    "PHMS_TMUX_SESSION": "phms_attack",
+    "PHMS_USE_TMUX": "1"
+  },
+  "generated_at": "2026-09-24T15:04:45Z",
+  "git_commit": null,
+  "git_worktree_dirty": null,
+  "missing_device_counters": "blank means unavailable; zero requires an explicit device value",
+  "mode": "attack",
+  "physiological_data_collected": true,
+  "protocol_version": "phms-campaign-v2",
+  "source_sha256": {
+    "phms-esp32/esp32_a_mqtt/esp32_a_mqtt.ino": "eb940d9922764485b9a1a04af233d157b44f1f96930fe74705603c8afc9e5907",
+    "phms-esp32/esp32_b_mqtt/esp32_b_mqtt.ino": "7d54fc7efc622100283e929f65b0a3b6012716659a8ba42c62f885e22942864e",
+    "vulnerability_testing/scripts/campaign_protocol.py": "1002bd2df01050c451383aaa2375c07c05b282cc96d8d82ea38a0b6f640e185e",
+    "vulnerability_testing/scripts/collect_normal_baseline.sh": "f83016cf198ae341c1ef91de5a59d91cf1759d86b0ed6333508be2b2a2944908",
+    "vulnerability_testing/scripts/collect_phms_data_pi.py": "1a85cb6589b6ee5f45e4f868bb165be5ad64f08e6882c9bc35e66980675bb973",
+    "vulnerability_testing/scripts/generate_campaign_report.py": "4a802f3c108b6b6c948e63fc671034fb4feb0e2552f25d1b3a8c295274b7c5fb",
+    "vulnerability_testing/scripts/post_campaign_cleanup_pi.py": "6ec839a41f81fb20aaccfcc618f4074080dd4b3b17b626559bb669ddd29f59e2",
+    "vulnerability_testing/scripts/run_full_pi_kali_campaign.sh": "a812859947f4f19bc1f5a20b7bba13372199aa661bec904295ef02b1ab97a929",
+    "vulnerability_testing/scripts/run_intermittent_vulnerability_campaign.py": "37f0061111f840568a2ac098ace4fa146f29b552701403f06fa221b9842bf247",
+    "vulnerability_testing/scripts/run_vulnerability_suite.py": "95e8cc1fe064b8cee3c5ba9da6914bb0a85798ba5de1f3abc59577edc0b5bb1b",
+    "vulnerability_testing/scripts/validate_campaign_evidence.py": "eb6eff2b8190c37c5c8e69255c1158812b1274b00c64920595e1262e16b4a28a"
+  }
+}

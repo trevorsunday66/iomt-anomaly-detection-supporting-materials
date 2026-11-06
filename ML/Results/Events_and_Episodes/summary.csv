@@ -1,0 +1,7 @@
+scope,detector,feature_set,seed,eligible_events,detected_events,missed_events,incomplete_events,delay_origin,delay_median_seconds,delay_min_seconds,delay_max_seconds,normal_windows,valid_normal_windows,normal_topic_hours,normal_flagged_windows,normal_alert_episodes,episodes_per_topic_hour,episode_duration_median_seconds,episode_duration_max_seconds,normal_flagged_seconds
+matched_development,IF,combined,,35,29,6,0,exposure_start,3.0,1.0,23.0,360,360,0.5,12,9,18.0,5.0,15.0,60
+matched_development,IF,network,,35,34,1,0,exposure_start,3.0,1.0,8.0,360,360,0.5,11,11,22.0,5.0,5.0,55
+matched_development,IF,system,,35,9,26,0,exposure_start,4.0,1.0,15.0,360,360,0.5,5,4,8.0,5.0,10.0,25
+matched_development,LOF,combined,,35,21,14,0,exposure_start,3.0,1.0,18.0,360,360,0.5,13,10,20.0,5.0,10.0,65
+matched_development,LOF,network,,35,20,15,0,exposure_start,3.5,1.0,18.0,360,360,0.5,17,15,30.0,5.0,15.0,85
+matched_development,LOF,system,,35,0,35,0,exposure_start,,,,360,360,0.5,3,3,6.0,5.0,5.0,15

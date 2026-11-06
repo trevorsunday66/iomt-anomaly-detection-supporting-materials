@@ -1,0 +1,200 @@
+{
+  "test": "mqtt_protocol_metrics_test",
+  "timestamp": "2026-09-25T13:23:36Z",
+  "broker": "192.168.25.105",
+  "port": 1883,
+  "connect_return_code": 0,
+  "duplicate_client_id_probe": {
+    "client_id": "phms-duplicate-client-mqtt-metrics-1790342604",
+    "primary_connect_return_code": 0,
+    "secondary_connect_return_code": 0,
+    "primary_disconnect_events": [
+      "DisconnectFlags(is_disconnect_packet_from_server=False)",
+      "DisconnectFlags(is_disconnect_packet_from_server=False)"
+    ],
+    "duplicate_client_id_accepted": true
+  },
+  "published_count": 20,
+  "labels": [
+    "device_topic_mismatch",
+    "malformed_payload",
+    "out_of_order_timestamp",
+    "payload_size_probe",
+    "publish_timing_jitter",
+    "topic_misuse"
+  ],
+  "isolated_lab_only": true,
+  "events": [
+    {
+      "topic": "phms/patient_a/debug",
+      "payload_bytes": 378,
+      "retain": false,
+      "published": true,
+      "label": "topic_misuse"
+    },
+    {
+      "topic": "phms/patient_a/data/extra",
+      "payload_bytes": 383,
+      "retain": false,
+      "published": true,
+      "label": "topic_misuse"
+    },
+    {
+      "topic": "phms/../patient_a/data",
+      "payload_bytes": 380,
+      "retain": false,
+      "published": true,
+      "label": "topic_misuse"
+    },
+    {
+      "topic": "phms/patient_a_shadow/data",
+      "payload_bytes": 384,
+      "retain": false,
+      "published": true,
+      "label": "topic_misuse"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 412,
+      "retain": false,
+      "published": true,
+      "label": "device_topic_mismatch"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 360,
+      "retain": false,
+      "published": true,
+      "label": "payload_size_probe"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 616,
+      "retain": false,
+      "published": true,
+      "label": "payload_size_probe"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 1384,
+      "retain": false,
+      "published": true,
+      "label": "payload_size_probe"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 4456,
+      "retain": false,
+      "published": true,
+      "label": "payload_size_probe"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 381,
+      "retain": false,
+      "published": true,
+      "label": "out_of_order_timestamp"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 380,
+      "retain": false,
+      "published": true,
+      "label": "out_of_order_timestamp"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 381,
+      "retain": false,
+      "published": true,
+      "label": "out_of_order_timestamp"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 400,
+      "retain": false,
+      "published": true,
+      "label": "publish_timing_jitter"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 399,
+      "retain": false,
+      "published": true,
+      "label": "publish_timing_jitter"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 400,
+      "retain": false,
+      "published": true,
+      "label": "publish_timing_jitter"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 399,
+      "retain": false,
+      "published": true,
+      "label": "publish_timing_jitter"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 400,
+      "retain": false,
+      "published": true,
+      "label": "publish_timing_jitter"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 31,
+      "retain": false,
+      "published": true,
+      "label": "malformed_payload"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 21,
+      "retain": false,
+      "published": true,
+      "label": "malformed_payload"
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "payload_bytes": 84,
+      "retain": false,
+      "published": true,
+      "label": "malformed_payload"
+    }
+  ],
+  "findings": [
+    {
+      "title": "Low-rate MQTT protocol metric probes were accepted",
+      "severity": "Medium",
+      "evidence": {
+        "published_count": 20,
+        "labels": [
+          "device_topic_mismatch",
+          "malformed_payload",
+          "out_of_order_timestamp",
+          "payload_size_probe",
+          "publish_timing_jitter",
+          "topic_misuse"
+        ]
+      }
+    },
+    {
+      "title": "Duplicate MQTT client ID connection was accepted",
+      "severity": "Medium",
+      "evidence": {
+        "client_id": "phms-duplicate-client-mqtt-metrics-1790342604",
+        "primary_connect_return_code": 0,
+        "secondary_connect_return_code": 0,
+        "primary_disconnect_events": [
+          "DisconnectFlags(is_disconnect_packet_from_server=False)",
+          "DisconnectFlags(is_disconnect_packet_from_server=False)"
+        ],
+        "duplicate_client_id_accepted": true
+      }
+    }
+  ]
+}

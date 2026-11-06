@@ -1,0 +1,25 @@
+{
+  "primary_profiles": [
+    "llama",
+    "qwen_on",
+    "mistral"
+  ],
+  "primary_views": [
+    "network",
+    "system",
+    "combined"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "primary_ml": "feature-matched frozen Isolation Forest per view",
+  "development_ablation": "qwen_off",
+  "sole_headline_model": null,
+  "sole_headline_view": null,
+  "supersedes": "reporting/development_selection_schema_v2",
+  "source_results_manifest_sha256": "c14b1cc24360442db5137047d1dc6ed321f5dde6dada40c3a53c1f8ff322ac6c",
+  "source_review_manifest_sha256": "b4faeb55602f490eed4b7a4b14f7e37f4f7f102cf9c05bd2c8bf821e1260735b",
+  "selection_disclosure": "Qwen thinking mode chosen after development review; no feature-view or seed selection."
+}

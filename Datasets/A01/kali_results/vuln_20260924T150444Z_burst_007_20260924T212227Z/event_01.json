@@ -1,0 +1,46 @@
+{
+  "kind": "retained_abuse",
+  "device": "patient_a",
+  "profile": "cluster",
+  "started_at": "2026-09-24T21:22:39.803477+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-24T21:22:39.930617+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "886b5cac06392c3b4e944eca5781e71f8f27e430a27a2b03ffab547a1af998df",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-24T21:22:41.435993+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "886b5cac06392c3b4e944eca5781e71f8f27e430a27a2b03ffab547a1af998df",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-24T21:22:42.919450+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "886b5cac06392c3b4e944eca5781e71f8f27e430a27a2b03ffab547a1af998df",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-24T21:22:44.276651+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "886b5cac06392c3b4e944eca5781e71f8f27e430a27a2b03ffab547a1af998df",
+      "bytes": 695,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": true,
+    "success": true,
+    "action": "clear",
+    "original_sha256": null
+  },
+  "payload_sha256": "886b5cac06392c3b4e944eca5781e71f8f27e430a27a2b03ffab547a1af998df",
+  "retained_delivery_observed": true,
+  "finished_at": "2026-09-24T21:22:50.212566+00:00"
+}

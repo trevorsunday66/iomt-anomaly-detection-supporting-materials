@@ -1,0 +1,148 @@
+{
+  "target": "192.168.25.105",
+  "http_port": 5000,
+  "mqtt_port": 1883,
+  "timestamp": "2026-09-25T02:43:42Z",
+  "isolated_lab_only": true,
+  "tests": {
+    "health_endpoint": {
+      "reachable": true,
+      "status_code": 200,
+      "body_preview": "{\"mqtt_started\":true,\"status\":\"ok\",\"success\":true,\"timestamp\":\"2026-09-25T02:43:42Z\"}\n"
+    },
+    "demo_credentials": {
+      "attempts": [
+        {
+          "username": "admin",
+          "password": "admin",
+          "status_code": 200,
+          "token_received": true
+        },
+        {
+          "username": "doctor",
+          "password": "doctor",
+          "status_code": 200,
+          "token_received": true
+        },
+        {
+          "username": "nurse",
+          "password": "nurse",
+          "status_code": 200,
+          "token_received": true
+        },
+        {
+          "username": "kiosk",
+          "password": "kiosk",
+          "status_code": 200,
+          "token_received": true
+        }
+      ],
+      "valid_credentials": [
+        {
+          "username": "admin",
+          "password": "admin"
+        },
+        {
+          "username": "doctor",
+          "password": "doctor"
+        },
+        {
+          "username": "nurse",
+          "password": "nurse"
+        },
+        {
+          "username": "kiosk",
+          "password": "kiosk"
+        }
+      ]
+    },
+    "jwt_controls": {
+      "missing_token_status": 200,
+      "malformed_token_status": 200,
+      "known_good_token_status": 200,
+      "forged_token_status": 200,
+      "jwt_secret_tested": true
+    },
+    "cors": {
+      "origin": "http://attacker.lab",
+      "status_code": 200,
+      "access_control_allow_origin": "http://attacker.lab"
+    },
+    "mqtt_weak_credentials": {
+      "mqtt_library_available": true,
+      "tcp_port_open": true,
+      "weak_credentials_accepted": true,
+      "publish_attempted": false,
+      "publish_success": false,
+      "topic": "phms/patient_a/data",
+      "connect_return_code": 0
+    }
+  },
+  "findings": [
+    {
+      "title": "Demo credentials grant API tokens",
+      "severity": "High",
+      "evidence": {
+        "valid_credentials": [
+          {
+            "username": "admin",
+            "password": "admin"
+          },
+          {
+            "username": "doctor",
+            "password": "doctor"
+          },
+          {
+            "username": "nurse",
+            "password": "nurse"
+          },
+          {
+            "username": "kiosk",
+            "password": "kiosk"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Known lab JWT secret allows token forgery",
+      "severity": "Critical",
+      "evidence": {
+        "endpoint": "/api/devices",
+        "status_code": 200
+      }
+    },
+    {
+      "title": "API accepted missing or malformed JWT",
+      "severity": "Critical",
+      "evidence": {
+        "missing_token_status": 200,
+        "malformed_token_status": 200,
+        "known_good_token_status": 200,
+        "forged_token_status": 200,
+        "jwt_secret_tested": true
+      }
+    },
+    {
+      "title": "Broad CORS origin accepted",
+      "severity": "Medium",
+      "evidence": {
+        "origin": "http://attacker.lab",
+        "status_code": 200,
+        "access_control_allow_origin": "http://attacker.lab"
+      }
+    },
+    {
+      "title": "Weak shared MQTT credentials accepted",
+      "severity": "High",
+      "evidence": {
+        "username": "phms",
+        "password": "phms",
+        "port": 1883
+      }
+    }
+  ],
+  "summary": {
+    "finding_count": 5,
+    "critical_or_high": 4
+  }
+}

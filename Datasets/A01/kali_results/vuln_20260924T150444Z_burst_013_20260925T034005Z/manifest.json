@@ -1,0 +1,110 @@
+{
+  "protocol_version": "phms-campaign-v2",
+  "attack_mode": "randomized",
+  "campaign": "vuln_20260924T150444Z_burst_013_20260925T034005Z",
+  "dry_run": false,
+  "plan": {
+    "version": "phms-randomized-mqtt-v2",
+    "seed": 720829183800191030,
+    "burst_number": 10,
+    "events": [
+      {
+        "name": "event_01",
+        "kind": "spoofed_device",
+        "device": "patient_a",
+        "profile": "cluster",
+        "count": 11,
+        "delays": [
+          0.861,
+          1.09,
+          1.491,
+          1.141,
+          0.705,
+          0.474,
+          1.332,
+          0.756,
+          0.672,
+          0.606
+        ],
+        "pause_before": 2.107,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 2552603925,
+        "topic_suffix": "data"
+      },
+      {
+        "name": "event_02",
+        "kind": "timing_jitter",
+        "device": "patient_a",
+        "profile": "cluster",
+        "count": 12,
+        "delays": [
+          0.493,
+          2.886,
+          0.373,
+          2.543,
+          0.483,
+          2.944,
+          0.352,
+          2.122,
+          0.499,
+          2.503,
+          0.356
+        ],
+        "pause_before": 15.684,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 2413019777,
+        "topic_suffix": "data"
+      }
+    ],
+    "quiet_after": 45.058
+  },
+  "plan_sha256": "e3301a834444cf1ba5c73c2bf7b3303ae51b3f53c01c24e8a3da28f9e1cecead",
+  "source_sha256": {
+    "run_randomized_mqtt_burst.py": "e98ca8272257865d91db991aa47135c1d0bdecc7e44957637e2b250324516471",
+    "random_attack_plan.py": "dde1f620d5b7f26591341c6fa7a400440a6a5873b3a2c7c4d5a61e00be6d8ab3",
+    "campaign_protocol.py": "1002bd2df01050c451383aaa2375c07c05b282cc96d8d82ea38a0b6f640e185e"
+  },
+  "created_at": "2026-09-25T03:40:05.137663+00:00",
+  "tests": [
+    {
+      "name": "event_01",
+      "attack_label": "spoofed_device",
+      "device": "patient_a",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled spoofed_device",
+      "started_at": "2026-09-25T03:40:15.309938+00:00",
+      "finished_at": "2026-09-25T03:40:26.101545+00:00",
+      "returncode": 0,
+      "json_output": "event_01.json",
+      "json_sha256": "b8c6e8583e87d268eaefe6b7d340a958369fb288954518e394b4b618e607c2d9",
+      "stdout_log": "event_01.stdout.log",
+      "stderr_log": "event_01.stderr.log"
+    },
+    {
+      "name": "event_02",
+      "attack_label": "timing_jitter",
+      "device": "patient_a",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled timing_jitter",
+      "started_at": "2026-09-25T03:40:41.786697+00:00",
+      "finished_at": "2026-09-25T03:40:59.018229+00:00",
+      "returncode": 0,
+      "json_output": "event_02.json",
+      "json_sha256": "610c30bb85114bc0f79d352bb73fdc9beef6e9a5e40a4c98e0bcce0be3f5a52d",
+      "stdout_log": "event_02.stdout.log",
+      "stderr_log": "event_02.stderr.log"
+    }
+  ],
+  "status": "complete",
+  "ground_truth": "sidecar publish evidence; time windows are not exact row labels",
+  "evidence_sha256": {
+    "attack_plan.json": "e3301a834444cf1ba5c73c2bf7b3303ae51b3f53c01c24e8a3da28f9e1cecead",
+    "observer_messages.json": "0ceab5fac4b3c08691e2e855ce872ee92c571057dd884b77826ff6d79bcb138a",
+    "source_capture.json": "3360eeeaf5ceee8d9f730eb3755953db224d5600a2a4955be44ed7f5b0b23388",
+    "event_02.json": "610c30bb85114bc0f79d352bb73fdc9beef6e9a5e40a4c98e0bcce0be3f5a52d",
+    "event_01.json": "b8c6e8583e87d268eaefe6b7d340a958369fb288954518e394b4b618e607c2d9"
+  },
+  "finished_at": "2026-09-25T03:41:44.079015+00:00"
+}

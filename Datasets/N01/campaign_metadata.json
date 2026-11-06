@@ -1,0 +1,27 @@
+{
+  "analysis_feature_policy": "system-network-only-v1",
+  "campaign_id": "normal_20260923T161519Z",
+  "configuration": {
+    "PHMS_DURATION": "0"
+  },
+  "generated_at": "2026-09-23T16:15:19Z",
+  "git_commit": null,
+  "git_worktree_dirty": null,
+  "missing_device_counters": "blank means unavailable; zero requires an explicit device value",
+  "mode": "normal",
+  "physiological_data_collected": true,
+  "protocol_version": "phms-campaign-v2",
+  "source_sha256": {
+    "phms-esp32/esp32_a_mqtt/esp32_a_mqtt.ino": "eb940d9922764485b9a1a04af233d157b44f1f96930fe74705603c8afc9e5907",
+    "phms-esp32/esp32_b_mqtt/esp32_b_mqtt.ino": "7d54fc7efc622100283e929f65b0a3b6012716659a8ba42c62f885e22942864e",
+    "vulnerability_testing/scripts/campaign_protocol.py": "54263726cc2a79672da332fe743d9ddaec454d176799a75954388365fdbd4bfd",
+    "vulnerability_testing/scripts/collect_normal_baseline.sh": "f83016cf198ae341c1ef91de5a59d91cf1759d86b0ed6333508be2b2a2944908",
+    "vulnerability_testing/scripts/collect_phms_data_pi.py": "1a85cb6589b6ee5f45e4f868bb165be5ad64f08e6882c9bc35e66980675bb973",
+    "vulnerability_testing/scripts/generate_campaign_report.py": "4a802f3c108b6b6c948e63fc671034fb4feb0e2552f25d1b3a8c295274b7c5fb",
+    "vulnerability_testing/scripts/post_campaign_cleanup_pi.py": "6ec839a41f81fb20aaccfcc618f4074080dd4b3b17b626559bb669ddd29f59e2",
+    "vulnerability_testing/scripts/run_full_pi_kali_campaign.sh": "45b1e6e8f42b4392f0ea8e73c2101e2c6bdc076d0a09d8b30e73bedece8726d2",
+    "vulnerability_testing/scripts/run_intermittent_vulnerability_campaign.py": "134ff35e8afde58707cafbbe945181e7aac0661d1485e90d5520b7ae8a3e4b0b",
+    "vulnerability_testing/scripts/run_vulnerability_suite.py": "19f3735ba4f40da24e50e8b2f4ae538cc40f5e0fc70a2ed46622c650b38230b4",
+    "vulnerability_testing/scripts/validate_campaign_evidence.py": "e0752c7fe06b99fa5bb9acf7699d0be16d2541fb5892bd370754eba7b9646530"
+  }
+}

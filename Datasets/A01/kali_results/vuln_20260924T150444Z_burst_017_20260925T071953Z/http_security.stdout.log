@@ -1,0 +1,112 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ WARNING: FOR AUTHORIZED SECURITY TESTING ONLY
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ This tool tests HTTP security configurations and may reveal
+ information about the target system's security posture.
+
+ Only use against systems you own or have explicit permission to test.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+======================================================================
+ PHMS HTTP Security Test Suite
+======================================================================
+Target:     http://192.168.25.105:5000
+Timeout:    20s
+Start Time: 2026-09-25T07:19:53Z
+======================================================================
+
+⚠️  Testing HTTP security configurations.
+    Ensure you have authorization to test this device.
+
+Checking target connectivity...
+✓ Target reachable (Status: 200)
+
+
+[*] Testing encryption (PHMS-002)...
+    HTTP Available:     True
+    HTTPS Available:    False
+    HTTPS Redirect:     False
+    Status: ✗ VULNERABLE
+
+[*] Testing security headers (PHMS-007)...
+    Headers Present:    0
+    Headers Missing:    7
+    Headers Incorrect:  0
+    Missing headers:
+      - X-Content-Type-Options: Prevents MIME type sniffing
+      - X-Frame-Options: Prevents clickjacking attacks
+      - X-XSS-Protection: Enables XSS filtering (deprecated but checked for legacy)
+      - Content-Security-Policy: Controls resource loading
+      - Strict-Transport-Security: Enforces HTTPS connections
+      - Referrer-Policy: Controls referrer information
+      - Permissions-Policy: Controls browser features
+    Status: ✗ VULNERABLE
+
+[*] Testing CORS policy (PHMS-008)...
+    CORS Headers Present: True
+    Allows Any Origin:    True
+      Origin: http://evil.com                -> Allowed (ACAO: http://evil.com)
+      Origin: https://attacker.example.com   -> Allowed (ACAO: https://attacker.example.com)
+      Origin: null                           -> Allowed (ACAO: null)
+    Status: ✗ VULNERABLE
+
+[*] Testing information disclosure (PHMS-009)...
+    Sensitive Headers:  1
+      - Server: Werkzeug/3.1.8 Python/3.13.5
+    Debug Info Found:   0
+    Error Page Leaks:   False
+    Status: ✗ VULNERABLE
+
+======================================================================
+ TEST SUMMARY
+======================================================================
+
+Vulnerabilities Found: 4
+
+Vulnerability Details:
+--------------------------------------------------
+
+  PHMS-002: Unencrypted HTTP
+    Severity: Medium (CVSS: 6.5)
+    Description: All data transmitted in plaintext over HTTP
+
+  PHMS-007: Missing Security Headers
+    Severity: Medium (CVSS: 5.3)
+    Description: 7 security headers missing
+
+  PHMS-008: Permissive CORS Policy
+    Severity: Medium (CVSS: 5.0)
+    Description: CORS allows requests from any origin
+
+  PHMS-009: Debug Information Exposure
+    Severity: Medium (CVSS: 4.3)
+    Description: System information exposed in responses
+
+----------------------------------------------------------------------
+ RECOMMENDATIONS
+----------------------------------------------------------------------
+
+  1. PHMS-002 - Enable HTTPS:
+     - Generate or obtain TLS certificate
+     - Configure ESP32 for HTTPS (WiFiServerSecure)
+     - Redirect HTTP to HTTPS
+
+  2. PHMS-007 - Add Security Headers:
+     - X-Content-Type-Options: nosniff
+     - X-Frame-Options: DENY
+     - X-XSS-Protection: 1; mode=block
+     - Content-Security-Policy: default-src 'self'
+
+  3. PHMS-008 - Implement CORS Policy:
+     - Set Access-Control-Allow-Origin to specific origins
+     - Avoid using wildcard (*)
+
+  4. PHMS-009 - Reduce Information Disclosure:
+     - Remove server version headers
+     - Disable debug output in production
+     - Use generic error messages
+        
+======================================================================
+
+Results saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_017_20260925T071953Z/http_security.json

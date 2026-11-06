@@ -1,0 +1,21 @@
+{
+  "version": "phms-randomized-mqtt-v2",
+  "seed": 720829183800191030,
+  "burst_number": 22,
+  "events": [
+    {
+      "name": "event_01",
+      "kind": "retained_abuse",
+      "device": "patient_b",
+      "profile": "isolated",
+      "count": 1,
+      "delays": [],
+      "pause_before": 17.873,
+      "hold_seconds": 10.01,
+      "padding_bytes": 0,
+      "payload_seed": 1062779181,
+      "topic_suffix": "data"
+    }
+  ],
+  "quiet_after": 22.349
+}

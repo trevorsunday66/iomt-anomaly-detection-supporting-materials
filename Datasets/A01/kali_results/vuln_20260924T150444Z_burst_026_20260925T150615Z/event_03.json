@@ -1,0 +1,21 @@
+{
+  "kind": "topic_device_mismatch",
+  "device": "patient_a",
+  "profile": "isolated",
+  "started_at": "2026-09-25T15:06:58.855994+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T15:06:58.991785+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "024fcb521e205532741620b2baf10397271f92d76ccbcccddf8107ac238aabdf",
+      "bytes": 697,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "024fcb521e205532741620b2baf10397271f92d76ccbcccddf8107ac238aabdf",
+  "finished_at": "2026-09-25T15:06:58.991805+00:00"
+}

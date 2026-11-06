@@ -1,0 +1,16 @@
+feature_set,campaign,split,unknown_windows,ml_alerts,consistency_alerts,ml_or_consistency_alerts
+combined,normal_20260923T161519Z,train,48,1,0,1
+combined,normal_20260923T161519Z,validation,1,0,0,0
+combined,vuln_20260924T150444Z,purged,98,6,0,6
+combined,vuln_20260924T150444Z,train,27332,1376,1,1376
+combined,vuln_20260924T150444Z,validation,12386,701,2,701
+network,normal_20260923T161519Z,train,48,2,0,2
+network,normal_20260923T161519Z,validation,1,1,0,1
+network,vuln_20260924T150444Z,purged,98,2,0,2
+network,vuln_20260924T150444Z,train,27332,615,1,615
+network,vuln_20260924T150444Z,validation,12386,393,2,394
+system,normal_20260923T161519Z,train,48,4,0,4
+system,normal_20260923T161519Z,validation,1,0,0,0
+system,vuln_20260924T150444Z,purged,98,18,0,18
+system,vuln_20260924T150444Z,train,27332,4811,1,4811
+system,vuln_20260924T150444Z,validation,12386,2610,2,2610

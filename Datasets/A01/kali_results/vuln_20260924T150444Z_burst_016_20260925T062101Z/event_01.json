@@ -1,0 +1,63 @@
+{
+  "kind": "spoofed_device",
+  "device": "patient_b",
+  "profile": "cluster",
+  "started_at": "2026-09-25T06:21:14.836942+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T06:21:14.992368+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T06:21:16.006660+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T06:21:17.245423+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T06:21:18.576920+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T06:21:19.910595+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T06:21:20.793904+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T06:21:21.989617+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+      "bytes": 695,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "02daa036fc445c21d8fe954a4bd14e274e87d0324bb48402109821bee97721dd",
+  "finished_at": "2026-09-25T06:21:21.989639+00:00"
+}

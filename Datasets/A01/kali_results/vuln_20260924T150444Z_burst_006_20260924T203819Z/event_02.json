@@ -1,0 +1,21 @@
+{
+  "kind": "replay",
+  "device": "patient_b",
+  "profile": "isolated",
+  "started_at": "2026-09-24T20:39:01.495027+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-24T20:39:01.621118+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "2c89870c3b093e7aaa142c8b0dd8232aaf74343e5f77a88552582d21da1b4e96",
+      "bytes": 695,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "2c89870c3b093e7aaa142c8b0dd8232aaf74343e5f77a88552582d21da1b4e96",
+  "finished_at": "2026-09-24T20:39:01.621134+00:00"
+}

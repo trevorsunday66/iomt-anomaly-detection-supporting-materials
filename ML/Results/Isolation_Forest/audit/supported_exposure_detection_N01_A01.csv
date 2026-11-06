@@ -1,0 +1,13 @@
+feature_set,split,evidence_group,supported_exposure_windows,ml_detections,consistency_detections,ml_or_consistency_detections
+combined,train,randomized_replay_excluded_by_guard,3,3,0,3
+combined,train,vitals_integrity_attack_coverage,4,4,1,4
+combined,validation,mqtt_protocol_metrics_coverage,4,4,2,4
+combined,validation,randomized_replay_excluded_by_guard,3,1,0,1
+network,train,randomized_replay_excluded_by_guard,3,3,0,3
+network,train,vitals_integrity_attack_coverage,4,4,1,4
+network,validation,mqtt_protocol_metrics_coverage,4,3,2,4
+network,validation,randomized_replay_excluded_by_guard,3,3,0,3
+system,train,randomized_replay_excluded_by_guard,3,1,0,1
+system,train,vitals_integrity_attack_coverage,4,4,1,4
+system,validation,mqtt_protocol_metrics_coverage,4,4,2,4
+system,validation,randomized_replay_excluded_by_guard,3,0,0,0

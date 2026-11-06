@@ -1,0 +1,118 @@
+{
+  "target": "192.168.25.105:5000",
+  "timestamp": "2026-09-25T07:19:53Z",
+  "tests": {
+    "encryption": {
+      "http_available": true,
+      "https_available": false,
+      "https_redirect": false,
+      "vulnerable": true,
+      "http_status": 200
+    },
+    "security_headers": {
+      "headers_present": [],
+      "headers_missing": [
+        {
+          "header": "X-Content-Type-Options",
+          "description": "Prevents MIME type sniffing",
+          "severity": "Medium"
+        },
+        {
+          "header": "X-Frame-Options",
+          "description": "Prevents clickjacking attacks",
+          "severity": "Medium"
+        },
+        {
+          "header": "X-XSS-Protection",
+          "description": "Enables XSS filtering (deprecated but checked for legacy)",
+          "severity": "Low"
+        },
+        {
+          "header": "Content-Security-Policy",
+          "description": "Controls resource loading",
+          "severity": "Medium"
+        },
+        {
+          "header": "Strict-Transport-Security",
+          "description": "Enforces HTTPS connections",
+          "severity": "High"
+        },
+        {
+          "header": "Referrer-Policy",
+          "description": "Controls referrer information",
+          "severity": "Low"
+        },
+        {
+          "header": "Permissions-Policy",
+          "description": "Controls browser features",
+          "severity": "Low"
+        }
+      ],
+      "headers_incorrect": [],
+      "vulnerable": true
+    },
+    "cors": {
+      "cors_headers_present": true,
+      "allows_any_origin": true,
+      "origins_tested": [
+        {
+          "origin": "http://evil.com",
+          "acao_header": "http://evil.com",
+          "allowed": true
+        },
+        {
+          "origin": "https://attacker.example.com",
+          "acao_header": "https://attacker.example.com",
+          "allowed": true
+        },
+        {
+          "origin": "null",
+          "acao_header": "null",
+          "allowed": true
+        }
+      ],
+      "vulnerable": true
+    },
+    "information_disclosure": {
+      "sensitive_headers": [
+        {
+          "header": "Server",
+          "value": "Werkzeug/3.1.8 Python/3.13.5"
+        }
+      ],
+      "debug_info_found": [],
+      "error_disclosure": false,
+      "vulnerable": true
+    }
+  },
+  "vulnerabilities_found": [
+    {
+      "id": "PHMS-002",
+      "name": "Unencrypted HTTP",
+      "cvss": 6.5,
+      "severity": "Medium",
+      "description": "All data transmitted in plaintext over HTTP"
+    },
+    {
+      "id": "PHMS-007",
+      "name": "Missing Security Headers",
+      "cvss": 5.3,
+      "severity": "Medium",
+      "description": "7 security headers missing"
+    },
+    {
+      "id": "PHMS-008",
+      "name": "Permissive CORS Policy",
+      "cvss": 5.0,
+      "severity": "Medium",
+      "description": "CORS allows requests from any origin"
+    },
+    {
+      "id": "PHMS-009",
+      "name": "Debug Information Exposure",
+      "cvss": 4.3,
+      "severity": "Medium",
+      "description": "System information exposed in responses"
+    }
+  ]
+}

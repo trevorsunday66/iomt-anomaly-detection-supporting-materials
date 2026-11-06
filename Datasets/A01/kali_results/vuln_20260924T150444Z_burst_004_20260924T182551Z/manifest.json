@@ -1,0 +1,59 @@
+{
+  "protocol_version": "phms-campaign-v2",
+  "attack_mode": "randomized",
+  "campaign": "vuln_20260924T150444Z_burst_004_20260924T182551Z",
+  "dry_run": false,
+  "plan": {
+    "version": "phms-randomized-mqtt-v2",
+    "seed": 720829183800191030,
+    "burst_number": 3,
+    "events": [
+      {
+        "name": "event_01",
+        "kind": "timing_jitter",
+        "device": "patient_b",
+        "profile": "isolated",
+        "count": 1,
+        "delays": [],
+        "pause_before": 14.631,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 2745798950,
+        "topic_suffix": "data"
+      }
+    ],
+    "quiet_after": 17.465
+  },
+  "plan_sha256": "64da07303bb9501bdcb1efc50e67705967efc14e231d662fa4557f0254376314",
+  "source_sha256": {
+    "run_randomized_mqtt_burst.py": "e98ca8272257865d91db991aa47135c1d0bdecc7e44957637e2b250324516471",
+    "random_attack_plan.py": "dde1f620d5b7f26591341c6fa7a400440a6a5873b3a2c7c4d5a61e00be6d8ab3",
+    "campaign_protocol.py": "1002bd2df01050c451383aaa2375c07c05b282cc96d8d82ea38a0b6f640e185e"
+  },
+  "created_at": "2026-09-24T18:25:51.121283+00:00",
+  "tests": [
+    {
+      "name": "event_01",
+      "attack_label": "timing_jitter",
+      "device": "patient_b",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled timing_jitter",
+      "started_at": "2026-09-24T18:26:13.856223+00:00",
+      "finished_at": "2026-09-24T18:26:13.988514+00:00",
+      "returncode": 0,
+      "json_output": "event_01.json",
+      "json_sha256": "51135e5e02ad54a4879be2116a4feba987ea3d37f6cbeda3947a34d564a62b76",
+      "stdout_log": "event_01.stdout.log",
+      "stderr_log": "event_01.stderr.log"
+    }
+  ],
+  "status": "complete",
+  "ground_truth": "sidecar publish evidence; time windows are not exact row labels",
+  "evidence_sha256": {
+    "attack_plan.json": "64da07303bb9501bdcb1efc50e67705967efc14e231d662fa4557f0254376314",
+    "observer_messages.json": "ab95015cbe5eb52381906d89bb3898b93d6d850976ac9efed40861094bb112ff",
+    "source_capture.json": "103d9dd21646c3d5fee99c2d5de2b64e57960b01048af4abd60533d012ef5fef",
+    "event_01.json": "51135e5e02ad54a4879be2116a4feba987ea3d37f6cbeda3947a34d564a62b76"
+  },
+  "finished_at": "2026-09-24T18:26:31.455821+00:00"
+}

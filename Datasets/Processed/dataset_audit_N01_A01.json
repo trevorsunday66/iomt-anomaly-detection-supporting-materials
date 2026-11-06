@@ -1,0 +1,22 @@
+[
+  {
+    "campaign": "normal_20260923T161519Z",
+    "mode": "normal",
+    "rows": 112916,
+    "windows": 31465,
+    "start": "2026-09-23 16:15:20+00:00",
+    "end": "2026-09-24 14:06:20+00:00",
+    "sha256": "b31baac556d61cec66da21481015ddcae16617c1fb0ae3565bcc951a89a459ab",
+    "identical_rows_preserved": 0
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "mode": "attack",
+    "rows": 126236,
+    "windows": 39883,
+    "start": "2026-09-24 15:04:45+00:00",
+    "end": "2026-09-25 18:46:25+00:00",
+    "sha256": "9347a8d86109721dd3fd5dbacede2b7518f45d9cae2fce70b72981984347cebd",
+    "identical_rows_preserved": 0
+  }
+]

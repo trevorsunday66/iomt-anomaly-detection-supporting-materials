@@ -1,0 +1,21 @@
+{
+  "kind": "spoofed_device",
+  "device": "patient_b",
+  "profile": "isolated",
+  "started_at": "2026-09-24T15:28:49.429787+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-24T15:28:49.580764+00:00",
+      "topic": "phms/patient_b/data",
+      "payload_sha256": "72c3185b632828597bb7ee856cc15bd356a80c638152778fe1aade3a55224b9c",
+      "bytes": 693,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "72c3185b632828597bb7ee856cc15bd356a80c638152778fe1aade3a55224b9c",
+  "finished_at": "2026-09-24T15:28:49.580780+00:00"
+}

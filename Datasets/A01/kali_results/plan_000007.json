@@ -1,0 +1,61 @@
+{
+  "version": "phms-randomized-mqtt-v2",
+  "seed": 720829183800191030,
+  "burst_number": 6,
+  "events": [
+    {
+      "name": "event_01",
+      "kind": "retained_abuse",
+      "device": "patient_a",
+      "profile": "cluster",
+      "count": 4,
+      "delays": [
+        1.339,
+        1.353,
+        1.13
+      ],
+      "pause_before": 3.889,
+      "hold_seconds": 5.738,
+      "padding_bytes": 0,
+      "payload_seed": 2139437621,
+      "topic_suffix": "data"
+    },
+    {
+      "name": "event_02",
+      "kind": "topic_misuse",
+      "device": "patient_a",
+      "profile": "isolated",
+      "count": 1,
+      "delays": [],
+      "pause_before": 8.783,
+      "hold_seconds": 0,
+      "padding_bytes": 0,
+      "payload_seed": 944552262,
+      "topic_suffix": "debug"
+    },
+    {
+      "name": "event_03",
+      "kind": "replay",
+      "device": "patient_a",
+      "profile": "cluster",
+      "count": 10,
+      "delays": [
+        0.534,
+        1.405,
+        1.004,
+        0.737,
+        0.93,
+        0.947,
+        1.488,
+        0.405,
+        0.979
+      ],
+      "pause_before": 7.766,
+      "hold_seconds": 0,
+      "padding_bytes": 0,
+      "payload_seed": 540428252,
+      "topic_suffix": "data"
+    }
+  ],
+  "quiet_after": 46.572
+}

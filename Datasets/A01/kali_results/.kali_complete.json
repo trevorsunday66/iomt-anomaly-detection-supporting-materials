@@ -1,0 +1,24 @@
+{
+  "campaign": "vuln_20260924T150444Z",
+  "started_at": "2026-09-24T15:04:50Z",
+  "finished_at": "2026-09-25T18:46:24Z",
+  "returncode": 0,
+  "burst_count": 30,
+  "manifest_count": 30,
+  "expected_json_outputs": [
+    "credential.json",
+    "eavesdrop.json",
+    "event_01.json",
+    "event_02.json",
+    "event_03.json",
+    "http_security.json",
+    "input_validation.json",
+    "logging.json",
+    "mqtt_protocol_metrics.json",
+    "vitals_integrity_attack.json",
+    "weak_security_baseline.json"
+  ],
+  "missing_by_burst": [],
+  "dry_run": false,
+  "status": "complete"
+}

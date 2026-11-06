@@ -1,0 +1,94 @@
+{
+  "protocol_version": "phms-campaign-v2",
+  "attack_mode": "randomized",
+  "campaign": "vuln_20260924T150444Z_burst_016_20260925T062101Z",
+  "dry_run": false,
+  "plan": {
+    "version": "phms-randomized-mqtt-v2",
+    "seed": 720829183800191030,
+    "burst_number": 12,
+    "events": [
+      {
+        "name": "event_01",
+        "kind": "spoofed_device",
+        "device": "patient_b",
+        "profile": "cluster",
+        "count": 7,
+        "delays": [
+          0.838,
+          1.06,
+          1.19,
+          1.162,
+          0.636,
+          1.062
+        ],
+        "pause_before": 4.958,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 1666322529,
+        "topic_suffix": "data"
+      },
+      {
+        "name": "event_02",
+        "kind": "topic_device_mismatch",
+        "device": "patient_a",
+        "profile": "isolated",
+        "count": 1,
+        "delays": [],
+        "pause_before": 16.21,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 2342315861,
+        "topic_suffix": "data"
+      }
+    ],
+    "quiet_after": 33.034
+  },
+  "plan_sha256": "e583aca97185311477f5752fea344e6c7ed56291cc4d0a28d87b33040a37eb53",
+  "source_sha256": {
+    "run_randomized_mqtt_burst.py": "e98ca8272257865d91db991aa47135c1d0bdecc7e44957637e2b250324516471",
+    "random_attack_plan.py": "dde1f620d5b7f26591341c6fa7a400440a6a5873b3a2c7c4d5a61e00be6d8ab3",
+    "campaign_protocol.py": "1002bd2df01050c451383aaa2375c07c05b282cc96d8d82ea38a0b6f640e185e"
+  },
+  "created_at": "2026-09-25T06:21:01.799313+00:00",
+  "tests": [
+    {
+      "name": "event_01",
+      "attack_label": "spoofed_device",
+      "device": "patient_b",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled spoofed_device",
+      "started_at": "2026-09-25T06:21:14.836942+00:00",
+      "finished_at": "2026-09-25T06:21:21.989639+00:00",
+      "returncode": 0,
+      "json_output": "event_01.json",
+      "json_sha256": "a15090ec03c55cf8df05bb484663f1bc83719ac63280ddd814b615b780b4deea",
+      "stdout_log": "event_01.stdout.log",
+      "stderr_log": "event_01.stderr.log"
+    },
+    {
+      "name": "event_02",
+      "attack_label": "topic_device_mismatch",
+      "device": "patient_a",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled topic_device_mismatch",
+      "started_at": "2026-09-25T06:21:38.200860+00:00",
+      "finished_at": "2026-09-25T06:21:38.362137+00:00",
+      "returncode": 0,
+      "json_output": "event_02.json",
+      "json_sha256": "5d9be694b9a3256ae6288ffa1f9cdf4ff346258561ddc787ea971d3c4b3c685a",
+      "stdout_log": "event_02.stdout.log",
+      "stderr_log": "event_02.stderr.log"
+    }
+  ],
+  "status": "complete",
+  "ground_truth": "sidecar publish evidence; time windows are not exact row labels",
+  "evidence_sha256": {
+    "attack_plan.json": "e583aca97185311477f5752fea344e6c7ed56291cc4d0a28d87b33040a37eb53",
+    "observer_messages.json": "6d711452c600861a75e4c233e30cc9d7d9e817985dfbc93bcc554ea8e3325c7d",
+    "source_capture.json": "cdaf906bb531f7eec7f9c8e880d2830436f7a5cede7812fd6f4b077b3ef933c9",
+    "event_02.json": "5d9be694b9a3256ae6288ffa1f9cdf4ff346258561ddc787ea971d3c4b3c685a",
+    "event_01.json": "a15090ec03c55cf8df05bb484663f1bc83719ac63280ddd814b615b780b4deea"
+  },
+  "finished_at": "2026-09-25T06:22:11.398845+00:00"
+}

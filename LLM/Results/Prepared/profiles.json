@@ -1,0 +1,58 @@
+{
+  "llama": {
+    "model": "llama3.1:8b",
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "think": null,
+    "options": {
+      "temperature": 0,
+      "top_p": 0.9,
+      "top_k": 40,
+      "min_p": 0,
+      "repeat_penalty": 1.1,
+      "num_ctx": 16384,
+      "num_predict": 1024
+    }
+  },
+  "qwen_off": {
+    "model": "qwen3:8b",
+    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "think": false,
+    "options": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1.1,
+      "num_ctx": 16384,
+      "num_predict": 8192
+    }
+  },
+  "qwen_on": {
+    "model": "qwen3:8b",
+    "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+    "think": true,
+    "options": {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "min_p": 0,
+      "repeat_penalty": 1.1,
+      "num_ctx": 16384,
+      "num_predict": 8192
+    }
+  },
+  "mistral": {
+    "model": "mistral:7b-instruct",
+    "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+    "think": null,
+    "options": {
+      "temperature": 0,
+      "top_p": 0.9,
+      "top_k": 40,
+      "min_p": 0,
+      "repeat_penalty": 1.1,
+      "num_ctx": 16384,
+      "num_predict": 1024
+    }
+  }
+}

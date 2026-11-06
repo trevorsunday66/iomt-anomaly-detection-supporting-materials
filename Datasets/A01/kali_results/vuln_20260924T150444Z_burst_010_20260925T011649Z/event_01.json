@@ -1,0 +1,70 @@
+{
+  "kind": "payload_size",
+  "device": "patient_a",
+  "profile": "cluster",
+  "started_at": "2026-09-25T01:17:06.562785+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T01:17:06.692734+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T01:17:07.786536+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T01:17:08.229734+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T01:17:08.915971+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T01:17:09.925464+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T01:17:10.993235+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T01:17:12.586017+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T01:17:13.860524+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+      "bytes": 836,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "e7267b071642eb31ed3e739f267b1399265cd0c04968118dce4c7351ce875b40",
+  "finished_at": "2026-09-25T01:17:13.860539+00:00"
+}

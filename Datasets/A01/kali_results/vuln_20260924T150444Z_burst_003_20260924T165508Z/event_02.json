@@ -1,0 +1,21 @@
+{
+  "kind": "malformed_payload",
+  "device": "patient_a",
+  "profile": "isolated",
+  "started_at": "2026-09-24T16:55:34.697892+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-24T16:55:34.723046+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "ba8168c34b9eee8dbf427d52e61289a97b1982aa143f35fde78574c441a3a117",
+      "bytes": 692,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "ba8168c34b9eee8dbf427d52e61289a97b1982aa143f35fde78574c441a3a117",
+  "finished_at": "2026-09-24T16:55:34.723061+00:00"
+}

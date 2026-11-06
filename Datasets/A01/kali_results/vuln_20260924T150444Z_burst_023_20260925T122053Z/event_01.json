@@ -1,0 +1,63 @@
+{
+  "kind": "payload_size",
+  "device": "patient_a",
+  "profile": "cluster",
+  "started_at": "2026-09-25T12:21:17.275925+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T12:21:17.410588+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+      "bytes": 1221,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T12:21:18.044312+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+      "bytes": 1221,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T12:21:18.564262+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+      "bytes": 1221,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T12:21:20.173444+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+      "bytes": 1221,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T12:21:21.272696+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+      "bytes": 1221,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T12:21:21.847537+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+      "bytes": 1221,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T12:21:23.296358+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+      "bytes": 1221,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "c3c0927325e45ff09df02cdbac8f9d09d4a006e6989a7c080d78c0a7cda76081",
+  "finished_at": "2026-09-25T12:21:23.296375+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "version": "phms-randomized-mqtt-v2",
+  "seed": 720829183800191030,
+  "burst_number": 18,
+  "events": [
+    {
+      "name": "event_01",
+      "kind": "payload_size",
+      "device": "patient_a",
+      "profile": "cluster",
+      "count": 7,
+      "delays": [
+        0.402,
+        0.386,
+        1.483,
+        0.968,
+        0.419,
+        1.305
+      ],
+      "pause_before": 15.881,
+      "hold_seconds": 0,
+      "padding_bytes": 512,
+      "payload_seed": 3983482043,
+      "topic_suffix": "data"
+    }
+  ],
+  "quiet_after": 23.648
+}

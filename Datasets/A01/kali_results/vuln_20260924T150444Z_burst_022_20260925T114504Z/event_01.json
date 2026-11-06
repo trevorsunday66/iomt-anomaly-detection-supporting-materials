@@ -1,0 +1,21 @@
+{
+  "kind": "timing_jitter",
+  "device": "patient_a",
+  "profile": "isolated",
+  "started_at": "2026-09-25T11:45:19.273791+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T11:45:19.417921+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "7e75dab79b67c8ace8b6e1e8fc0af8f6bec94f5b3f992ebc70f9c93ca40ee030",
+      "bytes": 695,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "7e75dab79b67c8ace8b6e1e8fc0af8f6bec94f5b3f992ebc70f9c93ca40ee030",
+  "finished_at": "2026-09-25T11:45:19.417938+00:00"
+}

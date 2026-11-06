@@ -1,0 +1,2 @@
+detector,feature_set,seed,request_id,label,campaign,group_id,status,error
+qwen_on,combined,42,wc6eeff31dc585b3945ff5fde,-1,vuln_20260924T150444Z,burst_00007,invalid,Model identity or completion failure

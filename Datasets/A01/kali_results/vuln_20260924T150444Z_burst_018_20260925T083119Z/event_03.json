@@ -1,0 +1,21 @@
+{
+  "kind": "topic_misuse",
+  "device": "patient_b",
+  "profile": "isolated",
+  "started_at": "2026-09-25T08:32:05.712809+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T08:32:05.740923+00:00",
+      "topic": "phms/patient_b/debug",
+      "payload_sha256": "92bfb930a8b567f7c04d0bbd5faca779644d7e57ba31cb75070806a4a1db3206",
+      "bytes": 696,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "92bfb930a8b567f7c04d0bbd5faca779644d7e57ba31cb75070806a4a1db3206",
+  "finished_at": "2026-09-25T08:32:05.740939+00:00"
+}

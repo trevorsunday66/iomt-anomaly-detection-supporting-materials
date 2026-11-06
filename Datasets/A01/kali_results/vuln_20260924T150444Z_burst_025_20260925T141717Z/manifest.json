@@ -1,0 +1,71 @@
+{
+  "protocol_version": "phms-campaign-v2",
+  "attack_mode": "randomized",
+  "campaign": "vuln_20260924T150444Z_burst_025_20260925T141717Z",
+  "dry_run": false,
+  "plan": {
+    "version": "phms-randomized-mqtt-v2",
+    "seed": 720829183800191030,
+    "burst_number": 19,
+    "events": [
+      {
+        "name": "event_01",
+        "kind": "spoofed_device",
+        "device": "patient_a",
+        "profile": "cluster",
+        "count": 12,
+        "delays": [
+          0.742,
+          0.649,
+          1.453,
+          1.328,
+          1.082,
+          0.655,
+          1.126,
+          0.574,
+          0.623,
+          0.865,
+          0.869
+        ],
+        "pause_before": 8.195,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 2355619634,
+        "topic_suffix": "data"
+      }
+    ],
+    "quiet_after": 39.553
+  },
+  "plan_sha256": "f2f8e623e69c96835350cad3facc527b2ed6b253621a30179035a4b2add3184f",
+  "source_sha256": {
+    "run_randomized_mqtt_burst.py": "e98ca8272257865d91db991aa47135c1d0bdecc7e44957637e2b250324516471",
+    "random_attack_plan.py": "dde1f620d5b7f26591341c6fa7a400440a6a5873b3a2c7c4d5a61e00be6d8ab3",
+    "campaign_protocol.py": "1002bd2df01050c451383aaa2375c07c05b282cc96d8d82ea38a0b6f640e185e"
+  },
+  "created_at": "2026-09-25T14:17:17.634264+00:00",
+  "tests": [
+    {
+      "name": "event_01",
+      "attack_label": "spoofed_device",
+      "device": "patient_a",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled spoofed_device",
+      "started_at": "2026-09-25T14:17:34.022820+00:00",
+      "finished_at": "2026-09-25T14:17:45.633128+00:00",
+      "returncode": 0,
+      "json_output": "event_01.json",
+      "json_sha256": "309d05154e6ecdde989d4115e2462a3ad8f163bf9fc4e5a24144652c5367016b",
+      "stdout_log": "event_01.stdout.log",
+      "stderr_log": "event_01.stderr.log"
+    }
+  ],
+  "status": "complete",
+  "ground_truth": "sidecar publish evidence; time windows are not exact row labels",
+  "evidence_sha256": {
+    "attack_plan.json": "f2f8e623e69c96835350cad3facc527b2ed6b253621a30179035a4b2add3184f",
+    "observer_messages.json": "d78dbe778d5e1a9aa6f8087e815a9001816965bc1096e2b2c0f95af1fb05ce87",
+    "source_capture.json": "14fe55c204e29f38df141f3f7fe0d7aee5b351f3383eb90752a7f90c31e5b297",
+    "event_01.json": "309d05154e6ecdde989d4115e2462a3ad8f163bf9fc4e5a24144652c5367016b"
+  },
+  "finished_at": "2026-09-25T14:18:25.188578+00:00"
+}

@@ -1,0 +1,10 @@
+scope,feature_set,label,windows,both_alert,if_only_alert,lof_only_alert,neither_alert
+matched_development,combined,-1,651,15,21,598,17
+matched_development,combined,0,360,0,12,13,335
+matched_development,combined,1,67,23,22,7,15
+matched_development,network,-1,651,4,26,115,506
+matched_development,network,0,360,0,11,17,332
+matched_development,network,1,67,23,36,3,5
+matched_development,system,-1,651,0,124,0,527
+matched_development,system,0,360,0,5,3,352
+matched_development,system,1,67,0,12,0,55

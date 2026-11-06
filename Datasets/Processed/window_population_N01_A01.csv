@@ -1,0 +1,17 @@
+campaign,split,label,state,windows
+normal_20260923T161519Z,purged,0,normal,98
+normal_20260923T161519Z,train,-1,recording_edge,48
+normal_20260923T161519Z,train,0,normal,21928
+normal_20260923T161519Z,validation,-1,recording_edge,1
+normal_20260923T161519Z,validation,0,normal,9390
+vuln_20260924T150444Z,purged,-1,attack_campaign_background_unknown,98
+vuln_20260924T150444Z,train,-1,attack_campaign_background_unknown,25254
+vuln_20260924T150444Z,train,-1,event_guard_unknown,1380
+vuln_20260924T150444Z,train,-1,excluded_check_guard,650
+vuln_20260924T150444Z,train,-1,recording_edge,48
+vuln_20260924T150444Z,train,1,attack_exposure,46
+vuln_20260924T150444Z,validation,-1,attack_campaign_background_unknown,11368
+vuln_20260924T150444Z,validation,-1,event_guard_unknown,663
+vuln_20260924T150444Z,validation,-1,excluded_check_guard,353
+vuln_20260924T150444Z,validation,-1,recording_edge,2
+vuln_20260924T150444Z,validation,1,attack_exposure,21

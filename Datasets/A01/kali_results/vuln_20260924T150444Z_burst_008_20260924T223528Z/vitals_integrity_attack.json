@@ -1,0 +1,222 @@
+{
+  "test": "vitals_integrity_attack_test",
+  "timestamp": "2026-09-24T22:35:42Z",
+  "broker": "192.168.25.105",
+  "port": 1883,
+  "connect_return_code": 0,
+  "published_count": 26,
+  "labels": [
+    "boundary_vitals",
+    "device_identity_swap",
+    "impossible_vitals_combo",
+    "missing_vitals_fields",
+    "stale_vitals_replay",
+    "timestamp_skew",
+    "unit_format_tamper",
+    "vitals_drift"
+  ],
+  "isolated_lab_only": true,
+  "events": [
+    {
+      "topic": "phms/patient_a/data",
+      "label": "stale_vitals_replay",
+      "device_id": "patient_a",
+      "payload_bytes": 436,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "stale_vitals_replay",
+      "device_id": "patient_a",
+      "payload_bytes": 437,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "stale_vitals_replay",
+      "device_id": "patient_a",
+      "payload_bytes": 437,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "stale_vitals_replay",
+      "device_id": "patient_a",
+      "payload_bytes": 437,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "stale_vitals_replay",
+      "device_id": "patient_a",
+      "payload_bytes": 437,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "vitals_drift",
+      "device_id": "patient_a",
+      "payload_bytes": 358,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "vitals_drift",
+      "device_id": "patient_a",
+      "payload_bytes": 371,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "vitals_drift",
+      "device_id": "patient_a",
+      "payload_bytes": 358,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "vitals_drift",
+      "device_id": "patient_a",
+      "payload_bytes": 371,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "vitals_drift",
+      "device_id": "patient_a",
+      "payload_bytes": 359,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "vitals_drift",
+      "device_id": "patient_a",
+      "payload_bytes": 360,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "impossible_vitals_combo",
+      "device_id": "patient_a",
+      "payload_bytes": 354,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "impossible_vitals_combo",
+      "device_id": "patient_a",
+      "payload_bytes": 353,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "impossible_vitals_combo",
+      "device_id": "patient_a",
+      "payload_bytes": 355,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "device_identity_swap",
+      "device_id": "patient_b",
+      "payload_bytes": 413,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "timestamp_skew",
+      "device_id": "patient_a",
+      "payload_bytes": 375,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "timestamp_skew",
+      "device_id": "patient_a",
+      "payload_bytes": 375,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "timestamp_skew",
+      "device_id": "patient_a",
+      "payload_bytes": 374,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "timestamp_skew",
+      "device_id": "patient_a",
+      "payload_bytes": 374,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "unit_format_tamper",
+      "device_id": "patient_a",
+      "payload_bytes": 385,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "unit_format_tamper",
+      "device_id": "patient_a",
+      "payload_bytes": 392,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "unit_format_tamper",
+      "device_id": "patient_a",
+      "payload_bytes": 383,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "boundary_vitals",
+      "device_id": "patient_a",
+      "payload_bytes": 345,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "boundary_vitals",
+      "device_id": "patient_a",
+      "payload_bytes": 349,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "boundary_vitals",
+      "device_id": "patient_a",
+      "payload_bytes": 348,
+      "published": true
+    },
+    {
+      "topic": "phms/patient_a/data",
+      "label": "missing_vitals_fields",
+      "device_id": "patient_a",
+      "payload_bytes": 312,
+      "published": true
+    }
+  ],
+  "findings": [
+    {
+      "title": "Vitals-integrity attack telemetry was accepted by MQTT broker",
+      "severity": "High",
+      "evidence": {
+        "published_count": 26,
+        "labels": [
+          "boundary_vitals",
+          "device_identity_swap",
+          "impossible_vitals_combo",
+          "missing_vitals_fields",
+          "stale_vitals_replay",
+          "timestamp_skew",
+          "unit_format_tamper",
+          "vitals_drift"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "retained_abuse",
+  "device": "patient_a",
+  "profile": "isolated",
+  "started_at": "2026-09-24T16:55:18.883696+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-24T16:55:19.010630+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "c12043eb897f49d8245a66608c6218b3bedfb87d081776fd9d54c9ff0129469d",
+      "bytes": 693,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": true,
+    "success": true,
+    "action": "clear",
+    "original_sha256": null
+  },
+  "payload_sha256": "c12043eb897f49d8245a66608c6218b3bedfb87d081776fd9d54c9ff0129469d",
+  "retained_delivery_observed": true,
+  "finished_at": "2026-09-24T16:55:30.123796+00:00"
+}

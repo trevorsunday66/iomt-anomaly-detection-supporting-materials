@@ -1,0 +1,254 @@
+[
+  {
+    "profile": "llama",
+    "view": "combined",
+    "seed": 42,
+    "contradicted": 164,
+    "supported": 2863
+  },
+  {
+    "profile": "llama",
+    "view": "combined",
+    "seed": 43,
+    "contradicted": 164,
+    "supported": 2863
+  },
+  {
+    "profile": "llama",
+    "view": "combined",
+    "seed": 44,
+    "contradicted": 164,
+    "supported": 2863
+  },
+  {
+    "profile": "llama",
+    "view": "network",
+    "seed": 42,
+    "supported": 2878,
+    "contradicted": 208
+  },
+  {
+    "profile": "llama",
+    "view": "network",
+    "seed": 43,
+    "supported": 2878,
+    "contradicted": 208
+  },
+  {
+    "profile": "llama",
+    "view": "network",
+    "seed": 44,
+    "supported": 2878,
+    "contradicted": 208
+  },
+  {
+    "profile": "llama",
+    "view": "system",
+    "seed": 42,
+    "supported": 3074,
+    "contradicted": 102
+  },
+  {
+    "profile": "llama",
+    "view": "system",
+    "seed": 43,
+    "supported": 3074,
+    "contradicted": 102
+  },
+  {
+    "profile": "llama",
+    "view": "system",
+    "seed": 44,
+    "supported": 3074,
+    "contradicted": 102
+  },
+  {
+    "profile": "mistral",
+    "view": "combined",
+    "seed": 42,
+    "supported": 2388,
+    "contradicted": 725
+  },
+  {
+    "profile": "mistral",
+    "view": "combined",
+    "seed": 43,
+    "supported": 2388,
+    "contradicted": 725
+  },
+  {
+    "profile": "mistral",
+    "view": "combined",
+    "seed": 44,
+    "supported": 2388,
+    "contradicted": 725
+  },
+  {
+    "profile": "mistral",
+    "view": "network",
+    "seed": 42,
+    "supported": 2599,
+    "contradicted": 477
+  },
+  {
+    "profile": "mistral",
+    "view": "network",
+    "seed": 43,
+    "supported": 2599,
+    "contradicted": 477
+  },
+  {
+    "profile": "mistral",
+    "view": "network",
+    "seed": 44,
+    "supported": 2599,
+    "contradicted": 477
+  },
+  {
+    "profile": "mistral",
+    "view": "system",
+    "seed": 42,
+    "supported": 2496,
+    "contradicted": 447
+  },
+  {
+    "profile": "mistral",
+    "view": "system",
+    "seed": 43,
+    "supported": 2496,
+    "contradicted": 447
+  },
+  {
+    "profile": "mistral",
+    "view": "system",
+    "seed": 44,
+    "supported": 2496,
+    "contradicted": 447
+  },
+  {
+    "profile": "qwen_off",
+    "view": "combined",
+    "seed": 42,
+    "supported": 2035,
+    "contradicted": 913
+  },
+  {
+    "profile": "qwen_off",
+    "view": "combined",
+    "seed": 43,
+    "supported": 2005,
+    "contradicted": 945
+  },
+  {
+    "profile": "qwen_off",
+    "view": "combined",
+    "seed": 44,
+    "supported": 2055,
+    "contradicted": 876
+  },
+  {
+    "profile": "qwen_off",
+    "view": "network",
+    "seed": 42,
+    "supported": 3057,
+    "contradicted": 142
+  },
+  {
+    "profile": "qwen_off",
+    "view": "network",
+    "seed": 43,
+    "supported": 3015,
+    "contradicted": 145
+  },
+  {
+    "profile": "qwen_off",
+    "view": "network",
+    "seed": 44,
+    "supported": 3055,
+    "contradicted": 130
+  },
+  {
+    "profile": "qwen_off",
+    "view": "system",
+    "seed": 42,
+    "supported": 2739,
+    "contradicted": 134
+  },
+  {
+    "profile": "qwen_off",
+    "view": "system",
+    "seed": 43,
+    "supported": 2801,
+    "contradicted": 148
+  },
+  {
+    "profile": "qwen_off",
+    "view": "system",
+    "seed": 44,
+    "supported": 2695,
+    "contradicted": 141
+  },
+  {
+    "profile": "qwen_on",
+    "view": "combined",
+    "seed": 42,
+    "supported": 2536,
+    "contradicted": 641
+  },
+  {
+    "profile": "qwen_on",
+    "view": "combined",
+    "seed": 43,
+    "supported": 2501,
+    "contradicted": 670
+  },
+  {
+    "profile": "qwen_on",
+    "view": "combined",
+    "seed": 44,
+    "supported": 2531,
+    "contradicted": 643
+  },
+  {
+    "profile": "qwen_on",
+    "view": "network",
+    "seed": 42,
+    "supported": 2820,
+    "contradicted": 334
+  },
+  {
+    "profile": "qwen_on",
+    "view": "network",
+    "seed": 43,
+    "supported": 2764,
+    "contradicted": 360
+  },
+  {
+    "profile": "qwen_on",
+    "view": "network",
+    "seed": 44,
+    "supported": 2799,
+    "contradicted": 350
+  },
+  {
+    "profile": "qwen_on",
+    "view": "system",
+    "seed": 42,
+    "supported": 2868,
+    "contradicted": 234
+  },
+  {
+    "profile": "qwen_on",
+    "view": "system",
+    "seed": 43,
+    "supported": 2897,
+    "contradicted": 201
+  },
+  {
+    "profile": "qwen_on",
+    "view": "system",
+    "seed": 44,
+    "supported": 2899,
+    "contradicted": 189
+  }
+]

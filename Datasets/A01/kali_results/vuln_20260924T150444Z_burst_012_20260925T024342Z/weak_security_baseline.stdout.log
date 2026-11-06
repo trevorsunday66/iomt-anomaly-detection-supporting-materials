@@ -1,0 +1,5 @@
+PHMS weak baseline security test
+Target: 192.168.25.105
+HTTP: 5000  MQTT: 1883
+Authorized isolated-lab use only.
+Results saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_012_20260925T024342Z/weak_security_baseline.json

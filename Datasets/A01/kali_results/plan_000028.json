@@ -1,0 +1,58 @@
+{
+  "version": "phms-randomized-mqtt-v2",
+  "seed": 720829183800191030,
+  "burst_number": 21,
+  "events": [
+    {
+      "name": "event_01",
+      "kind": "payload_size",
+      "device": "patient_b",
+      "profile": "cluster",
+      "count": 5,
+      "delays": [
+        0.615,
+        0.986,
+        0.569,
+        1.063
+      ],
+      "pause_before": 9.296,
+      "hold_seconds": 0,
+      "padding_bytes": 128,
+      "payload_seed": 801060494,
+      "topic_suffix": "data"
+    },
+    {
+      "name": "event_02",
+      "kind": "payload_size",
+      "device": "patient_a",
+      "profile": "isolated",
+      "count": 1,
+      "delays": [],
+      "pause_before": 5.05,
+      "hold_seconds": 0,
+      "padding_bytes": 2048,
+      "payload_seed": 3275756233,
+      "topic_suffix": "data"
+    },
+    {
+      "name": "event_03",
+      "kind": "timing_jitter",
+      "device": "patient_a",
+      "profile": "cluster",
+      "count": 6,
+      "delays": [
+        0.519,
+        2.934,
+        0.467,
+        1.93,
+        0.392
+      ],
+      "pause_before": 2.016,
+      "hold_seconds": 0,
+      "padding_bytes": 0,
+      "payload_seed": 335961099,
+      "topic_suffix": "data"
+    }
+  ],
+  "quiet_after": 43.666
+}

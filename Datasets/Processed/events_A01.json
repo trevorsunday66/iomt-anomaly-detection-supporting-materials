@@ -1,0 +1,991 @@
+[
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_001_20260924T152811Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_001_20260924T152811Z",
+    "attack_type": "retained_abuse",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 15:28:27.547346+00:00",
+    "end": "2026-09-24 15:28:32.597618+00:00",
+    "first_publish": "2026-09-24 15:28:27.686034+00:00",
+    "exposure_start": "2026-09-24 15:28:27+00:00",
+    "exposure_end": "2026-09-24 15:28:33+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_001_20260924T152811Z\\event_01.json",
+    "evidence_sha256": "983e6a34ec091345ae540d6d2f160f4cfb5ecefbccfb5eeae23bb2061ecc924a",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_001_20260924T152811Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_001_20260924T152811Z",
+    "attack_type": "spoofed_device",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 15:28:49.429787+00:00",
+    "end": "2026-09-24 15:28:49.580780+00:00",
+    "first_publish": "2026-09-24 15:28:49.580764+00:00",
+    "exposure_start": "2026-09-24 15:28:49+00:00",
+    "exposure_end": "2026-09-24 15:28:50+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_001_20260924T152811Z\\event_02.json",
+    "evidence_sha256": "29ec4abfe64a507720012e250e7109d1b0bb50c72f016c7fdc52f84ea5dff8ed",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_001_20260924T152811Z/event_03",
+    "burst": "vuln_20260924T150444Z_burst_001_20260924T152811Z",
+    "attack_type": "malformed_payload",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 15:28:56.929908+00:00",
+    "end": "2026-09-24 15:28:59.669184+00:00",
+    "first_publish": "2026-09-24 15:28:56.968806+00:00",
+    "exposure_start": "2026-09-24 15:28:56+00:00",
+    "exposure_end": "2026-09-24 15:29:00+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_001_20260924T152811Z\\event_03.json",
+    "evidence_sha256": "7ecc25a3a99b84a765c1150b2d7472d09b1bdb1ce830940ed31553b55903c6dc",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_002_20260924T161125Z/eavesdrop",
+    "burst": "vuln_20260924T150444Z_burst_002_20260924T161125Z",
+    "attack_type": "eavesdrop",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-24 16:11:25+00:00",
+    "end": "2026-09-24 16:11:31+00:00",
+    "first_publish": "2026-09-24 16:11:25+00:00",
+    "exposure_start": "2026-09-24 16:11:25+00:00",
+    "exposure_end": "2026-09-24 16:11:31+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_002_20260924T161125Z\\eavesdrop.json",
+    "evidence_sha256": "4ad97682a06b98ba87065b58614ea74335f2712503a8d73d452aed6056016a46",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_003_20260924T165508Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_003_20260924T165508Z",
+    "attack_type": "retained_abuse",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 16:55:18.883696+00:00",
+    "end": "2026-09-24 16:55:30.123796+00:00",
+    "first_publish": "2026-09-24 16:55:19.010630+00:00",
+    "exposure_start": "2026-09-24 16:55:19+00:00",
+    "exposure_end": "2026-09-24 16:55:31+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_003_20260924T165508Z\\event_01.json",
+    "evidence_sha256": "cb0cc833914782e9ed83bd8f94377b5ece5e93f242e4cee14bc2e54ad6186424",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_003_20260924T165508Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_003_20260924T165508Z",
+    "attack_type": "malformed_payload",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 16:55:34.697892+00:00",
+    "end": "2026-09-24 16:55:34.723061+00:00",
+    "first_publish": "2026-09-24 16:55:34.723046+00:00",
+    "exposure_start": "2026-09-24 16:55:34+00:00",
+    "exposure_end": "2026-09-24 16:55:35+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_003_20260924T165508Z\\event_02.json",
+    "evidence_sha256": "c8930985f374c85e187cbfe0bf1665e62b4e651aa675d3b9f48defc1aecda382",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_004_20260924T182551Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_004_20260924T182551Z",
+    "attack_type": "timing_jitter",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 18:26:13.856223+00:00",
+    "end": "2026-09-24 18:26:13.988514+00:00",
+    "first_publish": "2026-09-24 18:26:13.988489+00:00",
+    "exposure_start": "2026-09-24 18:26:13+00:00",
+    "exposure_end": "2026-09-24 18:26:14+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_004_20260924T182551Z\\event_01.json",
+    "evidence_sha256": "51135e5e02ad54a4879be2116a4feba987ea3d37f6cbeda3947a34d564a62b76",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_005_20260924T191410Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_005_20260924T191410Z",
+    "attack_type": "topic_device_mismatch",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 19:14:26.805811+00:00",
+    "end": "2026-09-24 19:14:28.203637+00:00",
+    "first_publish": "2026-09-24 19:14:26.946921+00:00",
+    "exposure_start": "2026-09-24 19:14:26+00:00",
+    "exposure_end": "2026-09-24 19:14:29+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_005_20260924T191410Z\\event_01.json",
+    "evidence_sha256": "e1aafe3679c9c60d6c42307e2f0030b72559bddaf370d6a5052b0ae3db8056ba",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_006_20260924T203819Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_006_20260924T203819Z",
+    "attack_type": "payload_size",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 20:38:44.091418+00:00",
+    "end": "2026-09-24 20:38:44.222946+00:00",
+    "first_publish": "2026-09-24 20:38:44.222930+00:00",
+    "exposure_start": "2026-09-24 20:38:44+00:00",
+    "exposure_end": "2026-09-24 20:38:45+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_006_20260924T203819Z\\event_01.json",
+    "evidence_sha256": "3971d54996d4229efe1e443133a120a4ce20fb0a2f5c2f78c42e122b96337f66",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_006_20260924T203819Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_006_20260924T203819Z",
+    "attack_type": "replay",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 20:39:01.495027+00:00",
+    "end": "2026-09-24 20:39:01.621134+00:00",
+    "first_publish": "2026-09-24 20:39:01.621118+00:00",
+    "exposure_start": "2026-09-24 20:39:01+00:00",
+    "exposure_end": "2026-09-24 20:39:02+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_006_20260924T203819Z\\event_02.json",
+    "evidence_sha256": "49ba69abc2d745f7ad2632b0df374c378cde1464ad5c2131f496d4a6a7a8bde7",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_007_20260924T212227Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_007_20260924T212227Z",
+    "attack_type": "retained_abuse",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 21:22:39.803477+00:00",
+    "end": "2026-09-24 21:22:50.212566+00:00",
+    "first_publish": "2026-09-24 21:22:39.930617+00:00",
+    "exposure_start": "2026-09-24 21:22:39+00:00",
+    "exposure_end": "2026-09-24 21:22:51+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_007_20260924T212227Z\\event_01.json",
+    "evidence_sha256": "3ab99dc8a0f22bd0b9fa838911ac6ada110a3d220d845bc4b72fe914eca787bf",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_007_20260924T212227Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_007_20260924T212227Z",
+    "attack_type": "topic_misuse",
+    "reason": "outside_collector_subscription",
+    "start": "2026-09-24 21:22:58.996640+00:00",
+    "end": "2026-09-24 21:22:59.040176+00:00",
+    "first_publish": "2026-09-24 21:22:59.040161+00:00",
+    "exposure_start": "2026-09-24 21:22:59+00:00",
+    "exposure_end": "2026-09-24 21:23:00+00:00",
+    "topics": [],
+    "attempted_topics": [
+      "phms/patient_a/debug"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_007_20260924T212227Z\\event_02.json",
+    "evidence_sha256": "675338bca944761407fb8a3e7c30c9af7af094a9126901f4ec3da51e0125b957",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_007_20260924T212227Z/event_03",
+    "burst": "vuln_20260924T150444Z_burst_007_20260924T212227Z",
+    "attack_type": "replay",
+    "reason": "eligible_exposure",
+    "start": "2026-09-24 21:23:06.807185+00:00",
+    "end": "2026-09-24 21:23:16.768420+00:00",
+    "first_publish": "2026-09-24 21:23:06.941731+00:00",
+    "exposure_start": "2026-09-24 21:23:06+00:00",
+    "exposure_end": "2026-09-24 21:23:17+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_007_20260924T212227Z\\event_03.json",
+    "evidence_sha256": "c91cfaa0886f4db3e7f39a5c9d349e4841f4113a04e3c922eb319d6cc633c4af",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_008_20260924T223528Z/vitals_integrity_attack",
+    "burst": "vuln_20260924T150444Z_burst_008_20260924T223528Z",
+    "attack_type": "vitals_integrity_attack",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-24 22:35:28+00:00",
+    "end": "2026-09-24 22:35:42+00:00",
+    "first_publish": "2026-09-24 22:35:28+00:00",
+    "exposure_start": "2026-09-24 22:35:28+00:00",
+    "exposure_end": "2026-09-24 22:35:42+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_008_20260924T223528Z\\vitals_integrity_attack.json",
+    "evidence_sha256": "d7c79fab821704d3cad59d333d60b2e586094354dec73935f76391177340c418",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_009_20260925T000228Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_009_20260925T000228Z",
+    "attack_type": "topic_device_mismatch",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 00:02:45.037399+00:00",
+    "end": "2026-09-25 00:02:47.738769+00:00",
+    "first_publish": "2026-09-25 00:02:45.168896+00:00",
+    "exposure_start": "2026-09-25 00:02:45+00:00",
+    "exposure_end": "2026-09-25 00:02:48+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_009_20260925T000228Z\\event_01.json",
+    "evidence_sha256": "66c8dc8d801bd84ee4c07ff76a86ebc4a58ba474b39d532951f47a82ef622f3d",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_010_20260925T011649Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_010_20260925T011649Z",
+    "attack_type": "payload_size",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 01:17:06.562785+00:00",
+    "end": "2026-09-25 01:17:13.860539+00:00",
+    "first_publish": "2026-09-25 01:17:06.692734+00:00",
+    "exposure_start": "2026-09-25 01:17:06+00:00",
+    "exposure_end": "2026-09-25 01:17:14+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_010_20260925T011649Z\\event_01.json",
+    "evidence_sha256": "9e2c4026265f7357fda96736725fca57e921cb563d1c5e7dea2723b3e93a9d0b",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_011_20260925T015241Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_011_20260925T015241Z",
+    "attack_type": "topic_device_mismatch",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 01:53:06.805523+00:00",
+    "end": "2026-09-25 01:53:07.104352+00:00",
+    "first_publish": "2026-09-25 01:53:07.104326+00:00",
+    "exposure_start": "2026-09-25 01:53:07+00:00",
+    "exposure_end": "2026-09-25 01:53:08+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_011_20260925T015241Z\\event_01.json",
+    "evidence_sha256": "595e990706efeb45f3a2c800e842161eef9a487f7583156b6159655ebccd8906",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_012_20260925T024342Z/weak_security_baseline",
+    "burst": "vuln_20260924T150444Z_burst_012_20260925T024342Z",
+    "attack_type": "weak_security_baseline",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-25 02:43:42+00:00",
+    "end": "2026-09-25 02:43:43+00:00",
+    "first_publish": "2026-09-25 02:43:42+00:00",
+    "exposure_start": "2026-09-25 02:43:42+00:00",
+    "exposure_end": "2026-09-25 02:43:43+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_012_20260925T024342Z\\weak_security_baseline.json",
+    "evidence_sha256": "64b9eaee9cde77d4809eccca4157b461845707950eda3b25cc0ab0d47959627c",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_013_20260925T034005Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_013_20260925T034005Z",
+    "attack_type": "spoofed_device",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 03:40:15.309938+00:00",
+    "end": "2026-09-25 03:40:26.101545+00:00",
+    "first_publish": "2026-09-25 03:40:15.438594+00:00",
+    "exposure_start": "2026-09-25 03:40:15+00:00",
+    "exposure_end": "2026-09-25 03:40:27+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_013_20260925T034005Z\\event_01.json",
+    "evidence_sha256": "b8c6e8583e87d268eaefe6b7d340a958369fb288954518e394b4b618e607c2d9",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_013_20260925T034005Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_013_20260925T034005Z",
+    "attack_type": "timing_jitter",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 03:40:41.786697+00:00",
+    "end": "2026-09-25 03:40:59.018229+00:00",
+    "first_publish": "2026-09-25 03:40:41.910639+00:00",
+    "exposure_start": "2026-09-25 03:40:41+00:00",
+    "exposure_end": "2026-09-25 03:41:00+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_013_20260925T034005Z\\event_02.json",
+    "evidence_sha256": "610c30bb85114bc0f79d352bb73fdc9beef6e9a5e40a4c98e0bcce0be3f5a52d",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_014_20260925T041450Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_014_20260925T041450Z",
+    "attack_type": "replay",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 04:15:11.125903+00:00",
+    "end": "2026-09-25 04:15:11.258606+00:00",
+    "first_publish": "2026-09-25 04:15:11.258590+00:00",
+    "exposure_start": "2026-09-25 04:15:11+00:00",
+    "exposure_end": "2026-09-25 04:15:12+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_014_20260925T041450Z\\event_01.json",
+    "evidence_sha256": "30f9567866c2123b10bffc3829d744687d4ec3d5eb69207e513497a3d4717515",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_014_20260925T041450Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_014_20260925T041450Z",
+    "attack_type": "retained_abuse",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 04:15:22.745634+00:00",
+    "end": "2026-09-25 04:15:44.575277+00:00",
+    "first_publish": "2026-09-25 04:15:22.870113+00:00",
+    "exposure_start": "2026-09-25 04:15:22+00:00",
+    "exposure_end": "2026-09-25 04:15:45+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_014_20260925T041450Z\\event_02.json",
+    "evidence_sha256": "97be448666f68ee07c9891eeb219b68e974b7809a80aeb75f6be0d86dc364b78",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_014_20260925T041450Z/event_03",
+    "burst": "vuln_20260924T150444Z_burst_014_20260925T041450Z",
+    "attack_type": "topic_misuse",
+    "reason": "outside_collector_subscription",
+    "start": "2026-09-25 04:15:57.868325+00:00",
+    "end": "2026-09-25 04:16:02.567027+00:00",
+    "first_publish": "2026-09-25 04:15:57.878442+00:00",
+    "exposure_start": "2026-09-25 04:15:57+00:00",
+    "exposure_end": "2026-09-25 04:16:03+00:00",
+    "topics": [],
+    "attempted_topics": [
+      "phms/patient_b/data/extra"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_014_20260925T041450Z\\event_03.json",
+    "evidence_sha256": "46e24aee622e26e8def0f2c39d766475f62506e52306b19491bbafeb2246f66a",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_015_20260925T052412Z/credential",
+    "burst": "vuln_20260924T150444Z_burst_015_20260925T052412Z",
+    "attack_type": "credential",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-25 05:24:12+00:00",
+    "end": "2026-09-25 05:24:15+00:00",
+    "first_publish": "2026-09-25 05:24:12+00:00",
+    "exposure_start": "2026-09-25 05:24:12+00:00",
+    "exposure_end": "2026-09-25 05:24:15+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_015_20260925T052412Z\\credential.json",
+    "evidence_sha256": "0ccc5d7754ae0905e2fc36e831629dcc964fbfe678f03e741d24dcec4e04d5ff",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_016_20260925T062101Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_016_20260925T062101Z",
+    "attack_type": "spoofed_device",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 06:21:14.836942+00:00",
+    "end": "2026-09-25 06:21:21.989639+00:00",
+    "first_publish": "2026-09-25 06:21:14.992368+00:00",
+    "exposure_start": "2026-09-25 06:21:14+00:00",
+    "exposure_end": "2026-09-25 06:21:22+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_016_20260925T062101Z\\event_01.json",
+    "evidence_sha256": "a15090ec03c55cf8df05bb484663f1bc83719ac63280ddd814b615b780b4deea",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_016_20260925T062101Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_016_20260925T062101Z",
+    "attack_type": "topic_device_mismatch",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 06:21:38.200860+00:00",
+    "end": "2026-09-25 06:21:38.362137+00:00",
+    "first_publish": "2026-09-25 06:21:38.362120+00:00",
+    "exposure_start": "2026-09-25 06:21:38+00:00",
+    "exposure_end": "2026-09-25 06:21:39+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_016_20260925T062101Z\\event_02.json",
+    "evidence_sha256": "5d9be694b9a3256ae6288ffa1f9cdf4ff346258561ddc787ea971d3c4b3c685a",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_017_20260925T071953Z/http_security",
+    "burst": "vuln_20260924T150444Z_burst_017_20260925T071953Z",
+    "attack_type": "http_security",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-25 07:19:53+00:00",
+    "end": "2026-09-25 07:19:54+00:00",
+    "first_publish": "2026-09-25 07:19:53+00:00",
+    "exposure_start": "2026-09-25 07:19:53+00:00",
+    "exposure_end": "2026-09-25 07:19:54+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_017_20260925T071953Z\\http_security.json",
+    "evidence_sha256": "f95d5c697650c48a833631533d57a68db320b10d7374c9bd54b1c300b44a4d68",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_018_20260925T083119Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_018_20260925T083119Z",
+    "attack_type": "spoofed_device",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 08:31:46.587961+00:00",
+    "end": "2026-09-25 08:31:46.712024+00:00",
+    "first_publish": "2026-09-25 08:31:46.711997+00:00",
+    "exposure_start": "2026-09-25 08:31:46+00:00",
+    "exposure_end": "2026-09-25 08:31:47+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_018_20260925T083119Z\\event_01.json",
+    "evidence_sha256": "aa87ebb19e72493fa1c54fa7309cb50832d323daca19c3b56faf45d3ecf3bb40",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_018_20260925T083119Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_018_20260925T083119Z",
+    "attack_type": "malformed_payload",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 08:31:54.055979+00:00",
+    "end": "2026-09-25 08:31:57.555732+00:00",
+    "first_publish": "2026-09-25 08:31:54.074840+00:00",
+    "exposure_start": "2026-09-25 08:31:54+00:00",
+    "exposure_end": "2026-09-25 08:31:58+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_018_20260925T083119Z\\event_02.json",
+    "evidence_sha256": "791ebb90b310d5c4837d363513167bebf93fee2bdca6f062366526395a90a2ae",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_018_20260925T083119Z/event_03",
+    "burst": "vuln_20260924T150444Z_burst_018_20260925T083119Z",
+    "attack_type": "topic_misuse",
+    "reason": "outside_collector_subscription",
+    "start": "2026-09-25 08:32:05.712809+00:00",
+    "end": "2026-09-25 08:32:05.740939+00:00",
+    "first_publish": "2026-09-25 08:32:05.740923+00:00",
+    "exposure_start": "2026-09-25 08:32:05+00:00",
+    "exposure_end": "2026-09-25 08:32:06+00:00",
+    "topics": [],
+    "attempted_topics": [
+      "phms/patient_b/debug"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_018_20260925T083119Z\\event_03.json",
+    "evidence_sha256": "c38c46ea0fdde0be911a6cb56269d49b1e8bf26e5bef889c132ac3a294fc7e6e",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_019_20260925T091453Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_019_20260925T091453Z",
+    "attack_type": "payload_size",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 09:15:13.769616+00:00",
+    "end": "2026-09-25 09:15:13.920722+00:00",
+    "first_publish": "2026-09-25 09:15:13.920701+00:00",
+    "exposure_start": "2026-09-25 09:15:13+00:00",
+    "exposure_end": "2026-09-25 09:15:14+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_019_20260925T091453Z\\event_01.json",
+    "evidence_sha256": "a4b81b6cc51205bf2759be45a86208df6d8fb8cbc81fa0a88a4d96779023ee10",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_020_20260925T094938Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_020_20260925T094938Z",
+    "attack_type": "malformed_payload",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 09:50:03.820178+00:00",
+    "end": "2026-09-25 09:50:03.868794+00:00",
+    "first_publish": "2026-09-25 09:50:03.868778+00:00",
+    "exposure_start": "2026-09-25 09:50:03+00:00",
+    "exposure_end": "2026-09-25 09:50:04+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_020_20260925T094938Z\\event_01.json",
+    "evidence_sha256": "2d7f49f9c2ca2de71e922abb4fbf31079fdabba741fc9c8c8d5fb125bfd8165e",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_020_20260925T094938Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_020_20260925T094938Z",
+    "attack_type": "payload_size",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 09:50:13.078158+00:00",
+    "end": "2026-09-25 09:50:26.204984+00:00",
+    "first_publish": "2026-09-25 09:50:13.226337+00:00",
+    "exposure_start": "2026-09-25 09:50:13+00:00",
+    "exposure_end": "2026-09-25 09:50:27+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_020_20260925T094938Z\\event_02.json",
+    "evidence_sha256": "d60f2187d54795f2cca0a46c0dbe844ac456ea6e8b439187814dfd1f8f7bb37d",
+    "split": "train"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_021_20260925T102424Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_021_20260925T102424Z",
+    "attack_type": "timing_jitter",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 10:24:35.230583+00:00",
+    "end": "2026-09-25 10:24:50.353971+00:00",
+    "first_publish": "2026-09-25 10:24:35.362204+00:00",
+    "exposure_start": "2026-09-25 10:24:35+00:00",
+    "exposure_end": "2026-09-25 10:24:51+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_021_20260925T102424Z\\event_01.json",
+    "evidence_sha256": "4762d1304df0e9d40fe819c53f71745d00f61469b94c595b5230b5b8968457cd",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_022_20260925T114504Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_022_20260925T114504Z",
+    "attack_type": "timing_jitter",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 11:45:19.273791+00:00",
+    "end": "2026-09-25 11:45:19.417938+00:00",
+    "first_publish": "2026-09-25 11:45:19.417921+00:00",
+    "exposure_start": "2026-09-25 11:45:19+00:00",
+    "exposure_end": "2026-09-25 11:45:20+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_022_20260925T114504Z\\event_01.json",
+    "evidence_sha256": "7c14aa5d45332e5095b8a0017b64e5f5e119cc95c0e8b74e6479e30d22b7fae8",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_022_20260925T114504Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_022_20260925T114504Z",
+    "attack_type": "topic_misuse",
+    "reason": "outside_collector_subscription",
+    "start": "2026-09-25 11:45:36.371071+00:00",
+    "end": "2026-09-25 11:45:41.899419+00:00",
+    "first_publish": "2026-09-25 11:45:36.397867+00:00",
+    "exposure_start": "2026-09-25 11:45:36+00:00",
+    "exposure_end": "2026-09-25 11:45:42+00:00",
+    "topics": [],
+    "attempted_topics": [
+      "phms/patient_a/data/extra"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_022_20260925T114504Z\\event_02.json",
+    "evidence_sha256": "9217024dfbc22423abb3574922f2defaab6c5d1b7c7603ded286c54aff5fc5a4",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_022_20260925T114504Z/event_03",
+    "burst": "vuln_20260924T150444Z_burst_022_20260925T114504Z",
+    "attack_type": "replay",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 11:45:46.332552+00:00",
+    "end": "2026-09-25 11:45:55.290540+00:00",
+    "first_publish": "2026-09-25 11:45:46.482156+00:00",
+    "exposure_start": "2026-09-25 11:45:46+00:00",
+    "exposure_end": "2026-09-25 11:45:56+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_022_20260925T114504Z\\event_03.json",
+    "evidence_sha256": "268613b90b8ac20824a20e75e83893eeeb7767082ca9c9efe1a92c21c7854c1b",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_023_20260925T122053Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_023_20260925T122053Z",
+    "attack_type": "payload_size",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 12:21:17.275925+00:00",
+    "end": "2026-09-25 12:21:23.296375+00:00",
+    "first_publish": "2026-09-25 12:21:17.410588+00:00",
+    "exposure_start": "2026-09-25 12:21:17+00:00",
+    "exposure_end": "2026-09-25 12:21:24+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_023_20260925T122053Z\\event_01.json",
+    "evidence_sha256": "9985cf99b63c1de1274ff59fed08d1e3d9939c7468f8f3a78e6243339caa91d4",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_024_20260925T132323Z/mqtt_protocol_metrics",
+    "burst": "vuln_20260924T150444Z_burst_024_20260925T132323Z",
+    "attack_type": "mqtt_protocol_metrics",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-25 13:23:24+00:00",
+    "end": "2026-09-25 13:23:36+00:00",
+    "first_publish": "2026-09-25 13:23:24+00:00",
+    "exposure_start": "2026-09-25 13:23:24+00:00",
+    "exposure_end": "2026-09-25 13:23:36+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_024_20260925T132323Z\\mqtt_protocol_metrics.json",
+    "evidence_sha256": "1c99d9443314b24156ab59977a09e053b7d802cd2388d995e5a01f3a792499a7",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_025_20260925T141717Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_025_20260925T141717Z",
+    "attack_type": "spoofed_device",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 14:17:34.022820+00:00",
+    "end": "2026-09-25 14:17:45.633128+00:00",
+    "first_publish": "2026-09-25 14:17:34.162589+00:00",
+    "exposure_start": "2026-09-25 14:17:34+00:00",
+    "exposure_end": "2026-09-25 14:17:46+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_025_20260925T141717Z\\event_01.json",
+    "evidence_sha256": "309d05154e6ecdde989d4115e2462a3ad8f163bf9fc4e5a24144652c5367016b",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_026_20260925T150615Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_026_20260925T150615Z",
+    "attack_type": "timing_jitter",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 15:06:33.933807+00:00",
+    "end": "2026-09-25 15:06:34.091235+00:00",
+    "first_publish": "2026-09-25 15:06:34.091217+00:00",
+    "exposure_start": "2026-09-25 15:06:34+00:00",
+    "exposure_end": "2026-09-25 15:06:35+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_026_20260925T150615Z\\event_01.json",
+    "evidence_sha256": "0f9978199601396c68b45aaf41892ac091fadf4588ede9036bc55c9abc9d014e",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_026_20260925T150615Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_026_20260925T150615Z",
+    "attack_type": "topic_device_mismatch",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 15:06:44.367348+00:00",
+    "end": "2026-09-25 15:06:44.500727+00:00",
+    "first_publish": "2026-09-25 15:06:44.500701+00:00",
+    "exposure_start": "2026-09-25 15:06:44+00:00",
+    "exposure_end": "2026-09-25 15:06:45+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_026_20260925T150615Z\\event_02.json",
+    "evidence_sha256": "0934f27b7f6cf8dc1481a8a63ff49895f3828f5903dec7867886ba089b5921c5",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_026_20260925T150615Z/event_03",
+    "burst": "vuln_20260924T150444Z_burst_026_20260925T150615Z",
+    "attack_type": "topic_device_mismatch",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 15:06:58.855994+00:00",
+    "end": "2026-09-25 15:06:58.991805+00:00",
+    "first_publish": "2026-09-25 15:06:58.991785+00:00",
+    "exposure_start": "2026-09-25 15:06:58+00:00",
+    "exposure_end": "2026-09-25 15:06:59+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_026_20260925T150615Z\\event_03.json",
+    "evidence_sha256": "02bd8791da93ac5d33c87235804f421fd02ccdf50a71520a9d66b4175ff485f3",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_027_20260925T154519Z/logging",
+    "burst": "vuln_20260924T150444Z_burst_027_20260925T154519Z",
+    "attack_type": "logging",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-25 15:45:20+00:00",
+    "end": "2026-09-25 15:45:21+00:00",
+    "first_publish": "2026-09-25 15:45:20+00:00",
+    "exposure_start": "2026-09-25 15:45:20+00:00",
+    "exposure_end": "2026-09-25 15:45:21+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_027_20260925T154519Z\\logging.json",
+    "evidence_sha256": "c4e4d4cace0397e6cd04308379b5ab77fb1bbefab0645f68e64f2f6abba96859",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_028_20260925T161844Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_028_20260925T161844Z",
+    "attack_type": "payload_size",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 16:19:01.611469+00:00",
+    "end": "2026-09-25 16:19:05.603944+00:00",
+    "first_publish": "2026-09-25 16:19:01.764514+00:00",
+    "exposure_start": "2026-09-25 16:19:01+00:00",
+    "exposure_end": "2026-09-25 16:19:06+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_028_20260925T161844Z\\event_01.json",
+    "evidence_sha256": "b59e5bdc8679bd7914440789acc5d0f48998a34c5632818cd9e33887cac1a350",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_028_20260925T161844Z/event_02",
+    "burst": "vuln_20260924T150444Z_burst_028_20260925T161844Z",
+    "attack_type": "payload_size",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 16:19:10.656312+00:00",
+    "end": "2026-09-25 16:19:10.796051+00:00",
+    "first_publish": "2026-09-25 16:19:10.796037+00:00",
+    "exposure_start": "2026-09-25 16:19:10+00:00",
+    "exposure_end": "2026-09-25 16:19:11+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_028_20260925T161844Z\\event_02.json",
+    "evidence_sha256": "b53514955022441bc22a7d14a4e668ebd67d808f11c1d53a75cbc771b01d66a8",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_028_20260925T161844Z/event_03",
+    "burst": "vuln_20260924T150444Z_burst_028_20260925T161844Z",
+    "attack_type": "timing_jitter",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 16:19:12.813046+00:00",
+    "end": "2026-09-25 16:19:19.889625+00:00",
+    "first_publish": "2026-09-25 16:19:12.940101+00:00",
+    "exposure_start": "2026-09-25 16:19:12+00:00",
+    "exposure_end": "2026-09-25 16:19:20+00:00",
+    "topics": [
+      "phms/patient_a/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_a/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_028_20260925T161844Z\\event_03.json",
+    "evidence_sha256": "1011f4d6e451f95d64c3b251451af9054883161c4a4146787272fac0ddd57cb4",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_029_20260925T172735Z/input_validation",
+    "burst": "vuln_20260924T150444Z_burst_029_20260925T172735Z",
+    "attack_type": "input_validation",
+    "reason": "coverage_only_or_nonprimary",
+    "start": "2026-09-25 17:27:35+00:00",
+    "end": "2026-09-25 17:27:37+00:00",
+    "first_publish": "2026-09-25 17:27:35+00:00",
+    "exposure_start": "2026-09-25 17:27:35+00:00",
+    "exposure_end": "2026-09-25 17:27:37+00:00",
+    "topics": [],
+    "attempted_topics": [],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_029_20260925T172735Z\\input_validation.json",
+    "evidence_sha256": "8f4d878824db775a866a07dd1976175c2942765ce884ccfb340d5add0641e942",
+    "split": "validation"
+  },
+  {
+    "campaign": "vuln_20260924T150444Z",
+    "event_id": "vuln_20260924T150444Z_burst_030_20260925T183631Z/event_01",
+    "burst": "vuln_20260924T150444Z_burst_030_20260925T183631Z",
+    "attack_type": "retained_abuse",
+    "reason": "eligible_exposure",
+    "start": "2026-09-25 18:36:57.788517+00:00",
+    "end": "2026-09-25 18:37:08.084444+00:00",
+    "first_publish": "2026-09-25 18:36:57.931739+00:00",
+    "exposure_start": "2026-09-25 18:36:57+00:00",
+    "exposure_end": "2026-09-25 18:37:09+00:00",
+    "topics": [
+      "phms/patient_b/data"
+    ],
+    "attempted_topics": [
+      "phms/patient_b/data"
+    ],
+    "result": "C:\\Users\\Admin\\Documents\\Anom\\ML\\one\\datasets\\vuln_20260924T150444Z\\kali_results\\vuln_20260924T150444Z_burst_030_20260925T183631Z\\event_01.json",
+    "evidence_sha256": "729c6307b675522d099a32109acb4e679a023c3c06710b8c127c7b4e6cb8e78a",
+    "split": "validation"
+  }
+]

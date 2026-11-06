@@ -1,0 +1,43 @@
+scope,detector,feature_set,attack_type,eligible_event_records,detected_event_records
+matched_development,Isolation Forest,combined,malformed_payload,4,3
+matched_development,Isolation Forest,combined,payload_size,7,7
+matched_development,Isolation Forest,combined,replay,2,1
+matched_development,Isolation Forest,combined,retained_abuse,5,5
+matched_development,Isolation Forest,combined,spoofed_device,5,3
+matched_development,Isolation Forest,combined,timing_jitter,6,4
+matched_development,Isolation Forest,combined,topic_device_mismatch,6,6
+matched_development,Isolation Forest,network,malformed_payload,4,4
+matched_development,Isolation Forest,network,payload_size,7,7
+matched_development,Isolation Forest,network,replay,2,2
+matched_development,Isolation Forest,network,retained_abuse,5,5
+matched_development,Isolation Forest,network,spoofed_device,5,5
+matched_development,Isolation Forest,network,timing_jitter,6,5
+matched_development,Isolation Forest,network,topic_device_mismatch,6,6
+matched_development,Isolation Forest,system,malformed_payload,4,0
+matched_development,Isolation Forest,system,payload_size,7,1
+matched_development,Isolation Forest,system,replay,2,1
+matched_development,Isolation Forest,system,retained_abuse,5,2
+matched_development,Isolation Forest,system,spoofed_device,5,4
+matched_development,Isolation Forest,system,timing_jitter,6,0
+matched_development,Isolation Forest,system,topic_device_mismatch,6,1
+matched_development,LOF,combined,malformed_payload,4,1
+matched_development,LOF,combined,payload_size,7,7
+matched_development,LOF,combined,replay,2,0
+matched_development,LOF,combined,retained_abuse,5,5
+matched_development,LOF,combined,spoofed_device,5,1
+matched_development,LOF,combined,timing_jitter,6,1
+matched_development,LOF,combined,topic_device_mismatch,6,6
+matched_development,LOF,network,malformed_payload,4,1
+matched_development,LOF,network,payload_size,7,7
+matched_development,LOF,network,replay,2,0
+matched_development,LOF,network,retained_abuse,5,5
+matched_development,LOF,network,spoofed_device,5,0
+matched_development,LOF,network,timing_jitter,6,1
+matched_development,LOF,network,topic_device_mismatch,6,6
+matched_development,LOF,system,malformed_payload,4,0
+matched_development,LOF,system,payload_size,7,0
+matched_development,LOF,system,replay,2,0
+matched_development,LOF,system,retained_abuse,5,0
+matched_development,LOF,system,spoofed_device,5,0
+matched_development,LOF,system,timing_jitter,6,0
+matched_development,LOF,system,topic_device_mismatch,6,0

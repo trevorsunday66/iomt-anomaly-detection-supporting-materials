@@ -1,0 +1,688 @@
+{
+  "network": {
+    "mqtt_msg_rate_per_min__mean": {
+      "min": 33.48,
+      "p01": 33.553333,
+      "p05": 44.29,
+      "median": 44.3225,
+      "p95": 44.34,
+      "p99": 44.345,
+      "max": 45.9325,
+      "missing_fraction": 0.0
+    },
+    "mqtt_msg_rate_per_min__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.005,
+      "p95": 0.01291,
+      "p99": 0.034377,
+      "max": 1.076766,
+      "missing_fraction": 0.0
+    },
+    "mqtt_msg_rate_per_min__min": {
+      "min": 33.32,
+      "p01": 33.55,
+      "p05": 44.28,
+      "median": 44.32,
+      "p95": 44.34,
+      "p99": 44.34,
+      "max": 44.62,
+      "missing_fraction": 0.0
+    },
+    "mqtt_msg_rate_per_min__max": {
+      "min": 33.54,
+      "p01": 33.56,
+      "p05": 44.3,
+      "median": 44.33,
+      "p95": 44.35,
+      "p99": 44.36,
+      "max": 46.54,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__mean": {
+      "min": 684.05,
+      "p01": 688.225,
+      "p05": 688.3,
+      "median": 692.075,
+      "p95": 697.0,
+      "p99": 697.1,
+      "max": 697.1,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.057735,
+      "p99": 0.057735,
+      "max": 0.208167,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__min": {
+      "min": 684.0,
+      "p01": 688.2,
+      "p05": 688.3,
+      "median": 692.0,
+      "p95": 697.0,
+      "p99": 697.1,
+      "max": 697.1,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__max": {
+      "min": 684.1,
+      "p01": 688.3,
+      "p05": 688.3,
+      "median": 692.1,
+      "p95": 697.0,
+      "p99": 697.1,
+      "max": 697.1,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__mean": {
+      "min": 4.937,
+      "p01": 4.9485,
+      "p05": 4.955667,
+      "median": 4.97225,
+      "p95": 4.98825,
+      "p99": 4.9925,
+      "max": 4.998667,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__std": {
+      "min": 0.0,
+      "p01": 0.000577,
+      "p05": 0.001528,
+      "median": 0.004583,
+      "p95": 0.009504,
+      "p99": 0.01193,
+      "max": 0.019035,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__min": {
+      "min": 4.921,
+      "p01": 4.942,
+      "p05": 4.949,
+      "median": 4.967,
+      "p95": 4.984,
+      "p99": 4.989,
+      "max": 4.997,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__max": {
+      "min": 4.942,
+      "p01": 4.954,
+      "p05": 4.96,
+      "median": 4.977,
+      "p95": 4.993,
+      "p99": 4.997,
+      "max": 5.002,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__mean": {
+      "min": 1198.675,
+      "p01": 1379.32725,
+      "p05": 1382.0,
+      "median": 1385.033333,
+      "p95": 1389.4,
+      "p99": 1843.324333,
+      "max": 2051.9,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__std": {
+      "min": 0.0,
+      "p01": 0.51316,
+      "p05": 1.053565,
+      "median": 4.682414,
+      "p95": 17.591983,
+      "p99": 35.041759,
+      "max": 2001.335461,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__min": {
+      "min": 0.4,
+      "p01": 1344.327,
+      "p05": 1367.4,
+      "median": 1380.5,
+      "p95": 1384.6,
+      "p99": 1839.573,
+      "max": 1850.4,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__max": {
+      "min": 1381.5,
+      "p01": 1384.4,
+      "p05": 1385.5,
+      "median": 1389.8,
+      "p95": 1408.965,
+      "p99": 1845.9,
+      "max": 4245.2,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__mean": {
+      "min": 386.2,
+      "p01": 387.033333,
+      "p05": 508.366667,
+      "median": 511.3,
+      "p95": 514.975,
+      "p99": 515.1,
+      "max": 526.9,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.057735,
+      "p95": 0.152753,
+      "p99": 0.386221,
+      "max": 12.352867,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__min": {
+      "min": 384.3,
+      "p01": 387.0,
+      "p05": 508.3,
+      "median": 511.3,
+      "p95": 514.9,
+      "p99": 515.1,
+      "max": 515.4,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__max": {
+      "min": 386.8,
+      "p01": 387.1,
+      "p05": 508.4,
+      "median": 511.4,
+      "p95": 515.0,
+      "p99": 515.2,
+      "max": 533.9,
+      "missing_fraction": 0.0
+    },
+    "message_count": {
+      "min": 2.0,
+      "p01": 3.0,
+      "p05": 3.0,
+      "median": 4.0,
+      "p95": 4.0,
+      "p99": 4.0,
+      "max": 5.0,
+      "missing_fraction": 0.0
+    },
+    "observed_messages_per_second": {
+      "min": 0.4,
+      "p01": 0.6,
+      "p05": 0.6,
+      "median": 0.8,
+      "p95": 0.8,
+      "p99": 0.8,
+      "max": 1.0,
+      "missing_fraction": 0.0
+    }
+  },
+  "system": {
+    "wifi_rssi_dbm__mean": {
+      "min": -51.666667,
+      "p01": -41.0,
+      "p05": -38.5,
+      "median": -28.0,
+      "p95": -19.75,
+      "p99": -19.333333,
+      "max": -18.0,
+      "missing_fraction": 0.0
+    },
+    "wifi_rssi_dbm__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 1.414214,
+      "p95": 5.507571,
+      "p99": 8.082904,
+      "max": 32.924155,
+      "missing_fraction": 0.0
+    },
+    "wifi_rssi_dbm__min": {
+      "min": -79.0,
+      "p01": -46.0,
+      "p05": -43.0,
+      "median": -31.0,
+      "p95": -20.0,
+      "p99": -20.0,
+      "max": -19.0,
+      "missing_fraction": 0.0
+    },
+    "wifi_rssi_dbm__max": {
+      "min": -47.0,
+      "p01": -39.0,
+      "p05": -36.0,
+      "median": -25.0,
+      "p95": -19.0,
+      "p99": -18.0,
+      "max": -16.0,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__mean": {
+      "min": 214191.0,
+      "p01": 216140.0,
+      "p05": 216164.0,
+      "median": 216236.0,
+      "p95": 216280.0,
+      "p99": 216280.0,
+      "max": 216296.0,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 144.0,
+      "p99": 166.276878,
+      "max": 1889.090081,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__min": {
+      "min": 212964.0,
+      "p01": 215948.0,
+      "p05": 215948.0,
+      "median": 216236.0,
+      "p95": 216280.0,
+      "p99": 216280.0,
+      "max": 216288.0,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__max": {
+      "min": 216236.0,
+      "p01": 216236.0,
+      "p05": 216236.0,
+      "median": 216264.0,
+      "p95": 216280.0,
+      "p99": 216280.0,
+      "max": 216320.0,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__mean": {
+      "min": 97.0,
+      "p01": 112.75,
+      "p05": 118.0,
+      "median": 128.0,
+      "p95": 128.0,
+      "p99": 128.0,
+      "max": 128.0,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 15.683568,
+      "p99": 17.897858,
+      "max": 21.213203,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__min": {
+      "min": 96.0,
+      "p01": 97.0,
+      "p05": 98.0,
+      "median": 128.0,
+      "p95": 128.0,
+      "p99": 128.0,
+      "max": 128.0,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__max": {
+      "min": 97.0,
+      "p01": 128.0,
+      "p05": 128.0,
+      "median": 128.0,
+      "p95": 128.0,
+      "p99": 128.0,
+      "max": 128.0,
+      "missing_fraction": 0.0
+    }
+  },
+  "combined": {
+    "mqtt_msg_rate_per_min__mean": {
+      "min": 33.48,
+      "p01": 33.553333,
+      "p05": 44.29,
+      "median": 44.3225,
+      "p95": 44.34,
+      "p99": 44.345,
+      "max": 45.9325,
+      "missing_fraction": 0.0
+    },
+    "mqtt_msg_rate_per_min__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.005,
+      "p95": 0.01291,
+      "p99": 0.034377,
+      "max": 1.076766,
+      "missing_fraction": 0.0
+    },
+    "mqtt_msg_rate_per_min__min": {
+      "min": 33.32,
+      "p01": 33.55,
+      "p05": 44.28,
+      "median": 44.32,
+      "p95": 44.34,
+      "p99": 44.34,
+      "max": 44.62,
+      "missing_fraction": 0.0
+    },
+    "mqtt_msg_rate_per_min__max": {
+      "min": 33.54,
+      "p01": 33.56,
+      "p05": 44.3,
+      "median": 44.33,
+      "p95": 44.35,
+      "p99": 44.36,
+      "max": 46.54,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__mean": {
+      "min": 684.05,
+      "p01": 688.225,
+      "p05": 688.3,
+      "median": 692.075,
+      "p95": 697.0,
+      "p99": 697.1,
+      "max": 697.1,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.057735,
+      "p99": 0.057735,
+      "max": 0.208167,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__min": {
+      "min": 684.0,
+      "p01": 688.2,
+      "p05": 688.3,
+      "median": 692.0,
+      "p95": 697.0,
+      "p99": 697.1,
+      "max": 697.1,
+      "missing_fraction": 0.0
+    },
+    "avg_msg_size_bytes__max": {
+      "min": 684.1,
+      "p01": 688.3,
+      "p05": 688.3,
+      "median": 692.1,
+      "p95": 697.0,
+      "p99": 697.1,
+      "max": 697.1,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__mean": {
+      "min": 4.937,
+      "p01": 4.9485,
+      "p05": 4.955667,
+      "median": 4.97225,
+      "p95": 4.98825,
+      "p99": 4.9925,
+      "max": 4.998667,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__std": {
+      "min": 0.0,
+      "p01": 0.000577,
+      "p05": 0.001528,
+      "median": 0.004583,
+      "p95": 0.009504,
+      "p99": 0.01193,
+      "max": 0.019035,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__min": {
+      "min": 4.921,
+      "p01": 4.942,
+      "p05": 4.949,
+      "median": 4.967,
+      "p95": 4.984,
+      "p99": 4.989,
+      "max": 4.997,
+      "missing_fraction": 0.0
+    },
+    "payload_entropy__max": {
+      "min": 4.942,
+      "p01": 4.954,
+      "p05": 4.96,
+      "median": 4.977,
+      "p95": 4.993,
+      "p99": 4.997,
+      "max": 5.002,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__mean": {
+      "min": 1198.675,
+      "p01": 1379.32725,
+      "p05": 1382.0,
+      "median": 1385.033333,
+      "p95": 1389.4,
+      "p99": 1843.324333,
+      "max": 2051.9,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__std": {
+      "min": 0.0,
+      "p01": 0.51316,
+      "p05": 1.053565,
+      "median": 4.682414,
+      "p95": 17.591983,
+      "p99": 35.041759,
+      "max": 2001.335461,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__min": {
+      "min": 0.4,
+      "p01": 1344.327,
+      "p05": 1367.4,
+      "median": 1380.5,
+      "p95": 1384.6,
+      "p99": 1839.573,
+      "max": 1850.4,
+      "missing_fraction": 0.0
+    },
+    "inter_arrival_ms__max": {
+      "min": 1381.5,
+      "p01": 1384.4,
+      "p05": 1385.5,
+      "median": 1389.8,
+      "p95": 1408.965,
+      "p99": 1845.9,
+      "max": 4245.2,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__mean": {
+      "min": 386.2,
+      "p01": 387.033333,
+      "p05": 508.366667,
+      "median": 511.3,
+      "p95": 514.975,
+      "p99": 515.1,
+      "max": 526.9,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.057735,
+      "p95": 0.152753,
+      "p99": 0.386221,
+      "max": 12.352867,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__min": {
+      "min": 384.3,
+      "p01": 387.0,
+      "p05": 508.3,
+      "median": 511.3,
+      "p95": 514.9,
+      "p99": 515.1,
+      "max": 515.4,
+      "missing_fraction": 0.0
+    },
+    "flow_bytes_per_sec__max": {
+      "min": 386.8,
+      "p01": 387.1,
+      "p05": 508.4,
+      "median": 511.4,
+      "p95": 515.0,
+      "p99": 515.2,
+      "max": 533.9,
+      "missing_fraction": 0.0
+    },
+    "message_count": {
+      "min": 2.0,
+      "p01": 3.0,
+      "p05": 3.0,
+      "median": 4.0,
+      "p95": 4.0,
+      "p99": 4.0,
+      "max": 5.0,
+      "missing_fraction": 0.0
+    },
+    "observed_messages_per_second": {
+      "min": 0.4,
+      "p01": 0.6,
+      "p05": 0.6,
+      "median": 0.8,
+      "p95": 0.8,
+      "p99": 0.8,
+      "max": 1.0,
+      "missing_fraction": 0.0
+    },
+    "wifi_rssi_dbm__mean": {
+      "min": -51.666667,
+      "p01": -41.0,
+      "p05": -38.5,
+      "median": -28.0,
+      "p95": -19.75,
+      "p99": -19.333333,
+      "max": -18.0,
+      "missing_fraction": 0.0
+    },
+    "wifi_rssi_dbm__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 1.414214,
+      "p95": 5.507571,
+      "p99": 8.082904,
+      "max": 32.924155,
+      "missing_fraction": 0.0
+    },
+    "wifi_rssi_dbm__min": {
+      "min": -79.0,
+      "p01": -46.0,
+      "p05": -43.0,
+      "median": -31.0,
+      "p95": -20.0,
+      "p99": -20.0,
+      "max": -19.0,
+      "missing_fraction": 0.0
+    },
+    "wifi_rssi_dbm__max": {
+      "min": -47.0,
+      "p01": -39.0,
+      "p05": -36.0,
+      "median": -25.0,
+      "p95": -19.0,
+      "p99": -18.0,
+      "max": -16.0,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__mean": {
+      "min": 214191.0,
+      "p01": 216140.0,
+      "p05": 216164.0,
+      "median": 216236.0,
+      "p95": 216280.0,
+      "p99": 216280.0,
+      "max": 216296.0,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 144.0,
+      "p99": 166.276878,
+      "max": 1889.090081,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__min": {
+      "min": 212964.0,
+      "p01": 215948.0,
+      "p05": 215948.0,
+      "median": 216236.0,
+      "p95": 216280.0,
+      "p99": 216280.0,
+      "max": 216288.0,
+      "missing_fraction": 0.0
+    },
+    "free_heap_bytes__max": {
+      "min": 216236.0,
+      "p01": 216236.0,
+      "p05": 216236.0,
+      "median": 216264.0,
+      "p95": 216280.0,
+      "p99": 216280.0,
+      "max": 216320.0,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__mean": {
+      "min": 97.0,
+      "p01": 112.75,
+      "p05": 118.0,
+      "median": 128.0,
+      "p95": 128.0,
+      "p99": 128.0,
+      "max": 128.0,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__std": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 15.683568,
+      "p99": 17.897858,
+      "max": 21.213203,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__min": {
+      "min": 96.0,
+      "p01": 97.0,
+      "p05": 98.0,
+      "median": 128.0,
+      "p95": 128.0,
+      "p99": 128.0,
+      "max": 128.0,
+      "missing_fraction": 0.0
+    },
+    "cpu_temp_f__max": {
+      "min": 97.0,
+      "p01": 128.0,
+      "p05": 128.0,
+      "median": 128.0,
+      "p95": 128.0,
+      "p99": 128.0,
+      "max": 128.0,
+      "missing_fraction": 0.0
+    }
+  }
+}

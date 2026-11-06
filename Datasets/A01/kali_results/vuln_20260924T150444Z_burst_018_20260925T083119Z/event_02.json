@@ -1,0 +1,42 @@
+{
+  "kind": "malformed_payload",
+  "device": "patient_a",
+  "profile": "cluster",
+  "started_at": "2026-09-25T08:31:54.055979+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T08:31:54.074840+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "120ad708be72dc8abf52f9b7d65c5485d6b2f6b838e8909772204d6e72c5579c",
+      "bytes": 694,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T08:31:55.193474+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "120ad708be72dc8abf52f9b7d65c5485d6b2f6b838e8909772204d6e72c5579c",
+      "bytes": 694,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T08:31:56.378545+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "120ad708be72dc8abf52f9b7d65c5485d6b2f6b838e8909772204d6e72c5579c",
+      "bytes": 694,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T08:31:57.555704+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "120ad708be72dc8abf52f9b7d65c5485d6b2f6b838e8909772204d6e72c5579c",
+      "bytes": 694,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "120ad708be72dc8abf52f9b7d65c5485d6b2f6b838e8909772204d6e72c5579c",
+  "finished_at": "2026-09-25T08:31:57.555732+00:00"
+}

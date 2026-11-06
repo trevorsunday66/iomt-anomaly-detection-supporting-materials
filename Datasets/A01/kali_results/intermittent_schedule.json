@@ -1,0 +1,2002 @@
+{
+  "campaign": "vuln_20260924T150444Z",
+  "protocol_version": "phms-campaign-v2",
+  "attack_mode": "randomized",
+  "target": "192.168.25.105",
+  "port": 5000,
+  "mqtt_port": 1883,
+  "started_at": "2026-09-24T15:04:50Z",
+  "deadline": null,
+  "window_seconds": 0,
+  "seed": 720829183800191030,
+  "dry_run": false,
+  "bursts": [
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 1,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "retained_abuse",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 7.791,
+            "hold_seconds": 4.739,
+            "padding_bytes": 0,
+            "payload_seed": 3345326177,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "spoofed_device",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 16.831,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1585531520,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_03",
+            "kind": "malformed_payload",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 4,
+            "delays": [
+              1.359,
+              0.748,
+              0.528
+            ],
+            "pause_before": 7.348,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 148832349,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 52.489
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json",
+        "event_03.json"
+      ],
+      "burst_number": 1,
+      "burst_campaign": "vuln_20260924T150444Z_burst_001_20260924T152811Z",
+      "started_at": "2026-09-24T15:28:11Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_001_20260924T152811Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000001.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T15:29:52Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "eavesdrop"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "eavesdrop.json"
+      ],
+      "burst_number": 2,
+      "burst_campaign": "vuln_20260924T150444Z_burst_002_20260924T161125Z",
+      "started_at": "2026-09-24T16:11:25Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_002_20260924T161125Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "eavesdrop"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T16:11:31Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 2,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "retained_abuse",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 2.491,
+            "hold_seconds": 10.986,
+            "padding_bytes": 0,
+            "payload_seed": 1664060962,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "malformed_payload",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 4.573,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1704511000,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 55.288
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json"
+      ],
+      "burst_number": 3,
+      "burst_campaign": "vuln_20260924T150444Z_burst_003_20260924T165508Z",
+      "started_at": "2026-09-24T16:55:08Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_003_20260924T165508Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000003.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T16:56:30Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 3,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "timing_jitter",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 14.631,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2745798950,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 17.465
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 4,
+      "burst_campaign": "vuln_20260924T150444Z_burst_004_20260924T182551Z",
+      "started_at": "2026-09-24T18:25:51Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_004_20260924T182551Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000004.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T18:26:31Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 4,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "topic_device_mismatch",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 3,
+            "delays": [
+              0.537,
+              0.463
+            ],
+            "pause_before": 8.111,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 3120005027,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 59.424
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 5,
+      "burst_campaign": "vuln_20260924T150444Z_burst_005_20260924T191410Z",
+      "started_at": "2026-09-24T19:14:10Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_005_20260924T191410Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000005.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T19:15:27Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 5,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "payload_size",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 16.254,
+            "hold_seconds": 0,
+            "padding_bytes": 2048,
+            "payload_seed": 3846223242,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "replay",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 17.271,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2594193191,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 26.038
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json"
+      ],
+      "burst_number": 6,
+      "burst_campaign": "vuln_20260924T150444Z_burst_006_20260924T203819Z",
+      "started_at": "2026-09-24T20:38:19Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_006_20260924T203819Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000006.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T20:39:27Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 6,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "retained_abuse",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 4,
+            "delays": [
+              1.339,
+              1.353,
+              1.13
+            ],
+            "pause_before": 3.889,
+            "hold_seconds": 5.738,
+            "padding_bytes": 0,
+            "payload_seed": 2139437621,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "topic_misuse",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 8.783,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 944552262,
+            "topic_suffix": "debug"
+          },
+          {
+            "name": "event_03",
+            "kind": "replay",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 10,
+            "delays": [
+              0.534,
+              1.405,
+              1.004,
+              0.737,
+              0.93,
+              0.947,
+              1.488,
+              0.405,
+              0.979
+            ],
+            "pause_before": 7.766,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 540428252,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 46.572
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json",
+        "event_03.json"
+      ],
+      "burst_number": 7,
+      "burst_campaign": "vuln_20260924T150444Z_burst_007_20260924T212227Z",
+      "started_at": "2026-09-24T21:22:27Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_007_20260924T212227Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000007.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T21:24:03Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "vitals_integrity_attack"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "vitals_integrity_attack.json"
+      ],
+      "burst_number": 8,
+      "burst_campaign": "vuln_20260924T150444Z_burst_008_20260924T223528Z",
+      "started_at": "2026-09-24T22:35:28Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_008_20260924T223528Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "vitals_integrity_attack"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-24T22:35:42Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 7,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "topic_device_mismatch",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 4,
+            "delays": [
+              0.432,
+              0.936,
+              0.729
+            ],
+            "pause_before": 8.385,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2074798155,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 27.229
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 9,
+      "burst_campaign": "vuln_20260924T150444Z_burst_009_20260925T000228Z",
+      "started_at": "2026-09-25T00:02:28Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_009_20260925T000228Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000009.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T00:03:15Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 8,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "payload_size",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 8,
+            "delays": [
+              0.961,
+              0.311,
+              0.533,
+              0.834,
+              0.92,
+              1.436,
+              1.12
+            ],
+            "pause_before": 9.352,
+            "hold_seconds": 0,
+            "padding_bytes": 128,
+            "payload_seed": 4206580488,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 47.747
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 10,
+      "burst_campaign": "vuln_20260924T150444Z_burst_010_20260925T011649Z",
+      "started_at": "2026-09-25T01:16:49Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_010_20260925T011649Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000010.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T01:18:01Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 9,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "topic_device_mismatch",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 16.939,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 3156583855,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 20.881
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 11,
+      "burst_campaign": "vuln_20260924T150444Z_burst_011_20260925T015241Z",
+      "started_at": "2026-09-25T01:52:41Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_011_20260925T015241Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000011.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T01:53:28Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "weak_security_baseline"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "weak_security_baseline.json"
+      ],
+      "burst_number": 12,
+      "burst_campaign": "vuln_20260924T150444Z_burst_012_20260925T024342Z",
+      "started_at": "2026-09-25T02:43:42Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_012_20260925T024342Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "weak_security_baseline"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T02:43:43Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 10,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "spoofed_device",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 11,
+            "delays": [
+              0.861,
+              1.09,
+              1.491,
+              1.141,
+              0.705,
+              0.474,
+              1.332,
+              0.756,
+              0.672,
+              0.606
+            ],
+            "pause_before": 2.107,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2552603925,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "timing_jitter",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 12,
+            "delays": [
+              0.493,
+              2.886,
+              0.373,
+              2.543,
+              0.483,
+              2.944,
+              0.352,
+              2.122,
+              0.499,
+              2.503,
+              0.356
+            ],
+            "pause_before": 15.684,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2413019777,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 45.058
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json"
+      ],
+      "burst_number": 13,
+      "burst_campaign": "vuln_20260924T150444Z_burst_013_20260925T034005Z",
+      "started_at": "2026-09-25T03:40:05Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_013_20260925T034005Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000013.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T03:41:44Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 11,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "replay",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 12.867,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 737718138,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "retained_abuse",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 10,
+            "delays": [
+              1.494,
+              1.472,
+              0.589,
+              0.653,
+              0.413,
+              1.046,
+              0.779,
+              0.788,
+              1.37
+            ],
+            "pause_before": 11.486,
+            "hold_seconds": 11.595,
+            "padding_bytes": 0,
+            "payload_seed": 1909271372,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_03",
+            "kind": "topic_misuse",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 5,
+            "delays": [
+              1.421,
+              0.781,
+              1.486,
+              0.85
+            ],
+            "pause_before": 13.292,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 3292807934,
+            "topic_suffix": "data/extra"
+          }
+        ],
+        "quiet_after": 35.454
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json",
+        "event_03.json"
+      ],
+      "burst_number": 14,
+      "burst_campaign": "vuln_20260924T150444Z_burst_014_20260925T041450Z",
+      "started_at": "2026-09-25T04:14:50Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_014_20260925T041450Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000014.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T04:16:38Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "credential"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "credential.json"
+      ],
+      "burst_number": 15,
+      "burst_campaign": "vuln_20260924T150444Z_burst_015_20260925T052412Z",
+      "started_at": "2026-09-25T05:24:12Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_015_20260925T052412Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "credential"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T05:24:15Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 12,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "spoofed_device",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 7,
+            "delays": [
+              0.838,
+              1.06,
+              1.19,
+              1.162,
+              0.636,
+              1.062
+            ],
+            "pause_before": 4.958,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1666322529,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "topic_device_mismatch",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 16.21,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2342315861,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 33.034
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json"
+      ],
+      "burst_number": 16,
+      "burst_campaign": "vuln_20260924T150444Z_burst_016_20260925T062101Z",
+      "started_at": "2026-09-25T06:21:01Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_016_20260925T062101Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000016.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T06:22:11Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "http_security"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "http_security.json"
+      ],
+      "burst_number": 17,
+      "burst_campaign": "vuln_20260924T150444Z_burst_017_20260925T071953Z",
+      "started_at": "2026-09-25T07:19:53Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_017_20260925T071953Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "http_security"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T07:19:54Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 13,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "spoofed_device",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 18.925,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 3478862881,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "malformed_payload",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 4,
+            "delays": [
+              1.101,
+              1.14,
+              1.152
+            ],
+            "pause_before": 7.335,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 3429924028,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_03",
+            "kind": "topic_misuse",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 8.156,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1701252247,
+            "topic_suffix": "debug"
+          }
+        ],
+        "quiet_after": 16.326
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json",
+        "event_03.json"
+      ],
+      "burst_number": 18,
+      "burst_campaign": "vuln_20260924T150444Z_burst_018_20260925T083119Z",
+      "started_at": "2026-09-25T08:31:19Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_018_20260925T083119Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000018.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T08:32:22Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 14,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "payload_size",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 12.467,
+            "hold_seconds": 0,
+            "padding_bytes": 512,
+            "payload_seed": 2320947302,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 18.516
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 19,
+      "burst_campaign": "vuln_20260924T150444Z_burst_019_20260925T091453Z",
+      "started_at": "2026-09-25T09:14:53Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_019_20260925T091453Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000019.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T09:15:32Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 15,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "malformed_payload",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 17.15,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1507325663,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "payload_size",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 11,
+            "delays": [
+              1.321,
+              0.746,
+              0.993,
+              1.226,
+              0.424,
+              1.234,
+              1.37,
+              1.475,
+              1.285,
+              0.807
+            ],
+            "pause_before": 9.207,
+            "hold_seconds": 0,
+            "padding_bytes": 2048,
+            "payload_seed": 806445400,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 38.143
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json"
+      ],
+      "burst_number": 20,
+      "burst_campaign": "vuln_20260924T150444Z_burst_020_20260925T094938Z",
+      "started_at": "2026-09-25T09:49:38Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_020_20260925T094938Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000020.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T09:51:04Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 16,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "timing_jitter",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 12,
+            "delays": [
+              0.405,
+              2.47,
+              0.338,
+              1.793,
+              0.479,
+              1.849,
+              0.435,
+              1.68,
+              0.555,
+              2.851,
+              0.541
+            ],
+            "pause_before": 2.672,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1857036156,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 23.951
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 21,
+      "burst_campaign": "vuln_20260924T150444Z_burst_021_20260925T102424Z",
+      "started_at": "2026-09-25T10:24:24Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_021_20260925T102424Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000021.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T10:25:14Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 17,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "timing_jitter",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 6.749,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1214598039,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "topic_misuse",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 7,
+            "delays": [
+              0.622,
+              0.694,
+              1.058,
+              0.993,
+              1.098,
+              0.902
+            ],
+            "pause_before": 16.952,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2441668003,
+            "topic_suffix": "data/extra"
+          },
+          {
+            "name": "event_03",
+            "kind": "replay",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 9,
+            "delays": [
+              0.39,
+              0.486,
+              0.625,
+              0.765,
+              1.373,
+              1.148,
+              1.223,
+              1.02
+            ],
+            "pause_before": 4.432,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1421785968,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 39.911
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json",
+        "event_03.json"
+      ],
+      "burst_number": 22,
+      "burst_campaign": "vuln_20260924T150444Z_burst_022_20260925T114504Z",
+      "started_at": "2026-09-25T11:45:04Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_022_20260925T114504Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000022.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T11:46:35Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 18,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "payload_size",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 7,
+            "delays": [
+              0.402,
+              0.386,
+              1.483,
+              0.968,
+              0.419,
+              1.305
+            ],
+            "pause_before": 15.881,
+            "hold_seconds": 0,
+            "padding_bytes": 512,
+            "payload_seed": 3983482043,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 23.648
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 23,
+      "burst_campaign": "vuln_20260924T150444Z_burst_023_20260925T122053Z",
+      "started_at": "2026-09-25T12:20:53Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_023_20260925T122053Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000023.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T12:21:46Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "mqtt_protocol_metrics"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "mqtt_protocol_metrics.json"
+      ],
+      "burst_number": 24,
+      "burst_campaign": "vuln_20260924T150444Z_burst_024_20260925T132323Z",
+      "started_at": "2026-09-25T13:23:23Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_024_20260925T132323Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "mqtt_protocol_metrics"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T13:23:36Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 19,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "spoofed_device",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 12,
+            "delays": [
+              0.742,
+              0.649,
+              1.453,
+              1.328,
+              1.082,
+              0.655,
+              1.126,
+              0.574,
+              0.623,
+              0.865,
+              0.869
+            ],
+            "pause_before": 8.195,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 2355619634,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 39.553
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 25,
+      "burst_campaign": "vuln_20260924T150444Z_burst_025_20260925T141717Z",
+      "started_at": "2026-09-25T14:17:17Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_025_20260925T141717Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000025.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T14:18:25Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 20,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "timing_jitter",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 10.566,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 614590979,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "topic_device_mismatch",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 10.275,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 4034612089,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_03",
+            "kind": "topic_device_mismatch",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 14.354,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 1927262925,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 24.756
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json",
+        "event_03.json"
+      ],
+      "burst_number": 26,
+      "burst_campaign": "vuln_20260924T150444Z_burst_026_20260925T150615Z",
+      "started_at": "2026-09-25T15:06:15Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_026_20260925T150615Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000026.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T15:07:23Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "logging"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "logging.json"
+      ],
+      "burst_number": 27,
+      "burst_campaign": "vuln_20260924T150444Z_burst_027_20260925T154519Z",
+      "started_at": "2026-09-25T15:45:19Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_027_20260925T154519Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "logging"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T15:45:21Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 21,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "payload_size",
+            "device": "patient_b",
+            "profile": "cluster",
+            "count": 5,
+            "delays": [
+              0.615,
+              0.986,
+              0.569,
+              1.063
+            ],
+            "pause_before": 9.296,
+            "hold_seconds": 0,
+            "padding_bytes": 128,
+            "payload_seed": 801060494,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_02",
+            "kind": "payload_size",
+            "device": "patient_a",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 5.05,
+            "hold_seconds": 0,
+            "padding_bytes": 2048,
+            "payload_seed": 3275756233,
+            "topic_suffix": "data"
+          },
+          {
+            "name": "event_03",
+            "kind": "timing_jitter",
+            "device": "patient_a",
+            "profile": "cluster",
+            "count": 6,
+            "delays": [
+              0.519,
+              2.934,
+              0.467,
+              1.93,
+              0.392
+            ],
+            "pause_before": 2.016,
+            "hold_seconds": 0,
+            "padding_bytes": 0,
+            "payload_seed": 335961099,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 43.666
+      },
+      "expected_json_outputs": [
+        "event_01.json",
+        "event_02.json",
+        "event_03.json"
+      ],
+      "burst_number": 28,
+      "burst_campaign": "vuln_20260924T150444Z_burst_028_20260925T161844Z",
+      "started_at": "2026-09-25T16:18:44Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_028_20260925T161844Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000028.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T16:20:03Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": [
+        "input_validation"
+      ],
+      "plan": null,
+      "expected_json_outputs": [
+        "input_validation.json"
+      ],
+      "burst_number": 29,
+      "burst_campaign": "vuln_20260924T150444Z_burst_029_20260925T172735Z",
+      "started_at": "2026-09-25T17:27:35Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py",
+        "--target",
+        "192.168.25.105",
+        "--port",
+        "5000",
+        "--mqtt-port",
+        "1883",
+        "--include-all-nondos",
+        "--mqtt-capture-duration",
+        "120",
+        "--mqtt-capture-max-messages",
+        "200",
+        "--mqtt-replay-limit",
+        "20",
+        "--timeout",
+        "20",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_029_20260925T172735Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--tests",
+        "input_validation"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T17:27:37Z",
+      "missing_json_outputs": []
+    },
+    {
+      "selected_tests": null,
+      "plan": {
+        "version": "phms-randomized-mqtt-v2",
+        "seed": 720829183800191030,
+        "burst_number": 22,
+        "events": [
+          {
+            "name": "event_01",
+            "kind": "retained_abuse",
+            "device": "patient_b",
+            "profile": "isolated",
+            "count": 1,
+            "delays": [],
+            "pause_before": 17.873,
+            "hold_seconds": 10.01,
+            "padding_bytes": 0,
+            "payload_seed": 1062779181,
+            "topic_suffix": "data"
+          }
+        ],
+        "quiet_after": 22.349
+      },
+      "expected_json_outputs": [
+        "event_01.json"
+      ],
+      "burst_number": 30,
+      "burst_campaign": "vuln_20260924T150444Z_burst_030_20260925T183631Z",
+      "started_at": "2026-09-25T18:36:31Z",
+      "command": [
+        "/usr/bin/python3",
+        "/home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py",
+        "--target",
+        "192.168.25.105",
+        "--mqtt-port",
+        "1883",
+        "--campaign",
+        "vuln_20260924T150444Z_burst_030_20260925T183631Z",
+        "--log-dir",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results",
+        "--plan",
+        "/home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000030.json"
+      ],
+      "returncode": 0,
+      "dry_run": false,
+      "finished_at": "2026-09-25T18:37:30Z",
+      "missing_json_outputs": []
+    }
+  ],
+  "status": "complete",
+  "finished_at": "2026-09-25T18:46:24Z",
+  "coverage": {
+    "complete": true,
+    "observed": [
+      [
+        "malformed_payload",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "malformed_payload",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "malformed_payload",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "malformed_payload",
+        "patient_b",
+        "isolated"
+      ],
+      [
+        "payload_size",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "payload_size",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "payload_size",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "payload_size",
+        "patient_b",
+        "isolated"
+      ],
+      [
+        "replay",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "replay",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "replay",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "replay",
+        "patient_b",
+        "isolated"
+      ],
+      [
+        "retained_abuse",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "retained_abuse",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "retained_abuse",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "retained_abuse",
+        "patient_b",
+        "isolated"
+      ],
+      [
+        "spoofed_device",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "spoofed_device",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "spoofed_device",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "spoofed_device",
+        "patient_b",
+        "isolated"
+      ],
+      [
+        "timing_jitter",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "timing_jitter",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "timing_jitter",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "timing_jitter",
+        "patient_b",
+        "isolated"
+      ],
+      [
+        "topic_device_mismatch",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "topic_device_mismatch",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "topic_device_mismatch",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "topic_device_mismatch",
+        "patient_b",
+        "isolated"
+      ],
+      [
+        "topic_misuse",
+        "patient_a",
+        "cluster"
+      ],
+      [
+        "topic_misuse",
+        "patient_a",
+        "isolated"
+      ],
+      [
+        "topic_misuse",
+        "patient_b",
+        "cluster"
+      ],
+      [
+        "topic_misuse",
+        "patient_b",
+        "isolated"
+      ]
+    ],
+    "missing": []
+  },
+  "coverage_checks": {
+    "observed": [
+      "credential",
+      "eavesdrop",
+      "http_security",
+      "input_validation",
+      "logging",
+      "mqtt_protocol_metrics",
+      "vitals_integrity_attack",
+      "weak_security_baseline"
+    ],
+    "missing": [
+      "auth_bypass"
+    ],
+    "complete": false
+  },
+  "stop_requested": true,
+  "stop_reason": "operator_stop_file"
+}

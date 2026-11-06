@@ -1,0 +1,102 @@
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ WARNING: LOGGING & MONITORING TESTING
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ This tool tests logging and monitoring capabilities.
+ Only use against systems you own or have permission to test.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+======================================================================
+ PHMS Logging & Monitoring Security Testing
+======================================================================
+Target:     http://192.168.25.105:5000
+Timeout:    20s
+Start Time: 2026-09-25T15:45:20Z
+======================================================================
+
+Checking target connectivity...
+✓ Target reachable (Status: 200)
+
+
+[*] Testing for accessible log endpoints...
+    /logs: 404
+    /log: 404
+    /api/logs: 404
+    /api/log: 404
+    /debug/log: 404
+    /admin/logs: 404
+    /system/logs: 404
+    /audit: 404
+    /events: 404
+    /api/events: 404
+    /api/audit: 404
+    /syslog: 404
+
+[*] Testing failed authentication logging...
+    Performing rapid auth attempts...
+    ⚠️  No rate limiting after 13 failed attempts
+
+[*] Testing security event logging...
+    Directory Traversal: ⚠️  Not blocked (404)
+    SQL Injection: ⚠️  Not blocked (200)
+    XSS Attempt: ⚠️  Not blocked (200)
+    Command Injection: ⚠️  Not blocked (200)
+
+[*] Testing audit trail capabilities...
+    ⚠️  No audit endpoints found
+
+[*] Testing log injection vulnerability...
+    Log injection payloads sent
+    Note: Manual log review required to confirm vulnerability
+
+[*] Testing alerting mechanisms...
+    ⚠️  No alerting endpoints found
+
+[*] Testing access logging...
+    Made 3 unique requests
+    ⚠️  No logging indicators detected
+
+======================================================================
+ LOGGING & MONITORING TEST SUMMARY
+======================================================================
+
+Vulnerabilities Found: 5
+
+Overall Rating: Poor
+Detection Capability: None
+Incident Response: Not Ready
+
+Vulnerabilities Detected:
+--------------------------------------------------
+
+  [High] No Failed Auth Rate Limiting
+    No rate limiting or lockout after 13 failed auth attempts
+
+  [High] No Security Event Detection
+    Attack patterns not detected or blocked
+
+  [Medium] Insufficient Audit Trail
+    No proper audit logging of user activities
+
+  [Medium] No Security Alerting
+    No security alerting mechanisms detected
+
+  [Medium] No Access Logging
+    No indication of access logging
+
+----------------------------------------------------------------------
+ RECOMMENDATIONS
+----------------------------------------------------------------------
+
+  1. Implement access logging for all endpoints
+  2. Log failed authentication attempts
+  3. Enable security event logging (attacks, anomalies)
+  4. Set up alerting for security events
+  5. Implement rate limiting on sensitive endpoints
+  6. Create audit trail for sensitive operations
+  7. Configure log retention and rotation
+  8. Set up centralized log management (SIEM)
+        
+======================================================================
+
+Results saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_027_20260925T154519Z/logging.json

@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2026-09-24T15:28:11.814011+00:00",
+    "topic": "phms/patient_b/status",
+    "sha256": "89aab18cf5bc3c9d18086d537efe50cb29fb193c99aac895502cd0d95f630faa",
+    "retain": true
+  },
+  {
+    "timestamp": "2026-09-24T15:28:12.839508+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "54f091e8cad112a5a9245b16a63d89cb43f8e005590bc985b4b9b9ec47b66645",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:14.106522+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "11e8da3cb2d64b8afdbeff62a460cfb17e4356c21d4e0bd84e1584c86549ba29",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:15.500315+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "3e5cf09ad37b1743443b0c1808b047234673a34ac6f21bd4616de323be23f970",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:16.876317+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "9e6ea4f7da384d534d709fb214beca3d7e8489b344f2423942f37ec2276991b9",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:18.377193+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "2e89502570ef0fd6825f3e43df73ae558ef738db3420e0ceef0d706b6cc11830",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:19.648339+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "f061164e839ac4e29216ef8dda61915afb3aaf296ff270fa4b1adb2af5ba95a2",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:21.150556+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "7ac99f940ddb8bc1ee1a8644759877e7e5799e88d9e56475085086ccb1e8ddfa",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:22.436107+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "cce95a0351876afec17b4c351336eeba4f05bfcd4b8fcc3c500bdc4425ba7215",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:23.804277+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "44f5cdf11753dcff9a3c8238be7b87c26dccdf63571902ca43288bea30056e2c",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:25.197699+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "9a339811e0b93d834c01e75689ae7fb4c574a05e052a92de12cef5f7090f093b",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:26.689464+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "f3bcf70f6c4eca4e32d95cbed29a5eb4f08112189b9af881d55f6d4132cea051",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:27.563574+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "54f091e8cad112a5a9245b16a63d89cb43f8e005590bc985b4b9b9ec47b66645",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:27.770787+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "54f091e8cad112a5a9245b16a63d89cb43f8e005590bc985b4b9b9ec47b66645",
+    "retain": true
+  },
+  {
+    "timestamp": "2026-09-24T15:28:27.962519+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "9c41071590e6c59e29545752266bfd95ebe53dbb09893cc8378a8c19840fabef",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:29.467568+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "52e0ff4986a1f67edb64f3b51327c7901949dc66d8576f6521986511eec51c01",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:30.841127+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "3dcf90b334ae4d2ecfa8244f57283dcc3727e881f4defb7932d3c64085390d8e",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:32.114296+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "8f5e1907d476e2380bbfc2fdb620cd12efde2449845612bbf068e864c4549eeb",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:32.583118+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:33.500213+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "6969ccc51fad782093310fa58a354fc58e791ce9457ab0b0f748677cbf0f78fa",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:34.880577+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "bfbe1dcfb8317c7ceb7f513cc218616ed5d1b7d48c2953ec8e5b9c9d194d80c5",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:36.273504+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "3716c7a777ae24bb223030b5140e714983fb4fd4fac68e7625b7fc85ea6c2151",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:37.692048+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "508ea42daa8053146b2fa642c1e1ed52dcef663fd490d19972399d72e1261eb6",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:39.079562+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "ae85ab930bfa0abb359988629577d142f3aad68fd1164918b53cb788e54177eb",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:40.465734+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "09d811aac056783a9c80341956ae125e04b391e7533bae78f1f6f05189f63673",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:41.850531+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "cf2abc46f285e35d7093f2fd97d6cabf2f1556b06b5f15b195f54c0c812d34a0",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:43.235676+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "b021d9396bca328b2eaa8cc25d5f959d868031ec2383e3f9375b823f3d3fb8aa",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:44.620315+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "f8ee4131d82440e3d999a0be75e7d27235c5629fb28ff05dbfa899e88222f7b8",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:46.124376+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "66ce1eddad978226206c6e879b1865da53da9383d9a9b85f7637c0de2b63908e",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:47.391540+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "9eddbebea1f547570f05da7d05708bb3e92cacc0a6fd9d42fb53f97dee6ec640",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:48.780091+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "7f30de151680873fbef0c1fcb8a573492432e2acde9ca4e86e12d17853e21ae3",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:49.561633+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "72c3185b632828597bb7ee856cc15bd356a80c638152778fe1aade3a55224b9c",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:50.278507+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "1f365df69725cc8cf5ac971cd78055359f366e9acee38fbcb38e7a61995083e5",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:51.548697+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "332458b5df76a4c3b6601e8ff2cde3db69c83f01793602c1d947677f26a04903",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:53.045338+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "951a3bb39e849cb96d72b1ffc25e226ca758faf3f924e94a49168e5d589be94d",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:54.316706+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "de1b84494370035004b11f738711b0ac6605db97228f47d433bab1cbf38eef49",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:55.712411+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "2976d41c47b7e0ef5599b78f67b6bc3f7ff5b5d6377b10ed1918f44bf62aaab3",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:56.954774+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "1161a9871ffa323549cb12a261915ed1510a575ef5ccab70d68be91939660cd4",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:57.198480+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "fe42dd641d18d1e612af2254b0ae43587aa562d8da191d75980a87255b98b3e0",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:58.335839+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "1161a9871ffa323549cb12a261915ed1510a575ef5ccab70d68be91939660cd4",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:58.474473+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "14d7ad0d8e3dded564d036a5d4113fae9f8328fed5253b0f36d56ec026578025",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:59.105148+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "1161a9871ffa323549cb12a261915ed1510a575ef5ccab70d68be91939660cd4",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:59.665010+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "1161a9871ffa323549cb12a261915ed1510a575ef5ccab70d68be91939660cd4",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:28:59.861425+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "fcca12cdeb270d5e42e959976863fa66d7073ba5b0b80d75691f05bff5c7770f",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:01.240467+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "d7f96eafb5d9a8ed1203e2a4d6dda833e28a417b4ab633b3872aa7b29d73b7e9",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:02.626347+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "c7b055408d37e65b3f3869c5e20e860ef58c0978baf50c865b8ab75b029c0d11",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:04.012469+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "6785efc62593bf7e1fb31ed50cc9d4b52bc4b0f94418e8c0aeca7bf9b6dd35fe",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:05.398550+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "92624dc149b2e66b3eda4851e9f2c8850a0b1743f112fdf0ff07da9fca8d97e9",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:06.780463+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "825f4806383ab81f9159e636b91a0e96b9b2dfe90d7ea24ae23233fbd7ab1115",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:08.172135+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "7d9b7de3f1ff7c7b1a8ecb0288b4c845fe58e15f09254e8ebbeafa6f2dfe6123",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:09.554137+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "0b60256546a01948c95258ffe45565bb49380d79cbe7ae3289f8b409c1acaeda",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:10.936488+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "1aee762ccd06694171b519b25a9115a4572b2a614cb27f5e9e63484597340806",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:12.442336+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "f6589ed92dde56a63a122dadf26811701722e0e383c46dc5f11cdbb41fdba957",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:13.708545+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "b0bb10051b23392db9cf1db4b1c2613763233bdd16eeeec6df44142affa9af13",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:15.104448+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "fa3a13ea5c559ab5a2a6446575c3124a7368adddfa3f4db7cc038ae6ef2f9afb",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:16.479684+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "ab1f6cec3da20e4f4287cfd45c006d62b62d747dca1f64925bc8be81c4078050",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:17.869892+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "0faa1f720b30065194d8de5222ebb3c3ddc45a6dce42cedc789a40fbfb400f5b",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:19.361295+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "de38a0cddd3e3ff1f18b0a01cf5f1e14920e1b5644cb2b6aa5b3752219422b24",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:20.634149+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "911a946f005945f6b7f1b2fcc37b3c7c757b7eceff36fb8bb745bb9ae5a23ad9",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:22.030113+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "77b6051896a93afb916238b05d8c0ad3dbcf1e095b3d2314307593c26a2a578c",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:23.516661+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "a77b25bff635ad378b9b7b59425fdc75570561e432c22d5e21fe15a1053402d1",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:24.793360+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "24252bfa0d3e23d98b9c74b116be378426aee320f955781e2c5980eb92ec0ff4",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:26.176615+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "b029b531565c292faed19ad93381074a066dfe577f112513b99768be0e71e272",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:27.559657+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "b6ad28fb3dc564518553a800735ddd9e09f7838f108ba1e599269f1f96f1316c",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:28.939586+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "de399518747aa5965ce95e45d3dfea4e8a64d50bac78cfefe5a8ce5ed208a07b",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:30.457016+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "3d7f941aa72f049dcf3bd61ae560585d1ba0416d2a75474cc202c37cb6c058ec",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:31.720643+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "a162933a2fc40c13bd0e1402e2cc3834029efeb9916bd57ab615caf9e975763e",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:33.100678+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "c74ca553dde44089089067906f2feb5161cf31d0c3556609fb4e186e18de95b6",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:34.488537+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "bad99afc12f7f4f3212a081513f4907102019acb1c8133606a12e919c97212dd",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:35.988965+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "fe99d5f51393be0c8d2b842acde29d8248be05362e8136cb3a9f63843b10685f",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:37.257698+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "0225366145de8322f29bc8182e4655a5358ccc2fb4cd52dad4db0df3795d76d2",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:38.756096+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "76120aefe24a045fcb5e9d8747b2d69ac797a4e2143e2c71760dce648bbc9882",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:40.026031+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "924ffca1c53c44ae18cf21da2a20724edd94b09c1764bdf5db9f6db1a816b039",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:41.533515+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "77587bb1511fd2ba826f996bbbdb88b60dc2ecb7d4d343aa5542ec138606f4fe",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:42.796484+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "f93824b133ab38ebf78541ca5c3e38254a92c858476400a1459c03d5d7a755fe",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:44.182577+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "4fa255afdb3bf4ce9a981fdd37ab0fcfe542a69f5677a05f42331945cf850a0e",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:45.684277+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "7d99d63d05a48aaf5471af8f0be14906e12246b39cdf6de6601c9216e89b3688",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:47.068278+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "94ab9da16f9ae5ab980b93e1796d11272b1e604dea90206bbc568fa58d14fdc0",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:48.343781+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "8263da4bfc9f5389bcff06abdc05aae3f42e9a25454ecdbc301b0b661b5259e5",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:49.725780+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "5d5fea5f8e66485ac7becb92db8c146321334797cebf165f9d553090fe210c21",
+    "retain": false
+  },
+  {
+    "timestamp": "2026-09-24T15:29:51.108473+00:00",
+    "topic": "phms/patient_b/data",
+    "sha256": "c7cf4e31eff1fe695f736a7033e535191f334e2b9a06fc89fb8417b3e3502fc5",
+    "retain": false
+  }
+]

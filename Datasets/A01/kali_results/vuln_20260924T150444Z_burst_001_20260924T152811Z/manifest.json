@@ -1,0 +1,119 @@
+{
+  "protocol_version": "phms-campaign-v2",
+  "attack_mode": "randomized",
+  "campaign": "vuln_20260924T150444Z_burst_001_20260924T152811Z",
+  "dry_run": false,
+  "plan": {
+    "version": "phms-randomized-mqtt-v2",
+    "seed": 720829183800191030,
+    "burst_number": 1,
+    "events": [
+      {
+        "name": "event_01",
+        "kind": "retained_abuse",
+        "device": "patient_b",
+        "profile": "isolated",
+        "count": 1,
+        "delays": [],
+        "pause_before": 7.791,
+        "hold_seconds": 4.739,
+        "padding_bytes": 0,
+        "payload_seed": 3345326177,
+        "topic_suffix": "data"
+      },
+      {
+        "name": "event_02",
+        "kind": "spoofed_device",
+        "device": "patient_b",
+        "profile": "isolated",
+        "count": 1,
+        "delays": [],
+        "pause_before": 16.831,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 1585531520,
+        "topic_suffix": "data"
+      },
+      {
+        "name": "event_03",
+        "kind": "malformed_payload",
+        "device": "patient_b",
+        "profile": "cluster",
+        "count": 4,
+        "delays": [
+          1.359,
+          0.748,
+          0.528
+        ],
+        "pause_before": 7.348,
+        "hold_seconds": 0,
+        "padding_bytes": 0,
+        "payload_seed": 148832349,
+        "topic_suffix": "data"
+      }
+    ],
+    "quiet_after": 52.489
+  },
+  "plan_sha256": "1dabb1289456d4531afad520a74b6796a20809f2b5dbaa95c13b75ffcc943e3f",
+  "source_sha256": {
+    "run_randomized_mqtt_burst.py": "e98ca8272257865d91db991aa47135c1d0bdecc7e44957637e2b250324516471",
+    "random_attack_plan.py": "dde1f620d5b7f26591341c6fa7a400440a6a5873b3a2c7c4d5a61e00be6d8ab3",
+    "campaign_protocol.py": "1002bd2df01050c451383aaa2375c07c05b282cc96d8d82ea38a0b6f640e185e"
+  },
+  "created_at": "2026-09-24T15:28:11.690625+00:00",
+  "tests": [
+    {
+      "name": "event_01",
+      "attack_label": "retained_abuse",
+      "device": "patient_b",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled retained_abuse",
+      "started_at": "2026-09-24T15:28:27.547346+00:00",
+      "finished_at": "2026-09-24T15:28:32.597618+00:00",
+      "returncode": 0,
+      "json_output": "event_01.json",
+      "json_sha256": "983e6a34ec091345ae540d6d2f160f4cfb5ecefbccfb5eeae23bb2061ecc924a",
+      "stdout_log": "event_01.stdout.log",
+      "stderr_log": "event_01.stderr.log"
+    },
+    {
+      "name": "event_02",
+      "attack_label": "spoofed_device",
+      "device": "patient_b",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled spoofed_device",
+      "started_at": "2026-09-24T15:28:49.429787+00:00",
+      "finished_at": "2026-09-24T15:28:49.580780+00:00",
+      "returncode": 0,
+      "json_output": "event_02.json",
+      "json_sha256": "29ec4abfe64a507720012e250e7109d1b0bb50c72f016c7fdc52f84ea5dff8ed",
+      "stdout_log": "event_02.stdout.log",
+      "stderr_log": "event_02.stderr.log"
+    },
+    {
+      "name": "event_03",
+      "attack_label": "malformed_payload",
+      "device": "patient_b",
+      "script": "run_randomized_mqtt_burst.py",
+      "issue": "controlled malformed_payload",
+      "started_at": "2026-09-24T15:28:56.929908+00:00",
+      "finished_at": "2026-09-24T15:28:59.669184+00:00",
+      "returncode": 0,
+      "json_output": "event_03.json",
+      "json_sha256": "7ecc25a3a99b84a765c1150b2d7472d09b1bdb1ce830940ed31553b55903c6dc",
+      "stdout_log": "event_03.stdout.log",
+      "stderr_log": "event_03.stderr.log"
+    }
+  ],
+  "status": "complete",
+  "ground_truth": "sidecar publish evidence; time windows are not exact row labels",
+  "evidence_sha256": {
+    "attack_plan.json": "1dabb1289456d4531afad520a74b6796a20809f2b5dbaa95c13b75ffcc943e3f",
+    "observer_messages.json": "af2e0c4a6a92ea77d022482be0b18f35a5cd487c6ffd5730b2790f52d96d14de",
+    "source_capture.json": "a260b697f0d04b2c98c74c328a6518712729091c78b1acb7da74d2e80097f6e0",
+    "event_02.json": "29ec4abfe64a507720012e250e7109d1b0bb50c72f016c7fdc52f84ea5dff8ed",
+    "event_03.json": "7ecc25a3a99b84a765c1150b2d7472d09b1bdb1ce830940ed31553b55903c6dc",
+    "event_01.json": "983e6a34ec091345ae540d6d2f160f4cfb5ecefbccfb5eeae23bb2061ecc924a"
+  },
+  "finished_at": "2026-09-24T15:29:52.160880+00:00"
+}

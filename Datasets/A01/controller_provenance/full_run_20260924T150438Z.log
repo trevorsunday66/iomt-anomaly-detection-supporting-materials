@@ -1,0 +1,40 @@
+[2026-09-24T15:04:38Z] Skipping git update for Pi because PHMS_GIT_UPDATE=0.
+[2026-09-24T15:04:38Z] Skipping git update for Kali because PHMS_GIT_UPDATE=0.
+[2026-09-24T15:04:38Z] Checking Pi services and telemetry.
+[2026-09-24T15:04:38Z] mosquitto is active
+[2026-09-24T15:04:43Z] Observed all expected MQTT devices: patient_a,patient_b
+[2026-09-24T15:04:43Z] Campaign filesystem has at least 5 GiB free.
+[2026-09-24T15:04:43Z] Checking SSH access to Kali.
+[2026-09-24T15:04:43Z] Comparing campaign source hashes between Pi and Kali.
+[2026-09-24T15:04:43Z] Pi and Kali campaign source hashes match.
+[2026-09-24T15:04:44Z] Pi/Kali UTC clock skew is within 5s.
+[2026-09-24T15:04:44Z] Kali tmux is available.
+[2026-09-24T15:04:44Z] Checking Kali Python dependencies before the long run.
+Kali Python dependencies OK
+Campaign metadata saved to: /home/pi1/phms/pi1-server/vulnerability_testing/logs/vuln_20260924T150444Z/campaign_metadata.json
+[2026-09-24T15:04:45Z] Prepared attack campaign: vuln_20260924T150444Z
+[2026-09-24T15:04:45Z] Pi evidence folder: /home/pi1/phms/pi1-server/vulnerability_testing/logs/vuln_20260924T150444Z
+[2026-09-24T15:04:45Z] Collection session: vuln_20260924T150444Z_pi
+[2026-09-24T15:04:45Z] Starting Pi telemetry collector for 0 seconds.
+[2026-09-24T15:04:45Z] Waiting for the Pi collector to write initial rows.
+[2026-09-24T15:04:50Z] Pi collector is writing telemetry for all expected devices (7 CSV lines).
+[2026-09-24T15:04:50Z] Starting Kali intermittent scheduler inside tmux session phms_kali_vuln_20260924T150444Z.
+[2026-09-24T15:04:50Z] Waiting for Kali completion marker: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/.kali_complete.json
+[2026-09-25T18:46:23Z] Requesting graceful Kali stop; waiting for active burst cleanup.
+[2026-09-25T18:46:24Z] Kali completion marker is present.
+[2026-09-25T18:46:24Z] Stopping Pi telemetry collector after Kali completion.
+[2026-09-25T18:46:25Z] Copying Kali results back into the Pi campaign folder (attempt 1/5).
+Wrote 49 per-test event timeline row(s) to /home/pi1/phms/pi1-server/vulnerability_testing/logs/vuln_20260924T150444Z/event_timeline.csv
+Kali evidence check OK: 30 burst manifest(s)
+[2026-09-25T18:46:26Z] Exporting bounded Mosquitto and PHMS server logs for vuln_20260924T150444Z.
+[2026-09-25T18:46:27Z] Validating vuln_20260924T150444Z.
+Campaign: /home/pi1/phms/pi1-server/vulnerability_testing/logs/vuln_20260924T150444Z
+[OK] Telemetry rows: 126236
+[OK] Devices: {'patient_b': 72043, 'patient_a': 54193}
+[OK] Labels: {'vulnerability_test': 126178, 'malformed_payload': 18, 'stale_vitals_replay': 5, 'vitals_drift': 6, 'impossible_vitals_combo': 3, 'device_identity_swap': 1, 'timestamp_skew': 4, 'unit_format_tamper': 3, 'boundary_vitals': 3, 'missing_vitals_fields': 1, 'topic_misuse': 1, 'device_topic_mismatch': 1, 'payload_size_probe': 4, 'out_of_order_timestamp': 3, 'publish_timing_jitter': 5}
+[OK] Attack labels observed: boundary_vitals, device_identity_swap, device_topic_mismatch, impossible_vitals_combo, malformed_payload, missing_vitals_fields, out_of_order_timestamp, payload_size_probe, publish_timing_jitter, stale_vitals_replay, timestamp_skew, topic_misuse, unit_format_tamper, vitals_drift
+[OK] Kali JSON files: 169
+Result: PASS
+[2026-09-25T18:46:34Z] Generating report for vuln_20260924T150444Z.
+[2026-09-25T18:46:34Z] Full PHMS run complete.
+[2026-09-25T18:46:34Z] Attack campaign: vuln_20260924T150444Z

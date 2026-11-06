@@ -1,0 +1,110 @@
+{
+  "target": "192.168.25.105:5000",
+  "ws_target": "192.168.25.105:81",
+  "timestamp": "2026-09-24T16:11:25Z",
+  "vulnerability_id": "PHMS-012",
+  "vulnerability_name": "Passive Eavesdropping Risk",
+  "tests": {
+    "http_plaintext": {
+      "encryption_enabled": false,
+      "http_accessible": true,
+      "https_accessible": false,
+      "exposed_data": {},
+      "vulnerable": true
+    },
+    "websocket_plaintext": {
+      "ws_accessible": false,
+      "wss_accessible": false,
+      "realtime_data_captured": false,
+      "captured_records": 0,
+      "data_types_exposed": [],
+      "vulnerable": false
+    },
+    "credential_exposure": {
+      "credentials_found": false,
+      "exposure_vectors": [],
+      "credential_types": [],
+      "vulnerable": false
+    },
+    "traffic_analysis": {
+      "pattern_detection": {
+        "average_response_time": "0.022s",
+        "response_sizes": [
+          9451,
+          9451,
+          9451,
+          9451,
+          9451
+        ],
+        "identifying_headers": {
+          "Server": "Werkzeug/3.1.8 Python/3.13.5"
+        }
+      },
+      "timing_analysis_possible": true,
+      "fingerprinting_possible": true,
+      "vulnerable": true
+    },
+    "mitm_feasibility": {
+      "no_https": true,
+      "no_certificate_validation": false,
+      "no_hsts": true,
+      "mitm_feasible": true,
+      "attack_surface": [
+        "Unencrypted HTTP allows passive interception",
+        "No HSTS header - downgrade attacks possible",
+        "Unencrypted WebSocket allows real-time interception"
+      ]
+    }
+  },
+  "vulnerabilities_found": [
+    {
+      "type": "Unencrypted HTTP Transport",
+      "severity": "High",
+      "cvss": 7.5,
+      "description": "Sensitive patient data transmitted in plaintext over HTTP",
+      "categories_exposed": [],
+      "impact": "Complete eavesdropping of patient health data"
+    },
+    {
+      "type": "Traffic Analysis Vulnerability",
+      "severity": "Medium",
+      "cvss": 5.3,
+      "description": "Network traffic patterns enable device identification and behavior analysis",
+      "impact": "Privacy compromise, patient activity monitoring"
+    },
+    {
+      "type": "Man-in-the-Middle Attack Feasible",
+      "severity": "High",
+      "cvss": 8.1,
+      "description": "Lack of encryption enables active traffic interception and modification",
+      "attack_vectors": [
+        "Unencrypted HTTP allows passive interception",
+        "No HSTS header - downgrade attacks possible",
+        "Unencrypted WebSocket allows real-time interception"
+      ],
+      "impact": "Data manipulation, credential theft, command injection"
+    }
+  ],
+  "intercepted_data_summary": {},
+  "risk_assessment": {
+    "overall_risk": "HIGH",
+    "total_vulnerabilities": 3,
+    "severity_breakdown": {
+      "Critical": 0,
+      "High": 2,
+      "Medium": 1,
+      "Low": 0
+    },
+    "eavesdropping_possible": true,
+    "clinical_impact": [
+      "Patient privacy violation (HIPAA)"
+    ],
+    "recommendations": [
+      "Enable ESP32 Flash Encryption for stored data",
+      "Implement HTTPS/TLS encryption for web interface",
+      "Use traffic padding to prevent pattern analysis",
+      "Use VPN or network segmentation for medical devices",
+      "Implement mutual TLS authentication"
+    ]
+  }
+}

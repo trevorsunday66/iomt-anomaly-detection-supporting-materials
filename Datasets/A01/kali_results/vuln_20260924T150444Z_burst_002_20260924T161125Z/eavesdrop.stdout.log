@@ -1,0 +1,43 @@
+============================================================
+PHMS EAVESDROPPING VULNERABILITY TEST (PHMS-012)
+============================================================
+Target: 192.168.25.105
+HTTP Port: 5000
+WebSocket Port: 81
+Time: 2026-09-24T16:11:25Z
+============================================================
+
+[*] Testing HTTP plaintext exposure...
+    ✓ HTTP is accessible (unencrypted)
+    ✗ HTTPS is NOT available
+
+[*] Testing WebSocket plaintext exposure...
+    ✗ Encrypted WebSocket (WSS) NOT available
+
+[*] Testing credential exposure in network traffic...
+
+[*] Testing traffic analysis feasibility...
+    ⚠  Traffic patterns identifiable
+       Average response time: 0.022s
+    ⚠  Device fingerprinting possible via headers:
+       Server: Werkzeug/3.1.8 Python/3.13.5
+
+[*] Testing MITM attack feasibility...
+    ⚠  No HTTPS - traffic can be intercepted
+    ⚠  No HSTS header - SSL stripping possible
+    ⚠  Unencrypted WebSocket - real-time MITM possible
+
+[*] Generating risk assessment...
+
+============================================================
+RISK ASSESSMENT - EAVESDROPPING VULNERABILITY
+============================================================
+Overall Risk Level: HIGH
+Total Vulnerabilities: 3
+  Critical: 0
+  High:     2
+  Medium:   1
+  Low:      0
+============================================================
+
+[+] Results saved to /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_002_20260924T161125Z/eavesdrop.json

@@ -1,0 +1,98 @@
+{
+  "kind": "timing_jitter",
+  "device": "patient_a",
+  "profile": "cluster",
+  "started_at": "2026-09-25T03:40:41.786697+00:00",
+  "messages": [
+    {
+      "timestamp": "2026-09-25T03:40:41.910639+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:42.529610+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:45.538827+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:46.056235+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:48.724862+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:49.337066+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:52.410574+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:52.904005+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:55.169684+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:55.793262+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:58.436239+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    },
+    {
+      "timestamp": "2026-09-25T03:40:59.018210+00:00",
+      "topic": "phms/patient_a/data",
+      "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+      "bytes": 695,
+      "publish_ack": true
+    }
+  ],
+  "success": true,
+  "cleanup": {
+    "required": false
+  },
+  "payload_sha256": "dcfb7e04238d1807137ae4182a4ef25bd2f7aa0bc11032d1417ba07c99001a74",
+  "finished_at": "2026-09-25T03:40:59.018229+00:00"
+}

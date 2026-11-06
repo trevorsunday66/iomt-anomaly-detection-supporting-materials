@@ -1,0 +1,124 @@
+Writing evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_002_20260924T161125Z
+Running eavesdrop...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_002_20260924T161125Z/manifest.json
+Writing evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_008_20260924T223528Z
+Running vitals_integrity_attack...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_008_20260924T223528Z/manifest.json
+Writing evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_012_20260925T024342Z
+Running weak_security_baseline...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_012_20260925T024342Z/manifest.json
+Writing evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_015_20260925T052412Z
+Running credential...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_015_20260925T052412Z/manifest.json
+Writing evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_017_20260925T071953Z
+Running http_security...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_017_20260925T071953Z/manifest.json
+
+[BURST 1] 2026-09-24T15:28:11Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_001_20260924T152811Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000001.json
+
+[BURST 2] 2026-09-24T16:11:25Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_002_20260924T161125Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests eavesdrop
+
+[BURST 3] 2026-09-24T16:55:08Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_003_20260924T165508Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000003.json
+
+[BURST 4] 2026-09-24T18:25:51Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_004_20260924T182551Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000004.json
+
+[BURST 5] 2026-09-24T19:14:10Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_005_20260924T191410Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000005.json
+
+[BURST 6] 2026-09-24T20:38:19Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_006_20260924T203819Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000006.json
+
+[BURST 7] 2026-09-24T21:22:27Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_007_20260924T212227Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000007.json
+
+[BURST 8] 2026-09-24T22:35:28Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_008_20260924T223528Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests vitals_integrity_attack
+
+[BURST 9] 2026-09-25T00:02:28Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_009_20260925T000228Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000009.json
+
+[BURST 10] 2026-09-25T01:16:49Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_010_20260925T011649Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000010.json
+
+[BURST 11] 2026-09-25T01:52:41Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_011_20260925T015241Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000011.json
+
+[BURST 12] 2026-09-25T02:43:42Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_012_20260925T024342Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests weak_security_baseline
+
+[BURST 13] 2026-09-25T03:40:05Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_013_20260925T034005Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000013.json
+
+[BURST 14] 2026-09-25T04:14:50Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_014_20260925T041450Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000014.json
+
+[BURST 15] 2026-09-25T05:24:12Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_015_20260925T052412Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests credential
+
+[BURST 16] 2026-09-25T06:21:01Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_016_20260925T062101Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000016.json
+
+[BURST 17] 2026-09-25T07:19:53Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_017_20260925T071953Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests http_security
+
+[BURST 18] 2026-09-25T08:31:19Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_018_20260925T083119Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000018.json
+
+[BURST 19] 2026-09-25T09:14:53Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_019_20260925T091453Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000019.json
+
+[BURST 20] 2026-09-25T09:49:38Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_020_20260925T094938Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000020.jsonWriting evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_024_20260925T132323Z
+Running mqtt_protocol_metrics...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_024_20260925T132323Z/manifest.json
+Writing evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_027_20260925T154519Z
+Running logging...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_027_20260925T154519Z/manifest.json
+Writing evidence to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_029_20260925T172735Z
+Running input_validation...
+  returncode: 0
+Manifest saved to: /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/vuln_20260924T150444Z_burst_029_20260925T172735Z/manifest.json
+
+
+[BURST 21] 2026-09-25T10:24:24Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_021_20260925T102424Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000021.json
+
+[BURST 22] 2026-09-25T11:45:04Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_022_20260925T114504Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000022.json
+
+[BURST 23] 2026-09-25T12:20:53Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_023_20260925T122053Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000023.json
+
+[BURST 24] 2026-09-25T13:23:23Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_024_20260925T132323Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests mqtt_protocol_metrics
+
+[BURST 25] 2026-09-25T14:17:17Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_025_20260925T141717Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000025.json
+
+[BURST 26] 2026-09-25T15:06:15Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_026_20260925T150615Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000026.json
+
+[BURST 27] 2026-09-25T15:45:19Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_027_20260925T154519Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests logging
+
+[BURST 28] 2026-09-25T16:18:44Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_028_20260925T161844Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000028.json
+
+[BURST 29] 2026-09-25T17:27:35Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_vulnerability_suite.py --target 192.168.25.105 --port 5000 --mqtt-port 1883 --include-all-nondos --mqtt-capture-duration 120 --mqtt-capture-max-messages 200 --mqtt-replay-limit 20 --timeout 20 --campaign vuln_20260924T150444Z_burst_029_20260925T172735Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --tests input_validation
+
+[BURST 30] 2026-09-25T18:36:31Z
+/usr/bin/python3 /home/pi2/phms-attack/vulnerability_testing/scripts/run_randomized_mqtt_burst.py --target 192.168.25.105 --mqtt-port 1883 --campaign vuln_20260924T150444Z_burst_030_20260925T183631Z --log-dir /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results --plan /home/pi2/phms-attack-results/vuln_20260924T150444Z/kali_results/plan_000030.json
+Campaign complete; seed=720829183800191030; bursts=30
+Coverage: {"complete": true, "observed": [["malformed_payload", "patient_a", "cluster"], ["malformed_payload", "patient_a", "isolated"], ["malformed_payload", "patient_b", "cluster"], ["malformed_payload", "patient_b", "isolated"], ["payload_size", "patient_a", "cluster"], ["payload_size", "patient_a", "isolated"], ["payload_size", "patient_b", "cluster"], ["payload_size", "patient_b", "isolated"], ["replay", "patient_a", "cluster"], ["replay", "patient_a", "isolated"], ["replay", "patient_b", "cluster"], ["replay", "patient_b", "isolated"], ["retained_abuse", "patient_a", "cluster"], ["retained_abuse", "patient_a", "isolated"], ["retained_abuse", "patient_b", "cluster"], ["retained_abuse", "patient_b", "isolated"], ["spoofed_device", "patient_a", "cluster"], ["spoofed_device", "patient_a", "isolated"], ["spoofed_device", "patient_b", "cluster"], ["spoofed_device", "patient_b", "isolated"], ["timing_jitter", "patient_a", "cluster"], ["timing_jitter", "patient_a", "isolated"], ["timing_jitter", "patient_b", "cluster"], ["timing_jitter", "patient_b", "isolated"], ["topic_device_mismatch", "patient_a", "cluster"], ["topic_device_mismatch", "patient_a", "isolated"], ["topic_device_mismatch", "patient_b", "cluster"], ["topic_device_mismatch", "patient_b", "isolated"], ["topic_misuse", "patient_a", "cluster"], ["topic_misuse", "patient_a", "isolated"], ["topic_misuse", "patient_b", "cluster"], ["topic_misuse", "patient_b", "isolated"]], "missing": []}
