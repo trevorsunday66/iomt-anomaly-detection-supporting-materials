@@ -1,0 +1,2090 @@
+[
+  {
+    "selection_rule": "flip_same_supported_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "network",
+      "request_id": "w0849e582511094d2e2a4618d",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 18:26:20+00:00",
+      "seed_count": 3,
+      "positive_decisions": 2,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": true,
+      "same_nonempty_claim_set_opposite_boolean_pair": true,
+      "same_supported_claim_set_opposite_boolean_pair": true,
+      "any_contradicted": false,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": true,
+      "mixed_supported_only_and_contradicted": false,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": false,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 1,
+      "same_feature_reference_set_opposite_boolean_pairs": 1,
+      "claim_count": 7,
+      "unique_claim_occurrences": 7,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 7,
+      "contradicted_claims": 0,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 3,
+      "contradicted_responses": 0,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.15,
+      "score_max": 0.85,
+      "score_span": 0.7
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Inter-arrival mean and max are above reference p95, indicating a significant deviation.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Inter-arrival mean and max are above normal reference.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most features are within normal bounds, with only inter_arrival_ms__mean and inter_arrival_ms__max above normal ranges.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_with_contradiction; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "network",
+      "request_id": "w02a6766eda739d8c5279374a",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-25 01:16:40+00:00",
+      "seed_count": 3,
+      "positive_decisions": 2,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": true,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 8,
+      "unique_claim_occurrences": 8,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 4,
+      "contradicted_claims": 4,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 1,
+      "contradicted_responses": 2,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.15,
+      "score_max": 0.85,
+      "score_span": 0.7
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Inter-arrival mean and min show significant deviation from reference.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "inter_arrival_ms__min",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "inter_arrival_ms__max",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Inter-arrival mean and min exceed reference max, indicating significant deviation.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "inter_arrival_ms__min",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "contradicted"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most measurements are within normal bounds with mild deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "stable_with_changed_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "network",
+      "request_id": "w00c52c5ca6f05f56d9dcb8e4",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_b/data",
+      "window_start": "2026-09-24 09:54:30+00:00",
+      "seed_count": 3,
+      "positive_decisions": 0,
+      "flipped": false,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": false,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": true,
+      "mixed_supported_only_and_contradicted": false,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": false,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 0,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 9,
+      "contradicted_claims": 0,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 3,
+      "contradicted_responses": 0,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 2,
+      "score_min": 0.15,
+      "score_max": 0.15,
+      "score_span": 0.0
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most measurements are within normal bounds, with only minor deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most measurements are within reference bounds, with minor deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most measurements are within normal bounds, with only minor deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_same_supported_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "system",
+      "request_id": "w01746fbf5eba1b29ed232e06",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 13:53:15+00:00",
+      "seed_count": 3,
+      "positive_decisions": 1,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": true,
+      "same_nonempty_claim_set_opposite_boolean_pair": true,
+      "same_supported_claim_set_opposite_boolean_pair": true,
+      "any_contradicted": false,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": true,
+      "mixed_supported_only_and_contradicted": false,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": false,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 1,
+      "same_feature_reference_set_opposite_boolean_pairs": 1,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 9,
+      "contradicted_claims": 0,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 3,
+      "contradicted_responses": 0,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.1,
+      "score_max": 0.85,
+      "score_span": 0.75
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "score": 0.1,
+        "reason": "Most measurements are within normal bounds with isolated deviations.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__min",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.1,
+        "reason": "Most features are within normal ranges; only some show mild deviations.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Several features show significant deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_with_contradiction; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "system",
+      "request_id": "w05781d278f8f248ef2bd650c",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-25 06:21:55+00:00",
+      "seed_count": 3,
+      "positive_decisions": 1,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": true,
+      "same_nonempty_claim_set_opposite_boolean_pair": true,
+      "same_supported_claim_set_opposite_boolean_pair": true,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 1,
+      "same_feature_reference_set_opposite_boolean_pairs": 1,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 8,
+      "contradicted_claims": 1,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.15,
+      "score_max": 0.85,
+      "score_span": 0.7
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most features are within normal bounds, with only minor deviations.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most measurements are within normal ranges, with mild deviations in free_heap_bytes__mean and cpu_temp_f__mean.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__max",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Free heap bytes mean and max are below reference, suggesting memory pressure.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "stable_with_changed_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "system",
+      "request_id": "w00c52c5ca6f05f56d9dcb8e4",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_b/data",
+      "window_start": "2026-09-24 09:54:30+00:00",
+      "seed_count": 3,
+      "positive_decisions": 0,
+      "flipped": false,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": false,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": true,
+      "mixed_supported_only_and_contradicted": false,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": false,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 0,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 9,
+      "contradicted_claims": 0,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 3,
+      "contradicted_responses": 0,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 2,
+      "score_min": 0.0,
+      "score_max": 0.1,
+      "score_span": 0.1
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "score": 0.1,
+        "reason": "Observations broadly consistent with normal operation.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__max",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.1,
+        "reason": "Observations broadly consistent with normal operation.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__max",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "score": 0.0,
+        "reason": "Observations are broadly consistent with normal operation.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__max",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_with_contradiction; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "combined",
+      "request_id": "w03109222e040e7803ebacb2b",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_b/data",
+      "window_start": "2026-09-24 09:53:45+00:00",
+      "seed_count": 3,
+      "positive_decisions": 1,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": true,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 6,
+      "contradicted_claims": 3,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.15,
+      "score_max": 0.85,
+      "score_span": 0.7
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most measurements are within normal bounds, with minor deviations.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most measurements are within reference bounds, with minor deviations in some features.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Several features show significant deviations from reference ranges.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "stable_with_changed_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_off",
+      "view": "combined",
+      "request_id": "w0083b9940dd6092674833e83",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 20:39:30+00:00",
+      "seed_count": 3,
+      "positive_decisions": 3,
+      "flipped": false,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": false,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": true,
+      "mixed_supported_only_and_contradicted": false,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": false,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 0,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 9,
+      "contradicted_claims": 0,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 3,
+      "contradicted_responses": 0,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 2,
+      "score_min": 0.85,
+      "score_max": 0.85,
+      "score_span": 0.0
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Multiple features show significant deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Multiple features show significant deviations from normal reference ranges.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Multiple features show significant deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_same_supported_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "network",
+      "request_id": "w1239c18f517ece126c4e3b15",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_b/data",
+      "window_start": "2026-09-25 14:17:45+00:00",
+      "seed_count": 3,
+      "positive_decisions": 2,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": true,
+      "same_nonempty_claim_set_opposite_boolean_pair": true,
+      "same_supported_claim_set_opposite_boolean_pair": true,
+      "any_contradicted": false,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": true,
+      "mixed_supported_only_and_contradicted": false,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": false,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 1,
+      "same_feature_reference_set_opposite_boolean_pairs": 1,
+      "claim_count": 7,
+      "unique_claim_occurrences": 7,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 7,
+      "contradicted_claims": 0,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 3,
+      "contradicted_responses": 0,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.1,
+      "score_max": 0.85,
+      "score_span": 0.75
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "payload_entropy__mean exceeds p99 threshold (4.9925 vs 4.994667) indicating a significant departure.",
+        "claims": [
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.1,
+        "reason": "Most metrics within reference bounds; deviations isolated and mild.",
+        "claims": [
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.7,
+        "reason": "Three features (payload_entropy__mean, payload_entropy__min, payload_entropy__max) are above p01_p99 thresholds.",
+        "claims": [
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_with_contradiction; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "network",
+      "request_id": "w01dfadf44e653faab2adeae3",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_b/data",
+      "window_start": "2026-09-24 13:20:45+00:00",
+      "seed_count": 3,
+      "positive_decisions": 1,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": true,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 6,
+      "contradicted_claims": 3,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.0,
+      "score_max": 0.85,
+      "score_span": 0.85
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Multiple features show significant deviations from reference bounds.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.0,
+        "reason": "Most features within reference bounds; deviations are isolated and mild.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "score": 0.1,
+        "reason": "Most metrics within reference bounds with minor isolated deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "stable_with_changed_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "network",
+      "request_id": "w0083b9940dd6092674833e83",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 20:39:30+00:00",
+      "seed_count": 3,
+      "positive_decisions": 3,
+      "flipped": false,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": true,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 0,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 8,
+      "contradicted_claims": 1,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.8,
+      "score_max": 0.85,
+      "score_span": 0.04999999999999993
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Multiple features show significant deviations: avg_msg_size_bytes__mean above max, message_count below p01, observed_messages_per_second below p01.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "message_count",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "observed_messages_per_second",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Multiple features show significant deviations: avg_msg_size_bytes_mean (above max), inter_arrival_ms_mean (above p95), and flow_bytes_per_sec_mean (below median).",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.8,
+        "reason": "Multiple features show significant deviations from reference ranges.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_same_supported_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "system",
+      "request_id": "w01746fbf5eba1b29ed232e06",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 13:53:15+00:00",
+      "seed_count": 3,
+      "positive_decisions": 2,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": true,
+      "same_nonempty_claim_set_opposite_boolean_pair": true,
+      "same_supported_claim_set_opposite_boolean_pair": true,
+      "any_contradicted": false,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": true,
+      "mixed_supported_only_and_contradicted": false,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": false,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 1,
+      "same_feature_reference_set_opposite_boolean_pairs": 1,
+      "claim_count": 5,
+      "unique_claim_occurrences": 5,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 5,
+      "contradicted_claims": 0,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 3,
+      "contradicted_responses": 0,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.0,
+      "score_max": 0.85,
+      "score_span": 0.85
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.8,
+        "reason": "Multiple features show significant deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.0,
+        "reason": "Most features within reference bounds; only wifi_rssi_dbm__std exceeds p99 but single feature deviation insufficient.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "wifi_rssi_dbm__std exceeds p99 threshold",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_with_contradiction; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "system",
+      "request_id": "w01f03b5e5f99bc5d233715c5",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 08:50:35+00:00",
+      "seed_count": 3,
+      "positive_decisions": 1,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": true,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 7,
+      "contradicted_claims": 2,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.0,
+      "score_max": 0.85,
+      "score_span": 0.85
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "score": 0.1,
+        "reason": "Most features within normal bounds; free_heap_bytes__mean at p95, cpu_temp_f__mean below median, but no coherent pattern.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "score": 0.0,
+        "reason": "Observations broadly consistent with normal operation; mild deviations isolated to individual features without coherent pattern.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Free heap bytes mean and min at upper reference bounds with coherent pattern",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "free_heap_bytes__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "stable_with_changed_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "system",
+      "request_id": "w0083b9940dd6092674833e83",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 20:39:30+00:00",
+      "seed_count": 3,
+      "positive_decisions": 3,
+      "flipped": false,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 0,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 8,
+      "contradicted_claims": 1,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.7,
+      "score_max": 0.85,
+      "score_span": 0.15000000000000002
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.7,
+        "reason": "Free heap bytes metrics show coherent deviations below p01 thresholds.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__min",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "free_heap_bytes__mean and free_heap_bytes__max below p01_p99 thresholds",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "free_heap_bytes__max below reference min, free_heap_bytes__mean below p01, wifi_rssi_dbm__std above p99",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_same_supported_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "combined",
+      "request_id": "w07641c9ba858f2f8cf360853",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_b/data",
+      "window_start": "2026-09-25 03:40:40+00:00",
+      "seed_count": 3,
+      "positive_decisions": 2,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": true,
+      "same_nonempty_claim_set_opposite_boolean_pair": true,
+      "same_supported_claim_set_opposite_boolean_pair": true,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": false,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 1,
+      "same_feature_reference_set_opposite_boolean_pairs": 1,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 7,
+      "contradicted_claims": 2,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.2,
+      "score_max": 0.8,
+      "score_span": 0.6000000000000001
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.8,
+        "reason": "Multiple features show significant deviations from reference ranges.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.7,
+        "reason": "Multiple features (free_heap_bytes__mean, payload_entropy__mean, free_heap_bytes__max, payload_entropy__min) show extreme deviations below p01 or above p99 thresholds.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "score": 0.2,
+        "reason": "Free heap bytes at p01 and below, but isolated.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "flip_with_contradiction; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "combined",
+      "request_id": "w01dfadf44e653faab2adeae3",
+      "label": 0,
+      "label_name": "normal",
+      "campaign": "normal_20260923T161519Z",
+      "topic": "phms/patient_b/data",
+      "window_start": "2026-09-24 13:20:45+00:00",
+      "seed_count": 3,
+      "positive_decisions": 1,
+      "flipped": true,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": true,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 2,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 6,
+      "contradicted_claims": 3,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.0,
+      "score_max": 0.3,
+      "score_span": 0.3
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "score": 0.0,
+        "reason": "All features within reference bounds with no significant deviations.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.3,
+        "reason": "Multiple features exceed reference thresholds.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "wifi_rssi_dbm__min",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "score": 0.15,
+        "reason": "Most metrics within reference bounds with minor deviations",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__max",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "selection_rule": "stable_with_changed_claim_set; lexicographically first eligible request ID; illustrative, not random",
+    "window": {
+      "profile": "qwen_on",
+      "view": "combined",
+      "request_id": "w0083b9940dd6092674833e83",
+      "label": -1,
+      "label_name": "unknown",
+      "campaign": "vuln_20260924T150444Z",
+      "topic": "phms/patient_a/data",
+      "window_start": "2026-09-24 20:39:30+00:00",
+      "seed_count": 3,
+      "positive_decisions": 3,
+      "flipped": false,
+      "claim_set_changed": true,
+      "feature_reference_set_changed": true,
+      "same_claim_set_opposite_boolean_pair": false,
+      "same_nonempty_claim_set_opposite_boolean_pair": false,
+      "same_supported_claim_set_opposite_boolean_pair": false,
+      "any_contradicted": true,
+      "any_unverifiable": false,
+      "all_claims_supported_nonempty": false,
+      "mixed_supported_only_and_contradicted": true,
+      "shared_reference_positions_changed": true,
+      "claim_correctness_status_changed": true,
+      "any_empty_claim_response": false,
+      "any_duplicate_claim_occurrences": false,
+      "opposite_boolean_pairs": 0,
+      "same_claim_set_opposite_boolean_pairs": 0,
+      "same_feature_reference_set_opposite_boolean_pairs": 0,
+      "claim_count": 9,
+      "unique_claim_occurrences": 9,
+      "duplicate_claim_occurrences": 0,
+      "supported_claims": 7,
+      "contradicted_claims": 2,
+      "unverifiable_claims": 0,
+      "supported_only_responses": 2,
+      "contradicted_responses": 1,
+      "unverifiable_responses": 0,
+      "empty_claim_responses": 0,
+      "reason_distinct_count": 3,
+      "score_min": 0.85,
+      "score_max": 0.95,
+      "score_span": 0.09999999999999998
+    },
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "score": 0.85,
+        "reason": "Multiple features show significant deviations: avg_msg_size_bytes__mean (above max), inter_arrival_ms__mean (above p99), wifi_rssi_dbm__std (above p99), and free_heap_bytes__mean (below p99).",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          }
+        ]
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "score": 0.95,
+        "reason": "Multiple features show significant deviations: avg_msg_size_bytes__mean (above max), inter_arrival_ms__mean (above max), flow_bytes_per_sec__mean (below min).",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "min_max",
+            "position": "above",
+            "verdict": "contradicted"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted"
+          }
+        ]
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "score": 0.9,
+        "reason": "Multiple features show significant deviations: avg_msg_size_bytes_mean (37.425 above p99), inter_arrival_ms_mean (459.066 above p99), flow_bytes_per_sec_mean (-75.9 from median), free_heap_bytes_mean (-244.0 from p01).",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported"
+          }
+        ]
+      }
+    ]
+  }
+]

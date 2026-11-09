@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering\small
+\caption{Qwen Boolean disagreement across seeds 42--44. Each cell reports windows with at least one changed decision divided by windows with valid responses for all three seeds.}
+\label{tab:seed_breakdown}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Thinking & View & Normal & Exposure & Unknown & Total \\
+\midrule
+Off & Network & 3/360 & 3/67 & 44/651 & 50/1078 \\
+Off & System & 10/360 & 6/67 & 44/651 & 60/1078 \\
+Off & Combined & 26/360 & 0/67 & 1/651 & 27/1078 \\
+On & Network & 50/360 & 1/67 & 119/651 & 170/1078 \\
+On & System & 54/360 & 0/67 & 3/651 & 57/1078 \\
+On & Combined & 147/360 & 0/67 & 43/650 & 190/1077 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\textwidth}{\footnotesize The incomplete Combined thinking response was on an unknown window. Disagreements on unknown windows measure output instability, not detection errors. Views and seeds reuse observations and are not independent trials.}
+\end{table*}

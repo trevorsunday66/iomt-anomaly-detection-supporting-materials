@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "inputs": {
+    "LLM/Results/Prepared/protocol.json": {
+      "sha256": "a8a506e66b0aa36cb33c28f61e2cdf4883df7628eb40e626377dfe0806044ca2",
+      "bytes": 3855
+    },
+    "LLM/Results/Prepared/profiles.json": {
+      "sha256": "2532f9836160b47f6622f85e9c09eeac419da73dad2538cabbaa065cc0d70507",
+      "bytes": 1397
+    },
+    "LLM/Results/Prepared/private/cohort.csv": {
+      "sha256": "51edae6a72918343c9f47df7da9c9bcb85ed5205bbe31b8e4050ca92ec9ceb87",
+      "bytes": 180525
+    },
+    "LLM/Results/Prepared/tasks.json": {
+      "sha256": "fc6126b39c76a0f50e82e692d68a97e46e57d112156cd49b880d0fc896598f38",
+      "bytes": 1558235
+    },
+    "LLM/Results/Prepared/inference/references.json": {
+      "sha256": "2a6cc815980d635a970687a52385901dfc079301be814b5981a366435b40a27a",
+      "bytes": 15448
+    },
+    "LLM/Results/Prepared/inference/network.jsonl": {
+      "sha256": "8b8ba28ce042e6862ce9aaa00a975ce9e145e2004f0d8a117a09fd360b556763",
+      "bytes": 824696
+    },
+    "LLM/Results/Prepared/inference/system.jsonl": {
+      "sha256": "20e56ba16bf9e4d40ea4558fe34e6274585d1785548c75f175036cca83e01a0e",
+      "bytes": 422016
+    },
+    "LLM/Results/Prepared/inference/combined.jsonl": {
+      "sha256": "411bb4048ca758dca294be684ca92e6b847b47ac4414760d39516e7ec25477cc",
+      "bytes": 1185266
+    },
+    "LLM/Results/Evaluation/decisions.csv": {
+      "sha256": "c2af5a8f8351c39f7700091c4123464b29bce3dbd4fe15dcc1bdcbe853e4d62f",
+      "bytes": 36865638
+    },
+    "LLM/Results/Raw_Responses/native_responses.jsonl": {
+      "sha256": "8744b22720abe2312a443cbe3c79f37225183fa5b16f50847ceb8ba4fcd0ed06",
+      "bytes": 104694913
+    }
+  },
+  "script_sha256": "872faf03dbbd9e088e664e4815d094abfdb46e09329b0806e7efd8a2e1f035f9",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "entrypoint": "Analysis/Code/audit_saved_qwen.py",
+  "input_root": ".",
+  "input_path_basis": "Input hash keys are relative to the selected input root.",
+  "path_policy_sha256": "abc0eba1fdf386a849889daa0ba0ad944ce2fcac726e70d018c7aa8148161f98",
+  "planned_response_records": 19404,
+  "native_qwen_records_reconciled": 19404,
+  "valid_native_qwen_records_reconciled": 19403,
+  "invalid_responses": 1,
+  "structured_claim_occurrences_independently_checked": 55268,
+  "all_valid_response_claim_verdict_counts": {
+    "supported": 48072,
+    "contradicted": 7196
+  },
+  "planned_mode_view_window_groups": 6468,
+  "complete_mode_view_window_groups": 6467,
+  "excluded_mode_view_window_groups": 1,
+  "valid_responses_in_complete_groups": 19401,
+  "valid_responses_excluded_from_summaries": 2,
+  "seed_pairs_in_complete_groups": 19401,
+  "cohort_windows": 1078,
+  "cohort_label_counts": {
+    "0": 360,
+    "-1": 651,
+    "1": 67
+  },
+  "frozen_inputs_unchanged": true,
+  "new_inference": false,
+  "new_model_fit": false,
+  "paper_changed": false,
+  "output_sha256": {
+    "excluded_groups.csv": "df010c4a22ebf6112bbb6c071c93e6fd1b15ac3755fc7be01bfbf5d9208af980",
+    "invalid_responses.json": "6f0722f9a981f71a4349bba814e293f77c00ef00f17f659fe255873db9aa3fbd",
+    "matched_mode_per_window.csv": "57389f27a36b172306c5af262714e1bccebd645c4f9003b045e8ba6d52afa675",
+    "matched_mode_summary.csv": "383faa06016b619c7be1b04dd13c325abb1cf0d2076bb74d4f04bf9e132d4524",
+    "methods.json": "d9d4e9908891f24fa03355a1dd76ce5f0a459d33a73d10abcd85a329fd6333cd",
+    "pairwise.csv": "a81773070d8753d564810940612f58d5cddb89200d84b6999ec7fb906054bdf9",
+    "pairwise_summary.csv": "5012e6f1f39495c029eaac917fcb6aed8e1a0562eae8f59dd4c50f4c68c0f1db",
+    "per_response.csv": "51c75df6f23d2414eae43d205848100482d2e21d9eb4eecabd8252874d9d5cab",
+    "per_window.csv": "de02d46893019578ff184deeacdd978609ce98a1f436103d6a2ec55ac096db3c",
+    "response_summary.csv": "aed1ab2520dd747a7782853e144b206d44dd47cb41830e8086cd0fbbad4c2cb3",
+    "selected_cases.json": "ab9049f2ec14fe9b150d88e3b95745cd2fc9d1c574290bde3e6623b545aa5dd7",
+    "window_summary.csv": "6c30f8f45568c71692137168ea3191046f5107dbc7e455547b9813bac17f7661"
+  }
+}

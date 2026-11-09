@@ -83,7 +83,7 @@ LOF_CONFIG = {'experiment': 'LOF across the three N01/A01 feature views',
                        'score/alert and fitting_row_not_scored status',
  'evaluations': ['All N01/A01 non-fitting windows; calibration and matched development reported '
                  'separately',
-                 'Exactly the saved 1,078-window development cohort'],
+                 'Exactly the saved matched development cohort'],
  'event_policy': 'An event is detected when any eligible exposure window in the matched cohort is '
                  'flagged',
  'unknown_policy': 'Unknown labels are excluded from classification metrics and reported as alert '
@@ -556,9 +556,17 @@ def fit_lof(windows,frozen,config,threshold_function):
 def frame(path):
     f=pd.read_csv(path,float_precision='round_trip',low_memory=False)
     for col in f.select_dtypes(include=['object','str']):f[col]=f[col].fillna('')
+    require(not f.empty,'Input windows are empty')
     require(set(f.campaign)==CAMPAIGNS,'Input must contain only the two packaged recordings')
     require(not f.duplicated(KEYS).any(),'Duplicate physical windows')
-    require(len(f)==71348,'Expected 71,348 N01/A01 windows')
+    saved_path=ROOT/'Datasets/Processed/windows_N01_A01.csv'
+    if Path(path).resolve()!=saved_path.resolve():
+        # A regenerated input must cover the saved identities, whatever their count.
+        saved=pd.read_csv(saved_path,usecols=KEYS,low_memory=False)
+        require(not saved.empty and not saved.duplicated(KEYS).any(),'Invalid saved window identities')
+        current_keys=pd.MultiIndex.from_frame(f[KEYS]).sort_values()
+        saved_keys=pd.MultiIndex.from_frame(saved[KEYS]).sort_values()
+        require(current_keys.equals(saved_keys),'Input window identities differ from saved windows')
     return f
 
 

@@ -1,0 +1,52 @@
+[
+  {
+    "path": "LLM/Results/Evaluation/decisions.csv",
+    "bytes": 36865638,
+    "sha256": "c2af5a8f8351c39f7700091c4123464b29bce3dbd4fe15dcc1bdcbe853e4d62f"
+  },
+  {
+    "path": "LLM/Results/Raw_Responses/native_responses.jsonl",
+    "bytes": 104694913,
+    "sha256": "8744b22720abe2312a443cbe3c79f37225183fa5b16f50847ceb8ba4fcd0ed06"
+  },
+  {
+    "path": "LLM/Results/Prepared/profiles.json",
+    "bytes": 1397,
+    "sha256": "2532f9836160b47f6622f85e9c09eeac419da73dad2538cabbaa065cc0d70507"
+  },
+  {
+    "path": "LLM/Results/Prepared/inference/references.json",
+    "bytes": 15448,
+    "sha256": "2a6cc815980d635a970687a52385901dfc079301be814b5981a366435b40a27a"
+  },
+  {
+    "path": "LLM/Results/Prepared/inference/network.jsonl",
+    "bytes": 824696,
+    "sha256": "8b8ba28ce042e6862ce9aaa00a975ce9e145e2004f0d8a117a09fd360b556763"
+  },
+  {
+    "path": "LLM/Results/Prepared/inference/system.jsonl",
+    "bytes": 422016,
+    "sha256": "20e56ba16bf9e4d40ea4558fe34e6274585d1785548c75f175036cca83e01a0e"
+  },
+  {
+    "path": "LLM/Results/Prepared/inference/combined.jsonl",
+    "bytes": 1185266,
+    "sha256": "411bb4048ca758dca294be684ca92e6b847b47ac4414760d39516e7ec25477cc"
+  },
+  {
+    "path": "LLM/Results/Prepared/private/cohort.csv",
+    "bytes": 180525,
+    "sha256": "51edae6a72918343c9f47df7da9c9bcb85ed5205bbe31b8e4050ca92ec9ceb87"
+  },
+  {
+    "path": "LLM/Results/Prepared/protocol.json",
+    "bytes": 3855,
+    "sha256": "a8a506e66b0aa36cb33c28f61e2cdf4883df7628eb40e626377dfe0806044ca2"
+  },
+  {
+    "path": "LLM/Results/Prepared/tasks.json",
+    "bytes": 1558235,
+    "sha256": "fc6126b39c76a0f50e82e692d68a97e46e57d112156cd49b880d0fc896598f38"
+  }
+]

@@ -1,0 +1,1959 @@
+[
+  {
+    "profile": "qwen_off",
+    "view": "network",
+    "request_id": "w3fd306ceb92f1a1db9ee5b72",
+    "label": 0,
+    "label_name": "normal",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-24 09:53:10+00:00",
+    "score_span": 0.75,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Multiple features show pronounced deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 44.32,
+            "lower_bound": 33.48,
+            "upper_bound": 45.9325,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 692.266667,
+            "lower_bound": 684.05,
+            "upper_bound": 697.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 1385.233333,
+            "lower_bound": 1198.675,
+            "upper_bound": 2051.9,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "51c4905085a73bf8e1d37ec3002f30982d1e224a60d4d0bb71657f8bcba054da"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Several features show pronounced departures from normal ranges.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 44.32,
+            "lower_bound": 33.48,
+            "upper_bound": 45.9325,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "mqtt_msg_rate_per_min__std",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 0.0,
+            "lower_bound": 0.0,
+            "upper_bound": 1.076766,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "mqtt_msg_rate_per_min__min",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 44.32,
+            "lower_bound": 33.32,
+            "upper_bound": 44.62,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "2ea6e597cf5e7ce7171cdc7bc93af21fc71558ed0a713dced56a1aacd688ac3a"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most measurements align with normal ranges, with minor deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 44.32,
+            "lower_bound": 33.48,
+            "upper_bound": 45.9325,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 692.266667,
+            "lower_bound": 684.05,
+            "upper_bound": 697.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 4.991667,
+            "lower_bound": 4.937,
+            "upper_bound": 4.998667,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "f509dba8a1e658307752f9383967d172d387d4b9a0042f2976461280a857325a"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_off",
+    "view": "network",
+    "request_id": "w20096870e2b5746461aa8f68",
+    "label": 1,
+    "label_name": "exposure",
+    "topic": "phms/patient_a/data",
+    "window_start": "2026-09-25 11:45:15+00:00",
+    "score_span": 0.7,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "anomaly_score": 0.15,
+        "reason": "Most measurements are within normal bounds, with only a few showing mild deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 33.72,
+            "lower_bound": 33.48,
+            "upper_bound": 45.9325,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 541.382096,
+            "lower_bound": 0.51316,
+            "upper_bound": 35.041759,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 3.262412,
+            "lower_bound": 0.0,
+            "upper_bound": 0.386221,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "5043ddbfb1fe89ca7f720ae2e12e86be6548692d2525ff24afae1c5f45788a61"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "anomaly_score": 0.15,
+        "reason": "Most features are within normal bounds, with minor deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 33.72,
+            "lower_bound": 33.48,
+            "upper_bound": 45.9325,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 541.382096,
+            "lower_bound": 0.51316,
+            "upper_bound": 35.041759,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 3.262412,
+            "lower_bound": 0.0,
+            "upper_bound": 0.386221,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "f695a39175774b832bf6256287a1ba41b9e696746c9be039afafd122e763c493"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Inter-arrival time and flow bytes per second show pronounced departures from reference.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 1530.533333,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 390.633333,
+            "lower_bound": 387.033333,
+            "upper_bound": 515.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 541.382096,
+            "lower_bound": 0.51316,
+            "upper_bound": 35.041759,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "bad69d733c260100808f64ca5e0af459b3925bc01e99102874d1595acfd3177c"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_off",
+    "view": "network",
+    "request_id": "w061f4d73a7ae92b8a4b1071c",
+    "label": -1,
+    "label_name": "unknown",
+    "topic": "phms/patient_a/data",
+    "window_start": "2026-09-24 21:22:20+00:00",
+    "score_span": 0.75,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Inter-arrival mean and min/max exceed reference ranges.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1843.933333,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1842.6,
+            "lower_bound": 1344.327,
+            "upper_bound": 1839.573,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1846.4,
+            "lower_bound": 1384.4,
+            "upper_bound": 1845.9,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "e750cd388731e7a78c404af8ca859ced8afd99173760454897fb506854cdce9a"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Inter-arrival mean and min/max values exceed reference thresholds.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1843.933333,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1842.6,
+            "lower_bound": 1344.327,
+            "upper_bound": 1839.573,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1846.4,
+            "lower_bound": 1384.4,
+            "upper_bound": 1845.9,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "7c47e5787e66a99ac0ccb0f400d8f8630f15bb4d4f9c8ef07cc245848472f80c"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most features are within normal bounds, with only inter_arrival_ms__mean and others showing mild deviations.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1843.933333,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 33.56,
+            "lower_bound": 33.48,
+            "upper_bound": 45.9325,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 388.8,
+            "lower_bound": 386.2,
+            "upper_bound": 526.9,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "ecb953b67b6fe9bf940d6c303d04c874cd4d8bc13e1735be7714467e4ea97a24"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_off",
+    "view": "system",
+    "request_id": "w01746fbf5eba1b29ed232e06",
+    "label": 0,
+    "label_name": "normal",
+    "topic": "phms/patient_a/data",
+    "window_start": "2026-09-24 13:53:15+00:00",
+    "score_span": 0.75,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most measurements are within normal bounds with isolated deviations.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": -38.5,
+            "lower_bound": -41.0,
+            "upper_bound": -19.333333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 9.192388,
+            "lower_bound": 0.0,
+            "upper_bound": 8.082904,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__min",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": -45.0,
+            "lower_bound": -46.0,
+            "upper_bound": -20.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "f231eb0ae153a26342c0859f1315fdc722d550999c14649ea7effd91e7ed4b62"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most features are within normal ranges; only some show mild deviations.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 9.192388,
+            "lower_bound": 0.0,
+            "upper_bound": 8.082904,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": -38.5,
+            "lower_bound": -51.666667,
+            "upper_bound": -18.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 216280.0,
+            "lower_bound": 214191.0,
+            "upper_bound": 216296.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "6027d61be814f2895fff97ab002614ef8206d4afb2d6f7f3975d80fe65cb70b5"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Several features show significant deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 9.192388,
+            "lower_bound": 0.0,
+            "upper_bound": 8.082904,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": -38.5,
+            "lower_bound": -51.666667,
+            "upper_bound": -18.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 216280.0,
+            "lower_bound": 214191.0,
+            "upper_bound": 216296.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "348321ff12e329cad9a4e900cbe0fe38d11e24cad4927a09d2f3b52cc44b0632"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_off",
+    "view": "system",
+    "request_id": "w1713e16f17130fc6fb925eac",
+    "label": 1,
+    "label_name": "exposure",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-25 10:24:40+00:00",
+    "score_span": 0.75,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Free heap bytes mean and max are below reference p01/p99, indicating significant memory usage deviation.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "cbcb1cd4ec6e28092b6e56e6b1d8323f59f88e5f23fdbc767cabacd5d4dbbcd2"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "free_heap_bytes__mean and free_heap_bytes__max are below reference p01_p99 thresholds.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "85f868c226be31f09c5d6068a33d11c09fae1973dac775e95320b5f0523551cc"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most measurements are within normal bounds, with only minor deviations in free_heap_bytes__mean and free_heap_bytes__max.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": -34.25,
+            "lower_bound": -51.666667,
+            "upper_bound": -18.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "e60b84e222227511a5dd1de23869c2c026d5562acca43af30514f42b04178f80"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_off",
+    "view": "system",
+    "request_id": "w7c07b48b09510c08e72f6ec3",
+    "label": -1,
+    "label_name": "unknown",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-25 15:07:00+00:00",
+    "score_span": 0.85,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most features are within normal bounds, with only free_heap_bytes__mean and free_heap_bytes__max below reference ranges.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "6750987d72a6c3a99deeec31e5bbc042946ca7b475b940275131db3600993c7e"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most measurements are within normal ranges, with minor deviations in free_heap_bytes__mean and free_heap_bytes__max.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": -40.0,
+            "lower_bound": -51.666667,
+            "upper_bound": -18.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "491705ab2e2b8de763d6c5cdda484520d78cafc03f5575945336b0fac05a1727"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "anomaly_score": 0.95,
+        "reason": "Free heap bytes mean and max are below normal reference p01_p99.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "b02e54cf6104e24016f5571fe9cbf727b8baa7ca8b1da1680434f51cb5758595"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_off",
+    "view": "combined",
+    "request_id": "w266ce3773e926fe4afb0e3c2",
+    "label": 0,
+    "label_name": "normal",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-24 12:39:10+00:00",
+    "score_span": 0.75,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Multiple features show significant deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 1386.225,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": -22.25,
+            "lower_bound": -41.0,
+            "upper_bound": -19.333333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "flow_bytes_per_sec__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 511.6,
+            "lower_bound": 387.1,
+            "upper_bound": 515.2,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "318bf938e27df49d709ce925079f44eb2ecfcfe0f676a2a9b7fbd1d632f01f11"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.75,
+        "reason": "Several features show significant deviations from reference distributions.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 1386.225,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": -22.25,
+            "lower_bound": -41.0,
+            "upper_bound": -19.333333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "flow_bytes_per_sec__max",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 511.6,
+            "lower_bound": 387.1,
+            "upper_bound": 515.2,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "84061e6703d184ba13ea9d42876c13a5a6dc0bb163ea27a813bb3d3e519ba31a"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most measurements are within normal bounds, with minor deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 44.325,
+            "lower_bound": 33.48,
+            "upper_bound": 45.9325,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 692.3,
+            "lower_bound": 684.05,
+            "upper_bound": 697.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 4.98725,
+            "lower_bound": 4.937,
+            "upper_bound": 4.998667,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "7c0d4cb55ba65f06bda9ccafda4c7315c6aba993d2b3387ff9e0b9c52a4b7752"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_off",
+    "view": "combined",
+    "request_id": "w333c7d6d1b3402f6af96cc04",
+    "label": -1,
+    "label_name": "unknown",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-24 21:23:45+00:00",
+    "score_span": 0.75,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Free heap bytes mean and max are below reference min/max, indicating potential memory issues.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 215948.0,
+            "lower_bound": 214191.0,
+            "upper_bound": 216296.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216320.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "07f34efc4cb61f68cd1e86a760a46b14d508925874008461bbff4d92dec5d879"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "free_heap_bytes__mean is below reference min",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 215948.0,
+            "lower_bound": 214191.0,
+            "upper_bound": 216296.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "6fa4273e4cb29d586a3d85a0b2fca33468f63c768ad8ece38e03ecd4541354dd"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most features are within normal bounds, with only minor deviations.",
+        "claims": [
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 694.25,
+            "lower_bound": 688.225,
+            "upper_bound": 697.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "payload_entropy__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 4.99,
+            "lower_bound": 4.942,
+            "upper_bound": 4.989,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 215948.0,
+            "lower_bound": 214191.0,
+            "upper_bound": 216296.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "2677414ce601014ae5f68b758436685dee0e570796c598fe18d4aec499a61c6f"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_on",
+    "view": "network",
+    "request_id": "w01dfadf44e653faab2adeae3",
+    "label": 0,
+    "label_name": "normal",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-24 13:20:45+00:00",
+    "score_span": 0.85,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Multiple features show significant deviations from reference bounds.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 1389.666667,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 12.705248,
+            "lower_bound": 0.51316,
+            "upper_bound": 35.041759,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 4.99,
+            "lower_bound": 4.9485,
+            "upper_bound": 4.9925,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "9924522a21a5e4ef5af1e707e5535ee027b4cafa1c5d42511cfd31d5a524cd35"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "anomaly_score": 0.0,
+        "reason": "Most features within reference bounds; deviations are isolated and mild.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 44.32,
+            "lower_bound": 33.553333,
+            "upper_bound": 44.345,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 692.3,
+            "lower_bound": 688.225,
+            "upper_bound": 697.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 4.99,
+            "lower_bound": 4.9485,
+            "upper_bound": 4.9925,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "e118c6d81e5bad073ff1ad7c45ea0b3a51f63b7cbc5c2799c3c286f04cb3f0a9"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most metrics within reference bounds with minor isolated deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 44.32,
+            "lower_bound": 33.553333,
+            "upper_bound": 44.345,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 1389.666667,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 4.99,
+            "lower_bound": 4.9485,
+            "upper_bound": 4.9925,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "ff4e8b001536d969d96fa869f17695b9c43037f8dc8ad3a4d7b554465260506b"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_on",
+    "view": "network",
+    "request_id": "wb4a840f077c3082f873d4b11",
+    "label": 1,
+    "label_name": "exposure",
+    "topic": "phms/patient_a/data",
+    "window_start": "2026-09-24 16:55:20+00:00",
+    "score_span": 0.55,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Multiple features show significant deviations: inter_arrival_ms_std exceeds p99, flow_bytes_per_sec_mean drops below median, and inter_arrival_ms_mean surpasses p95.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 279.87948,
+            "lower_bound": 0.51316,
+            "upper_bound": 35.041759,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 399.433333,
+            "lower_bound": 386.2,
+            "upper_bound": 526.9,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 1679.133333,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "81427ec4a9037aff5967f1e6bbef4d5b311bc76d05a51f6e9b6794e6df0f4f34"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Multiple features show significant deviations: inter_arrival_ms__std exceeds p99, flow_bytes_per_sec__mean is 111.8 below median, mqtt_msg_rate_per_min__mean is 9.7 below median.",
+        "claims": [
+          {
+            "feature": "inter_arrival_ms__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 279.87948,
+            "lower_bound": 0.51316,
+            "upper_bound": 35.041759,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 399.433333,
+            "lower_bound": 387.033333,
+            "upper_bound": 515.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 34.576667,
+            "lower_bound": 33.553333,
+            "upper_bound": 44.345,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "50674219750e4adf8c5763dd2d803461b4aa6045ac2c9916706a32bf39b9745d"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.3,
+        "reason": "Most features within normal ranges; deviations isolated and mild.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 34.576667,
+            "lower_bound": 33.553333,
+            "upper_bound": 44.345,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "avg_msg_size_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 693.1,
+            "lower_bound": 688.225,
+            "upper_bound": 697.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 4.972,
+            "lower_bound": 4.9485,
+            "upper_bound": 4.9925,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "7ed86175a4562c698533f92f021bb20d378fcd4989e56fa3aa6618aa62d5b838"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_on",
+    "view": "network",
+    "request_id": "w0f42c2cebac09ec64b68cc3e",
+    "label": -1,
+    "label_name": "unknown",
+    "topic": "phms/patient_a/data",
+    "window_start": "2026-09-25 08:31:40+00:00",
+    "score_span": 0.6,
+    "same_score_opposite_boolean": true,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most features within reference bounds; isolated mild deviations.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 33.55,
+            "lower_bound": 33.553333,
+            "upper_bound": 44.345,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "mqtt_msg_rate_per_min__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 33.55,
+            "lower_bound": 33.56,
+            "upper_bound": 44.36,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 1840.1,
+            "lower_bound": 1344.327,
+            "upper_bound": 1839.573,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "f085fe8f52f78e064147d2e617f14a3848cb3e545aa05dd297f41610c16a3b70"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.1,
+        "reason": "Multiple features show significant deviations from reference ranges.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 33.55,
+            "lower_bound": 33.553333,
+            "upper_bound": 44.345,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 1842.866667,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 388.7,
+            "lower_bound": 386.2,
+            "upper_bound": 526.9,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "c17a5fa8d579d4690bdf63c9c302435213d1eab5ce1d82afd0422751c8f4d886"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "anomaly_score": 0.7,
+        "reason": "Multiple features show significant deviations from reference medians and percentiles.",
+        "claims": [
+          {
+            "feature": "mqtt_msg_rate_per_min__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 33.55,
+            "lower_bound": 33.553333,
+            "upper_bound": 44.345,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "flow_bytes_per_sec__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 388.7,
+            "lower_bound": 387.033333,
+            "upper_bound": 515.1,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 1842.866667,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "05bda77a4a0d8ecf93c06d9fca6c78f9962adcfed1b48bb0b8bbf7589f6077fb"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_on",
+    "view": "system",
+    "request_id": "w01746fbf5eba1b29ed232e06",
+    "label": 0,
+    "label_name": "normal",
+    "topic": "phms/patient_a/data",
+    "window_start": "2026-09-24 13:53:15+00:00",
+    "score_span": 0.85,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.8,
+        "reason": "Multiple features show significant deviations from normal ranges.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 9.192388,
+            "lower_bound": 0.0,
+            "upper_bound": 8.082904,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 216280.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "cpu_temp_f__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 128.0,
+            "lower_bound": 97.0,
+            "upper_bound": 128.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "5883c5a16ed8c4bc7a1dbc13b5cd64b2265aded8527ac17d6b4b0408da57f3e9"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "anomaly_score": 0.0,
+        "reason": "Most features within reference bounds; only wifi_rssi_dbm__std exceeds p99 but single feature deviation insufficient.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 9.192388,
+            "lower_bound": 0.0,
+            "upper_bound": 8.082904,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "f234894232ca7eb3a699b9d686d5c19f65e5c881ec2bbce3fa0dfb205774969b"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "wifi_rssi_dbm__std exceeds p99 threshold",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__std",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 9.192388,
+            "lower_bound": 0.0,
+            "upper_bound": 8.082904,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "0e85b4dd3f7df1bfa3173839365c2a5415e6acfe0fd571fd2b882613f6596dd9"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_on",
+    "view": "system",
+    "request_id": "w17bb040b4ebf6a1c0e2414bb",
+    "label": -1,
+    "label_name": "unknown",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-24 21:23:25+00:00",
+    "score_span": 0.75,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "free_heap_bytes__mean and free_heap_bytes__max below p01_p99 but isolated",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "42a112fab07b7d1f135d560680a05af78e833997c86bcd8eb28647ea9680cea2"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "free_heap_bytes__mean and free_heap_bytes__max show significant deviations below reference p01/min thresholds.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "min_max",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216320.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": -40.333333,
+            "lower_bound": -41.0,
+            "upper_bound": -19.333333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "5a11170f0a4d039d52d2e97886a62ade96ea02312a33b3a670b014374890833f"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "anomaly_score": 0.85,
+        "reason": "Free heap bytes and Wi-Fi RSSI max values significantly below lower percentiles.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__min",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": 215948.0,
+            "lower_bound": 215948.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "wifi_rssi_dbm__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "contradicted",
+            "supplied_value": -39.0,
+            "lower_bound": -39.0,
+            "upper_bound": -18.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          }
+        ],
+        "request_sha256": "b617a1ec283a44e82fb773ab644c80452dc7e5bf96c9fb3f5fc2e93c31f7ead0"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_on",
+    "view": "combined",
+    "request_id": "w0aae5f9b7a2ce921bbc8e767",
+    "label": 0,
+    "label_name": "normal",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-24 09:53:25+00:00",
+    "score_span": 0.05000000000000002,
+    "same_score_opposite_boolean": true,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": true,
+        "anomaly_score": 0.2,
+        "reason": "Two features (payload_entropy__mean, payload_entropy__min) exceed p99 thresholds.",
+        "claims": [
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 4.993333,
+            "lower_bound": 4.9485,
+            "upper_bound": 4.9925,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "payload_entropy__min",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 4.992,
+            "lower_bound": 4.942,
+            "upper_bound": 4.989,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "787e7cb2473b3ba063b279be2693019f948ba07e921fb967b5c40553b7da4cd7"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": false,
+        "anomaly_score": 0.15,
+        "reason": "Most metrics within normal ranges; mild deviations in payload entropy and WiFi RSSI not indicative of anomaly.",
+        "claims": [
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 4.993333,
+            "lower_bound": 4.9485,
+            "upper_bound": 4.9925,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": -21.333333,
+            "lower_bound": -41.0,
+            "upper_bound": -19.333333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "message_count",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 3.0,
+            "lower_bound": 3.0,
+            "upper_bound": 4.0,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "e85e3d46ca6aa9a109e67cddf107726fac87c600148be29c7d67230f58fff69c"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": false,
+        "anomaly_score": 0.2,
+        "reason": "Most metrics within reference bounds; only wifi_rssi_dbm__mean shows significant delta_from_median but no coherent pattern.",
+        "claims": [
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": -21.333333,
+            "lower_bound": -41.0,
+            "upper_bound": -19.333333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "payload_entropy__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "supported",
+            "supplied_value": 4.993333,
+            "lower_bound": 4.9485,
+            "upper_bound": 4.9925,
+            "independently_computed_position": "above",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "min_max",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 1386.266667,
+            "lower_bound": 1198.675,
+            "upper_bound": 2051.9,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "960543e4f785df0a051991adddc9e001f60a63b1fd4d6a9639d9280464afe118"
+      }
+    ]
+  },
+  {
+    "profile": "qwen_on",
+    "view": "combined",
+    "request_id": "w166f2d5fc0af5b206f6e08a7",
+    "label": -1,
+    "label_name": "unknown",
+    "topic": "phms/patient_b/data",
+    "window_start": "2026-09-24 16:55:30+00:00",
+    "score_span": 0.85,
+    "same_score_opposite_boolean": false,
+    "selection_rule": "within mode/view/label, prefer same-score opposite Booleans, then maximum score span, then lexicographically smallest request ID; illustrative, not a representative random sample",
+    "responses": [
+      {
+        "seed": 42,
+        "is_anomaly": false,
+        "anomaly_score": 0.1,
+        "reason": "Most metrics within reference bounds; deviations are isolated and mild.",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__max",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": 1420.9,
+            "lower_bound": 1384.4,
+            "upper_bound": 1845.9,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "d356babe6a1b376198b94f21a452a2b54de0211eff0c4ed2ee716cc743bb0e14"
+      },
+      {
+        "seed": 43,
+        "is_anomaly": true,
+        "anomaly_score": 0.8,
+        "reason": "Free heap bytes and inter-arrival times show significant deviations",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "inter_arrival_ms__mean",
+            "reference": "p01_p99",
+            "position": "above",
+            "verdict": "contradicted",
+            "supplied_value": 1397.8,
+            "lower_bound": 1379.32725,
+            "upper_bound": 1843.324333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "contradicted"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "4c24de8fa46267825f8a1e676439d46f3e9bd80c9395a6d30e14450a5a716d90"
+      },
+      {
+        "seed": 44,
+        "is_anomaly": true,
+        "anomaly_score": 0.95,
+        "reason": "free_heap_bytes__mean and free_heap_bytes__max are below p01_p99 bounds with large deltas",
+        "claims": [
+          {
+            "feature": "free_heap_bytes__mean",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216140.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "free_heap_bytes__max",
+            "reference": "p01_p99",
+            "position": "below",
+            "verdict": "supported",
+            "supplied_value": 215948.0,
+            "lower_bound": 216236.0,
+            "upper_bound": 216280.0,
+            "independently_computed_position": "below",
+            "independently_computed_verdict": "supported"
+          },
+          {
+            "feature": "wifi_rssi_dbm__mean",
+            "reference": "p01_p99",
+            "position": "within",
+            "verdict": "supported",
+            "supplied_value": -36.666667,
+            "lower_bound": -41.0,
+            "upper_bound": -19.333333,
+            "independently_computed_position": "within",
+            "independently_computed_verdict": "supported"
+          }
+        ],
+        "request_sha256": "557571dde20f5a5038bf19de11ff3e7a915a2c40dbd2219218443ffbf1d88f7e"
+      }
+    ]
+  }
+]

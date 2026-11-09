@@ -1,0 +1,92 @@
+{
+  "saved_llm_rows": 38808,
+  "unique_request_profile_view_seed_keys": 38808,
+  "qwen_native_valid_responses_reconciled": 19403,
+  "qwen_native_total_records": 19404,
+  "invalid_responses": 1,
+  "complete_response_groups": 12935,
+  "cohort_windows": 1078,
+  "cohort_label_counts": {
+    "unknown": 651,
+    "normal": 360,
+    "exposure": 67
+  },
+  "planned_llm_rows": 38808,
+  "planned_response_groups": 12936,
+  "planned_qwen_rows": 19404,
+  "planned_seed_count": 3,
+  "input_integrity_checks_passed": true,
+  "selected_case_claims_independently_rechecked": 122,
+  "software": "Python standard library",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "profiles": {
+    "llama": {
+      "model": "llama3.1:8b",
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "think": null,
+      "options": {
+        "temperature": 0,
+        "top_p": 0.9,
+        "top_k": 40,
+        "min_p": 0,
+        "repeat_penalty": 1.1,
+        "num_ctx": 16384,
+        "num_predict": 1024
+      }
+    },
+    "qwen_off": {
+      "model": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "think": false,
+      "options": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "min_p": 0,
+        "repeat_penalty": 1.1,
+        "num_ctx": 16384,
+        "num_predict": 8192
+      }
+    },
+    "qwen_on": {
+      "model": "qwen3:8b",
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "think": true,
+      "options": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "min_p": 0,
+        "repeat_penalty": 1.1,
+        "num_ctx": 16384,
+        "num_predict": 8192
+      }
+    },
+    "mistral": {
+      "model": "mistral:7b-instruct",
+      "digest": "6577803aa9a036369e481d648a2baebb381ebc6e897f2bb9a766a2aa7bfbc1cf",
+      "think": null,
+      "options": {
+        "temperature": 0,
+        "top_p": 0.9,
+        "top_k": 40,
+        "min_p": 0,
+        "repeat_penalty": 1.1,
+        "num_ctx": 16384,
+        "num_predict": 1024
+      }
+    }
+  },
+  "method_limitations": [
+    "Descriptive repeated predictions on dependent windows, not independent trials.",
+    "Flips are disagreement, not necessarily detection errors; unknown labels are not false positives.",
+    "The score was an uncalibrated ranking signal and the Boolean was generated directly; a 0.5 diagnostic is not an assumed original decision threshold.",
+    "Final responses and sampling settings do not establish internal causes of seed dependence.",
+    "Illustrative cases are selected by an explicit diagnostic rule, not a random sample.",
+    "No new inference, temperature ablation, or hardware test was performed."
+  ]
+}

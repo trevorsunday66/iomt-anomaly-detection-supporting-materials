@@ -1,0 +1,3 @@
+# Scientific files and provenance are verified by byte hashes. Keep their
+# original line endings across platforms and user core.autocrlf settings.
+* -text

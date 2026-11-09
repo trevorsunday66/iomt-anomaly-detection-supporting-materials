@@ -1,0 +1,11 @@
+[
+  {
+    "profile": "qwen_on",
+    "view": "combined",
+    "seed": 42,
+    "request_id": "wc6eeff31dc585b3945ff5fde",
+    "label": -1,
+    "status": "invalid",
+    "error": "Model identity or completion failure"
+  }
+]

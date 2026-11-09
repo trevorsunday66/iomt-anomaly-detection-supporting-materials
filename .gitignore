@@ -1,6 +1,8 @@
 /.venv/
+/.venv-analysis/
 /runs/
 __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
+.pytest_cache/

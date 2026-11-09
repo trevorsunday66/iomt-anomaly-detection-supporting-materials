@@ -518,6 +518,17 @@ def choose(windows, events, config):
     return cohort, eligible_events, candidates
 
 
+def planned_request_count(tasks):
+    """Count actual request keys and reject duplicate work in the task plan."""
+    seen = set()
+    for task in tasks:
+        for rid in task['request_ids']:
+            key = (task['profile'], task['view'], task['seed'], rid)
+            require(key not in seen, 'Duplicate planned request key: ' + repr(key))
+            seen.add(key)
+    return len(seen)
+
+
 def prepare_llm(output):
     import pandas as pd
     scientific()
@@ -552,6 +563,7 @@ def prepare_llm(output):
                 for group,part in cohort.groupby('group_id',sort=True):
                     tasks.append(dict(task_id=len(tasks),view=view,profile=profile,seed=seed,group_id=group,request_ids=part.request_id.tolist()))
     require(tasks==read(ROOT/'LLM/Results/Prepared/tasks.json'),'Task plan differs')
+    request_count = planned_request_count(tasks)
     meta=KEYS+['label','state','split','event_ids','attack_types','request_id','group_id']
     cohort[meta].to_csv(prepared/'private/cohort.csv',index=False);cohort.to_csv(prepared/'private/windows.csv',index=False)
     write(prepared/'private/events.json',events);write(prepared/'private/normal_sampling.json',candidates)
@@ -560,8 +572,8 @@ def prepare_llm(output):
     write(prepared/'tasks.json',tasks);write(prepared/'profiles.json',profiles)
     write(prepared/'protocol.json',{'stage':'development','scope':'N01/A01','config':config,
         'training_windows':len(train),'cohort_windows':len(cohort),'ollama_version':config['ollama_version'],
-        'inference_source_sha256':sha(Path(__file__)),'expected_tasks':len(tasks),'expected_requests':38808})
-    result={'status':'PASS','cohort_windows':len(cohort),'training_windows':len(train),'tasks':len(tasks),'requests':38808,
+        'inference_source_sha256':sha(Path(__file__)),'expected_tasks':len(tasks),'expected_requests':request_count})
+    result={'status':'PASS','cohort_windows':len(cohort),'training_windows':len(train),'tasks':len(tasks),'requests':request_count,
         'cohort_inputs_references_and_task_plan_match_saved':True}
     write(output/'VALIDATION.json',result);seal(output);return result
 

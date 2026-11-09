@@ -1,0 +1,11 @@
+[
+  {
+    "detector": "qwen_on",
+    "feature_set": "combined",
+    "seed": 42,
+    "request_id": "wc6eeff31dc585b3945ff5fde",
+    "status": "invalid",
+    "label": -1,
+    "error": "Model identity or completion failure"
+  }
+]
